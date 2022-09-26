@@ -1,0 +1,11 @@
+Hide all layer but layer tPlace 21
+
+C:\EAGLE 9.6.2\examples\ulps\examples
+C:\EAGLE 9.6.2\examples\ulps\examples\import-bmp.ulp
+
+
+
+YouTube (https://www.youtube.com/watch?v=z1Ej3nJz43c)
+
+
+C:\DVT\Fred.PCB\EXTENSIONS\Analog\2022.BNSK Authoring Light
