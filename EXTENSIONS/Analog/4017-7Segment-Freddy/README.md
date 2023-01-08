@@ -9,3 +9,7 @@ How to create an animation using a [CD4017BE](http://www.ti.com/lit/ds/symlink/c
 ![board](./4017-7Segment.board.png)
 
 ![schema(./4017-7Segment.schema.png)
+
+## 7 Segment Display
+
+- Common Cathode
