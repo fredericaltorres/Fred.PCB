@@ -275,6 +275,6 @@ French USB -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Useless USB Gift Board\Gerbers
 - Convert the image to 2 colors black and white
 - in the board , menu File -> Import -> Bitmap
 	* Select the bitmap
-	* Select the color style mostly choice number 2
+	* Select the color style mostly choice number 2 - Chose both color white and black
 	* Select DPI, the greater the DPI the smaller the image will be
 	* Select the layer mostly 25, top text

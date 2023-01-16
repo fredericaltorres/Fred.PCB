@@ -1816,24 +1816,24 @@ With round pins</description>
 </class>
 </classes>
 <parts>
-<part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R_ARRAY_8" library="adafruit" deviceset="PINHD-1X9" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="MCU_RIGHT_SIDE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X7" device="" package3d_urn="urn:adsk.eagle:package:22477/2"/>
 <part name="MCU_LEFT_SIDE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X7" device="" package3d_urn="urn:adsk.eagle:package:22477/2"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="LED_GREEN" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="LED_RED" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="LED_YELLOW" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="B1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="B2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="PASSED" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="FAILED" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="RUNNING" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="CHECK_NOW" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="CHECKING" library="adafruit" deviceset="LED" device="SMT1206"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="LED_POWER" gate="G$1" x="5.08" y="73.66" smashed="yes" rot="R270">
+<instance part="POWER" gate="G$1" x="5.08" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="0.508" y="70.104" size="1.778" layer="95"/>
 <attribute name="VALUE" x="0.508" y="67.945" size="1.778" layer="96"/>
 </instance>
@@ -1855,25 +1855,25 @@ With round pins</description>
 <instance part="GND2" gate="1" x="5.08" y="106.68" smashed="yes">
 <attribute name="VALUE" x="5.08" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED_GREEN" gate="G$1" x="-53.34" y="76.2" smashed="yes" rot="R270">
+<instance part="PASSED" gate="G$1" x="-53.34" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="-57.912" y="72.644" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-57.912" y="70.485" size="1.778" layer="96"/>
 </instance>
-<instance part="LED_RED" gate="G$1" x="-83.82" y="76.2" smashed="yes" rot="R270">
+<instance part="FAILED" gate="G$1" x="-83.82" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="-88.392" y="72.644" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-88.392" y="70.485" size="1.778" layer="96"/>
 </instance>
-<instance part="LED_YELLOW" gate="G$1" x="-114.3" y="76.2" smashed="yes" rot="R270">
+<instance part="RUNNING" gate="G$1" x="-114.3" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="-118.872" y="72.644" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-118.872" y="70.485" size="1.778" layer="96"/>
 </instance>
-<instance part="B1" gate="1" x="-116.84" y="106.68" smashed="yes">
+<instance part="CHECK_NOW" gate="1" x="-116.84" y="106.68" smashed="yes">
 <attribute name="NAME" x="-123.19" y="104.14" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-120.65" y="109.855" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="B2" gate="1" x="-134.62" y="104.14" smashed="yes">
-<attribute name="NAME" x="-140.97" y="101.6" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-138.43" y="107.315" size="1.778" layer="96" rot="R90"/>
+<instance part="CHECKING" gate="G$1" x="-114.3" y="149.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="-118.872" y="146.304" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-118.872" y="144.145" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1893,7 +1893,7 @@ With round pins</description>
 </net>
 <net name="VCC_33" class="0">
 <segment>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<pinref part="POWER" gate="G$1" pin="A"/>
 <wire x1="7.62" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="20.32" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -1924,9 +1924,9 @@ With round pins</description>
 <label x="-25.4" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="B2" gate="1" pin="S"/>
-<wire x1="-134.62" y1="109.22" x2="-134.62" y2="124.46" width="0.1524" layer="91"/>
-<label x="-132.08" y="121.92" size="1.778" layer="95" rot="R90"/>
+<pinref part="CHECKING" gate="G$1" pin="A"/>
+<wire x1="-111.76" y1="149.86" x2="-93.98" y2="149.86" width="0.1524" layer="91"/>
+<label x="-99.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_D3" class="0">
@@ -1936,7 +1936,7 @@ With round pins</description>
 <label x="-27.94" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="B1" gate="1" pin="S"/>
+<pinref part="CHECK_NOW" gate="1" pin="S"/>
 <wire x1="-116.84" y1="111.76" x2="-116.84" y2="124.46" width="0.1524" layer="91"/>
 <label x="-114.3" y="121.92" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -1948,7 +1948,7 @@ With round pins</description>
 <label x="-30.48" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="LED_YELLOW" gate="G$1" pin="A"/>
+<pinref part="RUNNING" gate="G$1" pin="A"/>
 <wire x1="-111.76" y1="76.2" x2="-101.6" y2="76.2" width="0.1524" layer="91"/>
 <label x="-109.22" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -1960,7 +1960,7 @@ With round pins</description>
 <label x="-33.02" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="LED_RED" gate="G$1" pin="A"/>
+<pinref part="FAILED" gate="G$1" pin="A"/>
 <wire x1="-81.28" y1="76.2" x2="-73.66" y2="76.2" width="0.1524" layer="91"/>
 <label x="-78.74" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -1972,7 +1972,7 @@ With round pins</description>
 <label x="-35.56" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="LED_GREEN" gate="G$1" pin="A"/>
+<pinref part="PASSED" gate="G$1" pin="A"/>
 <wire x1="-50.8" y1="76.2" x2="-33.02" y2="76.2" width="0.1524" layer="91"/>
 <label x="-40.64" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -2019,7 +2019,7 @@ With round pins</description>
 <label x="-78.74" y="116.84" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<pinref part="POWER" gate="G$1" pin="C"/>
 <wire x1="-15.24" y1="73.66" x2="0" y2="73.66" width="0.1524" layer="91"/>
 <label x="-17.78" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -2031,7 +2031,7 @@ With round pins</description>
 <label x="-76.2" y="106.68" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="LED_GREEN" gate="G$1" pin="C"/>
+<pinref part="PASSED" gate="G$1" pin="C"/>
 <wire x1="-58.42" y1="76.2" x2="-66.04" y2="76.2" width="0.1524" layer="91"/>
 <label x="-66.04" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -2043,7 +2043,7 @@ With round pins</description>
 <label x="-73.66" y="116.84" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="LED_RED" gate="G$1" pin="C"/>
+<pinref part="FAILED" gate="G$1" pin="C"/>
 <wire x1="-88.9" y1="76.2" x2="-96.52" y2="76.2" width="0.1524" layer="91"/>
 <label x="-99.06" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -2055,7 +2055,7 @@ With round pins</description>
 <label x="-71.12" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED_YELLOW" gate="G$1" pin="C"/>
+<pinref part="RUNNING" gate="G$1" pin="C"/>
 <wire x1="-119.38" y1="76.2" x2="-127" y2="76.2" width="0.1524" layer="91"/>
 <label x="-129.54" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -2067,7 +2067,7 @@ With round pins</description>
 <label x="-68.58" y="116.84" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="B1" gate="1" pin="P1"/>
+<pinref part="CHECK_NOW" gate="1" pin="P1"/>
 <wire x1="-114.3" y1="101.6" x2="-114.3" y2="91.44" width="0.1524" layer="91"/>
 <label x="-111.76" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -2079,9 +2079,9 @@ With round pins</description>
 <label x="-66.04" y="96.52" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="B2" gate="1" pin="P1"/>
-<wire x1="-132.08" y1="99.06" x2="-132.08" y2="88.9" width="0.1524" layer="91"/>
-<label x="-129.54" y="91.44" size="1.778" layer="95" rot="R270"/>
+<pinref part="CHECKING" gate="G$1" pin="C"/>
+<wire x1="-119.38" y1="149.86" x2="-129.54" y2="149.86" width="0.1524" layer="91"/>
+<label x="-129.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

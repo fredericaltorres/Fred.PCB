@@ -146,7 +146,7 @@
 <text x="37" y="60.5" size="3" layer="26" rot="SMR0" align="center">www.FredericTorres.com</text>
 <text x="14.3984" y="14.98125" size="1.6764" layer="25" rot="R180" align="center">BNSK 2023/01</text>
 <text x="64.51575" y="25.14675" size="1.27" layer="25" rot="R180" align="center">+</text>
-<text x="7.5" y="28.4" size="1.016" layer="25" rot="R180" align="center">GND</text>
+<text x="48.013" y="64.4045" size="1.016" layer="25" rot="R180" align="center">GND</text>
 <text x="24.294" y="44.55825" size="1.27" layer="25" rot="R180" align="center">+</text>
 <text x="40.8815" y="52.7485" size="1.27" layer="25" rot="R180" align="center">+</text>
 <text x="42.19875" y="34.018" size="1.27" layer="25" rot="R180" align="center">+</text>
@@ -7778,9 +7778,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="60.48425" y="20.945" size="1.4224" layer="25" rot="R180" align="center"/>
 <attribute name="VALUE" x="61.98425" y="26.255" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R_ARRAY_8" library="adafruit" package="1X09-BIG" value="" x="6.98425" y="41.09475" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.15545" y="35.85855" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="10.15925" y="30.93475" size="1.27" layer="27" rot="R90"/>
+<element name="R_ARRAY_8" library="adafruit" package="1X09-BIG" value="" x="5.8095" y="42.55525" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.6383" y="47.79145" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="2.6345" y="52.71525" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="MCU_RIGHT_SIDE" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X07" package3d_urn="urn:adsk.eagle:package:22477/2" value="" x="56" y="50" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.2898" y="47.7056" size="1.27" layer="25" ratio="10" rot="R180"/>
@@ -7822,7 +7822,7 @@ design rules under a new name.</description>
 <signal name="GND">
 <contactref element="R_ARRAY_8" pad="1"/>
 <contactref element="MCU_LEFT_SIDE" pad="6"/>
-<wire x1="6.98425" y1="30.93475" x2="61.08" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8095" y1="52.71525" x2="61.08" y2="35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_33">
 <contactref element="POWER" pad="A"/>
@@ -7878,32 +7878,32 @@ design rules under a new name.</description>
 <signal name="RA_1">
 <contactref element="R_ARRAY_8" pad="2"/>
 <contactref element="POWER" pad="C"/>
-<wire x1="6.98425" y1="33.47475" x2="59.29225" y2="23.715" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8095" y1="50.17525" x2="59.29225" y2="23.715" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RA_2">
 <contactref element="R_ARRAY_8" pad="3"/>
 <contactref element="PASSED" pad="C"/>
-<wire x1="6.98425" y1="36.01475" x2="36.8325" y2="33.618" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8095" y1="47.63525" x2="36.8325" y2="33.618" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RA_3">
 <contactref element="R_ARRAY_8" pad="4"/>
 <contactref element="FAILED" pad="C"/>
-<wire x1="6.98425" y1="38.55475" x2="36.8325" y2="50.8405" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8095" y1="45.09525" x2="36.8325" y2="50.8405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RA_4">
 <contactref element="R_ARRAY_8" pad="5"/>
 <contactref element="RUNNING" pad="C"/>
-<wire x1="6.98425" y1="41.09475" x2="21.5785" y2="42.444" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8095" y1="42.55525" x2="21.5785" y2="42.444" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RA_5">
 <contactref element="R_ARRAY_8" pad="6"/>
 <contactref element="CHECK_NOW" pad="4"/>
-<wire x1="31.14935" y1="25.52705" x2="6.98425" y2="43.63475" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8095" y1="40.01525" x2="31.14935" y2="25.52705" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RA_6">
 <contactref element="R_ARRAY_8" pad="7"/>
 <contactref element="CHECKING" pad="C"/>
-<wire x1="23.578" y1="23" x2="6.98425" y2="46.17475" width="0" layer="19" extent="1-1"/>
+<wire x1="23.578" y1="23" x2="5.8095" y2="37.47525" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
