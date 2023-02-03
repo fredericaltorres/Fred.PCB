@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
@@ -130,38 +131,42 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="26.5" y2="0" width="0" layer="20"/>
-<wire x1="26.5" y1="0" x2="26.5" y2="23.5" width="0" layer="20"/>
-<wire x1="26.5" y1="23.5" x2="0" y2="23.5" width="0" layer="20"/>
-<wire x1="0" y1="23.5" x2="0" y2="0" width="0" layer="20"/>
-<text x="3.4" y="19.8" size="0.8128" layer="25">VCC</text>
-<text x="0.5" y="19.8" size="0.8128" layer="25">GND</text>
-<text x="6.7" y="19.8" size="0.8128" layer="25">7</text>
-<text x="14.3" y="19.8" size="0.8128" layer="25">4</text>
-<text x="9.3" y="19.8" size="0.8128" layer="25">6</text>
-<text x="11.7" y="19.8" size="0.8128" layer="25">5</text>
-<text x="22.5" y="16.5" size="0.8128" layer="25" rot="R90">1 MOSI</text>
-<text x="25.1" y="16.5" size="0.8128" layer="25" rot="R90">0 CLCK</text>
+<wire x1="0" y1="0" x2="50" y2="0" width="0" layer="20"/>
+<wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
+<wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
+<wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
+<text x="17.4" y="42.8" size="1.016" layer="25" rot="R90">VCC</text>
+<text x="14.5" y="42.8" size="1.016" layer="25" rot="R90">GND</text>
+<text x="18.7" y="44.8" size="1.016" layer="25">7</text>
+<text x="26.3" y="44.8" size="1.016" layer="25">4</text>
+<text x="21.3" y="44.8" size="1.016" layer="25">6</text>
+<text x="23.7" y="44.8" size="1.016" layer="25">5</text>
+<text x="34.5" y="41.5" size="1.016" layer="25" rot="R90">1 MOSI</text>
+<text x="37.1" y="41.5" size="1.016" layer="25" rot="R90">0 CLCK</text>
 <text x="9" y="21.8" size="1.27" layer="25"></text>
-<text x="1.1" y="3" size="0.8128" layer="25">GND</text>
-<text x="4.1" y="3" size="0.8128" layer="25">VCC</text>
-<text x="7.3" y="3.1" size="0.8128" layer="25">7</text>
-<text x="25" y="3.1" size="0.8128" layer="25">0</text>
-<text x="1" y="5" size="0.6096" layer="25" rot="R90">PCBv1 FT2016.02</text>
-<text x="9.8" y="3.1" size="0.8128" layer="25">6</text>
-<text x="12.5" y="3.1" size="0.8128" layer="25">5</text>
-<text x="14.8" y="3.1" size="0.8128" layer="25">4</text>
-<text x="17.5" y="3.1" size="0.8128" layer="25">3</text>
-<text x="20" y="3.1" size="0.8128" layer="25">2</text>
-<text x="22.5" y="3.1" size="0.8128" layer="25">1</text>
-<text x="20" y="16.5" size="0.8128" layer="25" rot="R90">2 MISO</text>
-<text x="17.5" y="16.5" size="0.8128" layer="25" rot="R90">3 NA</text>
-<text x="2" y="14.1" size="1.4224" layer="25">Nusbio Thumb Drive</text>
+<text x="19.3" y="4.1" size="1.016" layer="25" rot="R90">7</text>
+<text x="21.8" y="4.1" size="1.016" layer="25" rot="R90">6</text>
+<text x="24.5" y="4.1" size="1.016" layer="25" rot="R90">5</text>
+<text x="26.8" y="4.1" size="1.016" layer="25" rot="R90">4</text>
+<text x="32" y="41.5" size="1.016" layer="25" rot="R90">2 MISO</text>
+<text x="29.5" y="42.5" size="1.016" layer="25" rot="R90">3 NA</text>
+<text x="25" y="35.1" size="1.9304" layer="25" align="center">Nusbio Thumb Drive</text>
 <text x="23.5" y="11" size="1.4224" layer="26" rot="MR0">MadeInTheUSB.net</text>
-<text x="2.1" y="14" size="1.4224" layer="25">Nusbio Thumb Drive</text>
-<text x="1.9" y="14.2" size="1.4224" layer="25">Nusbio</text>
-<text x="22.2" y="10.2" size="0.6096" layer="25">VCC</text>
-<text x="12.1" y="6.4" size="0.6096" layer="25">GND</text>
+<text x="30" y="24" size="0.6096" layer="25">VCC</text>
+<text x="30" y="23" size="0.6096" layer="25">HOLD</text>
+<text x="30" y="22" size="0.6096" layer="25">CLK</text>
+<text x="30" y="20" size="0.6096" layer="25">MOSI</text>
+<text x="18" y="24" size="0.6096" layer="25">CS</text>
+<text x="18" y="23" size="0.6096" layer="25">MISO</text>
+<text x="18" y="22" size="0.6096" layer="25">WP</text>
+<text x="18" y="21" size="0.6096" layer="25">GND</text>
+<text x="37.1" y="4.5" size="1.016" layer="25" rot="R90">0 CLCK</text>
+<text x="34.5" y="4.5" size="1.016" layer="25" rot="R90">1 MOSI</text>
+<text x="32" y="4.5" size="1.016" layer="25" rot="R90">2 MISO</text>
+<text x="29.5" y="4.5" size="1.016" layer="25" rot="R90">3 CS</text>
+<text x="14.5" y="3.8" size="1.016" layer="25" rot="R90">GND</text>
+<text x="17.4" y="3.8" size="1.016" layer="25" rot="R90">VCC</text>
+<text x="40.1" y="35.5" size="1.016" layer="25" rot="R90">+</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -193,6 +198,46 @@
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 <rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
 <rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
+</package>
+<package name="R1206">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.397" y="1.143" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.397" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
+<package name="1206">
+<description>&lt;b&gt;CHICAGO MINIATURE LAMP, INC.&lt;/b&gt;&lt;p&gt;
+7022X Series SMT LEDs 1206 Package Size</description>
+<wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="-0.55" y1="-0.5" x2="0.55" y2="-0.5" width="0.1016" layer="21" curve="95.452622" cap="flat"/>
+<wire x1="-0.55" y1="-0.5" x2="-0.55" y2="0.5" width="0.1016" layer="51" curve="-84.547378" cap="flat"/>
+<wire x1="-0.55" y1="0.5" x2="0.55" y2="0.5" width="0.1016" layer="21" curve="-95.452622" cap="flat"/>
+<wire x1="0.55" y1="0.5" x2="0.55" y2="-0.5" width="0.1016" layer="51" curve="-84.547378" cap="flat"/>
+<smd name="A" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="C" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
+<rectangle x1="0.45" y1="-0.7" x2="0.8" y2="-0.45" layer="51"/>
+<rectangle x1="0.8" y1="-0.7" x2="0.9" y2="0.5" layer="51"/>
+<rectangle x1="0.8" y1="0.55" x2="0.9" y2="0.7" layer="51"/>
+<rectangle x1="-0.9" y1="-0.7" x2="-0.8" y2="0.5" layer="51"/>
+<rectangle x1="-0.9" y1="0.55" x2="-0.8" y2="0.7" layer="51"/>
+<rectangle x1="0.45" y1="-0.7" x2="0.6" y2="-0.45" layer="21"/>
 </package>
 </packages>
 </library>
@@ -365,10 +410,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -469,97 +518,120 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="NUSBIO_IN" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="13.33" y="1.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.8" y="5.3" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<element name="NUSBIO_IN" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="25.33" y="2" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.8" y="2.8" size="0.8128" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="NUSBIO_OUT" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="13.33" y="22.09" smashed="yes" rot="R180">
-<attribute name="NAME" x="7.5" y="19.3" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<element name="NUSBIO_OUT" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="25.33" y="48.09" smashed="yes" rot="R180">
+<attribute name="NAME" x="46.5" y="48.3" size="0.8128" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="25AA1024_SOIJ8" library="microchip" package="SO-08" value="25AA080SN" x="18" y="8.6" smashed="yes" rot="R270">
-<attribute name="OC_NEWARK" value="92C7351" x="18" y="8.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="25AA080/SN" x="18" y="8.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="MICROCHIP" x="18" y="8.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1816072" x="18" y="8.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="14.095" y="11.6" size="0.8128" layer="25"/>
+<element name="SPI_SOIC_FLASH" library="microchip" package="SO-08" value="25AA080SN" x="25" y="23" smashed="yes" rot="R270">
+<attribute name="MF" value="MICROCHIP" x="25" y="23" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="25AA080/SN" x="25" y="23" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.095" y="27" size="0.8128" layer="25"/>
+<attribute name="OC_FARNELL" value="1816072" x="25" y="23" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="92C7351" x="25" y="23" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="WRITE_ENABLE" library="microbuilder" package="SOLDERJUMPER_REFLOW" value="" x="6" y="8.5" smashed="yes">
-<attribute name="NAME" x="2.5" y="10" size="0.8128" layer="25" ratio="18"/>
-<attribute name="VALUE" x="6.4001" y="8.5" size="0.02" layer="27"/>
+<element name="WRITE_ENABLE" library="microbuilder" package="SOLDERJUMPER_REFLOW" value="" x="9" y="22.5" smashed="yes">
+<attribute name="NAME" x="5.5" y="24" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="9.4001" y="22.5" size="0.02" layer="27"/>
+</element>
+<element name="R_1K" library="adafruit" package="R1206" value="" x="44" y="23" smashed="yes">
+<attribute name="NAME" x="42.603" y="24.143" size="1.016" layer="25"/>
+<attribute name="VALUE" x="42.603" y="20.587" size="1.27" layer="27"/>
+</element>
+<element name="LED_POWER" library="adafruit" package="1206" value="" x="44" y="34" smashed="yes">
+<attribute name="VALUE" x="42.73" y="31.46" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="NUSBIO_IN" pad="10"/>
 <contactref element="NUSBIO_OUT" pad="10"/>
-<contactref element="25AA1024_SOIJ8" pad="4"/>
-<wire x1="1.9" y1="1.5" x2="1.9" y2="22.09" width="0" layer="19" extent="1-1"/>
-<wire x1="15.4" y1="6.695" x2="1.9" y2="1.5" width="0" layer="19" extent="1-1"/>
+<contactref element="SPI_SOIC_FLASH" pad="4"/>
+<contactref element="R_1K" pad="1"/>
+<wire x1="22.4" y1="21.095" x2="13.9" y2="48.09" width="0" layer="19" extent="1-1"/>
+<wire x1="42.578" y1="23" x2="22.4" y2="21.095" width="0" layer="19" extent="1-1"/>
+<wire x1="13.9" y1="2" x2="22.4" y2="21.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="NUSBIO_IN" pad="9"/>
 <contactref element="NUSBIO_OUT" pad="9"/>
-<contactref element="25AA1024_SOIJ8" pad="8"/>
-<contactref element="25AA1024_SOIJ8" pad="7"/>
+<contactref element="SPI_SOIC_FLASH" pad="8"/>
+<contactref element="SPI_SOIC_FLASH" pad="7"/>
 <contactref element="WRITE_ENABLE" pad="1"/>
-<wire x1="20.6" y1="10.505" x2="4.44" y2="22.09" width="0" layer="19" extent="1-1"/>
-<wire x1="20.6" y1="9.235" x2="20.6" y2="10.505" width="0" layer="19" extent="1-1"/>
-<wire x1="4.44" y1="1.5" x2="20.6" y2="9.235" width="0" layer="19" extent="1-1"/>
-<wire x1="5.238" y1="8.5" x2="4.44" y2="1.5" width="0" layer="19" extent="1-1"/>
+<contactref element="LED_POWER" pad="A"/>
+<wire x1="27.6" y1="24.905" x2="16.44" y2="48.09" width="0" layer="19" extent="1-1"/>
+<wire x1="27.6" y1="23.635" x2="27.6" y2="24.905" width="0" layer="19" extent="1-1"/>
+<wire x1="42.578" y1="34" x2="27.6" y2="23.635" width="0" layer="19" extent="1-1"/>
+<wire x1="8.238" y1="22.5" x2="27.6" y2="23.635" width="0" layer="19" extent="1-1"/>
+<wire x1="16.44" y1="2" x2="8.238" y2="22.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="NUSBIO_IN" pad="1"/>
-<contactref element="25AA1024_SOIJ8" pad="6"/>
+<contactref element="SPI_SOIC_FLASH" pad="6"/>
 <contactref element="NUSBIO_OUT" pad="1"/>
-<wire x1="20.6" y1="7.965" x2="24.76" y2="22.09" width="0" layer="19" extent="1-1"/>
-<wire x1="24.76" y1="1.5" x2="20.6" y2="7.965" width="0" layer="19" extent="1-1"/>
+<wire x1="27.6" y1="22.365" x2="36.76" y2="48.09" width="0" layer="19" extent="1-1"/>
+<wire x1="36.76" y1="2" x2="27.6" y2="22.365" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="NUSBIO_IN" pad="2"/>
-<contactref element="25AA1024_SOIJ8" pad="5"/>
+<contactref element="SPI_SOIC_FLASH" pad="5"/>
 <contactref element="NUSBIO_OUT" pad="2"/>
-<wire x1="20.6" y1="6.695" x2="22.22" y2="22.09" width="0" layer="19" extent="1-1"/>
-<wire x1="22.22" y1="1.5" x2="20.6" y2="6.695" width="0" layer="19" extent="1-1"/>
+<wire x1="27.6" y1="21.095" x2="34.22" y2="48.09" width="0" layer="19" extent="1-1"/>
+<wire x1="34.22" y1="2" x2="27.6" y2="21.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="NUSBIO_IN" pad="3"/>
-<contactref element="25AA1024_SOIJ8" pad="2"/>
+<contactref element="SPI_SOIC_FLASH" pad="2"/>
 <contactref element="NUSBIO_OUT" pad="3"/>
-<wire x1="15.4" y1="9.235" x2="19.68" y2="22.09" width="0" layer="19" extent="1-1"/>
-<wire x1="19.68" y1="1.5" x2="15.4" y2="9.235" width="0" layer="19" extent="1-1"/>
+<wire x1="22.4" y1="23.635" x2="31.68" y2="48.09" width="0" layer="19" extent="1-1"/>
+<wire x1="31.68" y1="2" x2="22.4" y2="23.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CS">
 <contactref element="NUSBIO_IN" pad="4"/>
-<contactref element="25AA1024_SOIJ8" pad="1"/>
+<contactref element="SPI_SOIC_FLASH" pad="1"/>
 <contactref element="NUSBIO_OUT" pad="4"/>
-<wire x1="15.4" y1="10.505" x2="17.14" y2="22.09" width="0" layer="19" extent="1-1"/>
-<wire x1="17.14" y1="1.5" x2="15.4" y2="10.505" width="0" layer="19" extent="1-1"/>
+<wire x1="22.4" y1="24.905" x2="29.14" y2="48.09" width="0" layer="19" extent="1-1"/>
+<wire x1="29.14" y1="2" x2="22.4" y2="24.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="WRITE_ENABLE" pad="2"/>
-<contactref element="25AA1024_SOIJ8" pad="3"/>
-<wire x1="6.762" y1="8.5" x2="15.4" y2="7.965" width="0" layer="19" extent="1-1"/>
+<contactref element="SPI_SOIC_FLASH" pad="3"/>
+<wire x1="9.762" y1="22.5" x2="22.4" y2="22.365" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO5">
 <contactref element="NUSBIO_IN" pad="5"/>
 <contactref element="NUSBIO_OUT" pad="5"/>
-<wire x1="14.6" y1="1.5" x2="14.6" y2="22.09" width="0" layer="19" extent="1-1"/>
+<wire x1="26.6" y1="2" x2="26.6" y2="48.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO6">
 <contactref element="NUSBIO_OUT" pad="6"/>
 <contactref element="NUSBIO_IN" pad="6"/>
-<wire x1="12.06" y1="1.5" x2="12.06" y2="22.09" width="0" layer="19" extent="1-1"/>
+<wire x1="24.06" y1="2" x2="24.06" y2="48.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO7">
 <contactref element="NUSBIO_IN" pad="7"/>
 <contactref element="NUSBIO_OUT" pad="7"/>
-<wire x1="9.52" y1="1.5" x2="9.52" y2="22.09" width="0" layer="19" extent="1-1"/>
+<wire x1="21.52" y1="2" x2="21.52" y2="48.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO8">
 <contactref element="NUSBIO_IN" pad="8"/>
 <contactref element="NUSBIO_OUT" pad="8"/>
-<wire x1="6.98" y1="1.5" x2="6.98" y2="22.09" width="0" layer="19" extent="1-1"/>
+<wire x1="18.98" y1="2" x2="18.98" y2="48.09" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="LED_POWER" pad="C"/>
+<contactref element="R_1K" pad="2"/>
+<wire x1="45.422" y1="34" x2="45.422" y2="23" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>

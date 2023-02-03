@@ -4073,6 +4073,7 @@ With round pins</description>
 <part name="SPI_OUT" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GPIO_OUT" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4123,6 +4124,9 @@ With round pins</description>
 <instance part="GND2" gate="1" x="-99.06" y="124.46" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-101.6" y="127" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND5" gate="1" x="5.08" y="124.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="2.54" y="127" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4147,6 +4151,11 @@ With round pins</description>
 <pinref part="SPI_OUT" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="-81.28" y1="124.46" x2="-96.52" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="27.94" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_33" class="0">
@@ -4286,12 +4295,22 @@ With round pins</description>
 <wire x1="68.58" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
 <label x="55.88" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="119.38" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
+<label x="12.7" y="119.38" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="C6" class="0">
 <segment>
 <pinref part="JP_GPIO" gate="A" pin="7"/>
 <wire x1="68.58" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
 <label x="50.8" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="4"/>
+<wire x1="27.94" y1="116.84" x2="7.62" y2="116.84" width="0.1524" layer="91"/>
+<label x="12.7" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C5" class="0">
@@ -4300,12 +4319,22 @@ With round pins</description>
 <wire x1="68.58" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
 <label x="53.34" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="5"/>
+<wire x1="27.94" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="15.24" y="114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="C4" class="0">
 <segment>
 <pinref part="JP_GPIO" gate="A" pin="5"/>
 <wire x1="68.58" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
 <label x="48.26" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="6"/>
+<wire x1="27.94" y1="111.76" x2="7.62" y2="111.76" width="0.1524" layer="91"/>
+<label x="12.7" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C3" class="0">
@@ -4314,12 +4343,22 @@ With round pins</description>
 <wire x1="68.58" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="7"/>
+<wire x1="27.94" y1="109.22" x2="10.16" y2="109.22" width="0.1524" layer="91"/>
+<label x="12.7" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="C2" class="0">
 <segment>
 <pinref part="JP_GPIO" gate="A" pin="3"/>
 <wire x1="68.58" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
 <label x="48.26" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="8"/>
+<wire x1="27.94" y1="106.68" x2="5.08" y2="106.68" width="0.1524" layer="91"/>
+<label x="12.7" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C1" class="0">
@@ -4328,12 +4367,22 @@ With round pins</description>
 <wire x1="68.58" y1="124.46" x2="55.88" y2="124.46" width="0.1524" layer="91"/>
 <label x="58.42" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="9"/>
+<wire x1="27.94" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+<label x="17.78" y="104.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="C0" class="0">
 <segment>
 <pinref part="JP_GPIO" gate="A" pin="1"/>
 <wire x1="68.58" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
 <label x="50.8" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="10"/>
+<wire x1="27.94" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
+<label x="10.16" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4350,6 +4399,11 @@ With round pins</description>
 <pinref part="SPI_OUT" gate="G$1" pin="2"/>
 <wire x1="-81.28" y1="121.92" x2="-99.06" y2="121.92" width="0.1524" layer="91"/>
 <label x="-96.52" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="121.92" x2="7.62" y2="121.92" width="0.1524" layer="91"/>
+<label x="10.16" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
