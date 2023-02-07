@@ -278,3 +278,11 @@ French USB -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Useless USB Gift Board\Gerbers
 	* Select the color style mostly choice number 2 - Chose both color white and black
 	* Select DPI, the greater the DPI the smaller the image will be
 	* Select the layer mostly 25, top text
+
+# SPI SOIC 8 and 16
+
+C:\DVT\Fred.PCB\EXTENSIONS\Ex EEPROM.SOP16
+
+soic 16 - S70FL01GSAGMFI011SL3016-M (S70FL01GSAGMFI011) / SL3016-M / MadeInTheUSB_Cypress_Flash_SOIC16
+Vendor 
+	https://www.mouser.com/datasheet/2/196/CYPR_S_A0011121609_1-3004832.pdf
