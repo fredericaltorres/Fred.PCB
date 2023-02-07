@@ -4280,7 +4280,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="JP_GPIO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X11" device="" package3d_urn="urn:adsk.eagle:package:22410/2"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="VCC_33" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="VCC_3V" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="VCC_5V" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="SPI_OUT" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GPIO_OUT" library="adafruit" deviceset="PINHD-1X10" device=""/>
@@ -4327,7 +4327,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND4" gate="1" x="55.88" y="101.6" smashed="yes" rot="R270">
 <attribute name="VALUE" x="53.34" y="104.14" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="VCC_33" gate="1" x="55.88" y="86.36" smashed="yes">
+<instance part="VCC_3V" gate="1" x="55.88" y="86.36" smashed="yes">
 <attribute name="NAME" x="53.34" y="88.9" size="1.778" layer="95"/>
 <attribute name="VALUE" x="53.34" y="82.55" size="1.778" layer="96"/>
 </instance>
@@ -4431,7 +4431,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-55.88" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="VCC_33" gate="1" pin="2"/>
+<pinref part="VCC_3V" gate="1" pin="2"/>
 <wire x1="60.96" y1="86.36" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="63.5" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -4694,7 +4694,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="VCC_5V" gate="1" pin="1"/>
-<pinref part="VCC_33" gate="1" pin="1"/>
+<pinref part="VCC_3V" gate="1" pin="1"/>
 <wire x1="50.8" y1="76.2" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="81.28" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="81.28" x2="40.64" y2="81.28" width="0.1524" layer="91"/>

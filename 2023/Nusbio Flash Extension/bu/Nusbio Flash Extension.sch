@@ -4030,10 +4030,12 @@ package type ST</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SPI_SOIC_FLASH" library="microchip" deviceset="25*" device="SN" technology="AA080"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="WRITE_ENABLE" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="WRITE_DISABLE" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="R_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="CS_ROUTER_TO_CS_3" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="CS_ROUTER_TO_CS_4" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 </parts>
 <sheets>
 <sheet>
@@ -4058,7 +4060,7 @@ package type ST</description>
 <instance part="GND2" gate="1" x="63.5" y="53.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="66.04" y="50.8" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="WRITE_ENABLE" gate="1" x="35.56" y="76.2" smashed="yes">
+<instance part="WRITE_DISABLE" gate="1" x="35.56" y="76.2" smashed="yes">
 <attribute name="NAME" x="33.02" y="78.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="33.02" y="72.39" size="1.778" layer="96"/>
 </instance>
@@ -4072,6 +4074,14 @@ package type ST</description>
 </instance>
 <instance part="GND4" gate="1" x="78.74" y="93.98" smashed="yes" rot="R270">
 <attribute name="VALUE" x="76.2" y="96.52" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="CS_ROUTER_TO_CS_3" gate="1" x="20.32" y="104.14" smashed="yes">
+<attribute name="NAME" x="17.78" y="106.68" size="1.778" layer="95"/>
+<attribute name="VALUE" x="17.78" y="100.33" size="1.778" layer="96"/>
+</instance>
+<instance part="CS_ROUTER_TO_CS_4" gate="1" x="20.32" y="96.52" smashed="yes">
+<attribute name="NAME" x="17.78" y="99.06" size="1.778" layer="95"/>
+<attribute name="VALUE" x="17.78" y="92.71" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4121,7 +4131,7 @@ package type ST</description>
 <label x="38.1" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="WRITE_ENABLE" gate="1" pin="1"/>
+<pinref part="WRITE_DISABLE" gate="1" pin="1"/>
 <wire x1="30.48" y1="76.2" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 <label x="30.48" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -4183,39 +4193,26 @@ package type ST</description>
 </net>
 <net name="CS" class="0">
 <segment>
-<pinref part="NUSBIO_IN" gate="G$1" pin="4"/>
-<wire x1="20.32" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
-<label x="27.94" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SPI_SOIC_FLASH" gate="G$1" pin="!CS"/>
 <wire x1="43.18" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
 <label x="38.1" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="NUSBIO_OUT" gate="G$1" pin="4"/>
-<wire x1="96.52" y1="58.42" x2="84.582" y2="58.42" width="0.1524" layer="91"/>
-<label x="82.042" y="58.42" size="1.778" layer="95"/>
+<pinref part="CS_ROUTER_TO_CS_3" gate="1" pin="2"/>
+<wire x1="25.4" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
+<label x="50.8" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CS_ROUTER_TO_CS_4" gate="1" pin="2"/>
+<wire x1="25.4" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
+<label x="53.34" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="WRITE_ENABLE" gate="1" pin="2"/>
+<pinref part="WRITE_DISABLE" gate="1" pin="2"/>
 <pinref part="SPI_SOIC_FLASH" gate="G$1" pin="!WP"/>
 <wire x1="40.64" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GPIO5" class="0">
-<segment>
-<pinref part="NUSBIO_IN" gate="G$1" pin="5"/>
-<wire x1="20.32" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
-<label x="27.94" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="NUSBIO_OUT" gate="G$1" pin="5"/>
-<wire x1="96.52" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
-<label x="81.28" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
@@ -4227,7 +4224,7 @@ package type ST</description>
 <segment>
 <pinref part="NUSBIO_IN" gate="G$1" pin="6"/>
 <wire x1="20.32" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<label x="30.48" y="58.42" size="1.778" layer="95"/>
+<label x="27.94" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO7" class="0">
@@ -4259,6 +4256,40 @@ package type ST</description>
 <pinref part="LED_POWER" gate="G$1" pin="C"/>
 <pinref part="R_1K" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CS_4" class="0">
+<segment>
+<pinref part="NUSBIO_IN" gate="G$1" pin="4"/>
+<wire x1="20.32" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<label x="27.94" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CS_ROUTER_TO_CS_3" gate="1" pin="1"/>
+<wire x1="15.24" y1="104.14" x2="5.08" y2="104.14" width="0.1524" layer="91"/>
+<label x="5.08" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NUSBIO_OUT" gate="G$1" pin="4"/>
+<wire x1="96.52" y1="58.42" x2="84.582" y2="58.42" width="0.1524" layer="91"/>
+<label x="82.042" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CS_5" class="0">
+<segment>
+<pinref part="NUSBIO_IN" gate="G$1" pin="5"/>
+<wire x1="20.32" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<label x="27.94" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CS_ROUTER_TO_CS_4" gate="1" pin="1"/>
+<wire x1="15.24" y1="96.52" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="NUSBIO_OUT" gate="G$1" pin="5"/>
+<wire x1="96.52" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<label x="81.28" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
