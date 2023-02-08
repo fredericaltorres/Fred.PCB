@@ -2164,8 +2164,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="BB_20" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="R_ARRAY_2" library="resistor-sip" deviceset="4610X" device=""/>
 <part name="R_ARRAY_2_CON" library="adafruit" deviceset="PINHD-1X10" device=""/>
-<part name="BUTTON_1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="BUTTON_1_SYNC" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="BUTTON_INPUTS" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="BUTTON_2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -2313,13 +2314,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <attribute name="NAME" x="-44.45" y="108.585" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-49.53" y="139.7" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="BUTTON_1" gate="1" x="-68.58" y="20.32" smashed="yes">
+<instance part="BUTTON_1_SYNC" gate="1" x="-68.58" y="20.32" smashed="yes">
 <attribute name="NAME" x="-74.93" y="17.78" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-72.39" y="23.495" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="BUTTON_INPUTS" gate="G$1" x="-78.74" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="-73.025" y="49.53" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-83.82" y="49.53" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="BUTTON_2" gate="1" x="-91.44" y="17.78" smashed="yes">
+<attribute name="NAME" x="-97.79" y="15.24" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-95.25" y="20.955" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -2504,6 +2509,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-2.54" y1="109.22" x2="-5.08" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-2.54" y="109.22"/>
 </segment>
+<segment>
+<pinref part="BUTTON_2" gate="1" pin="S"/>
+<wire x1="-91.44" y1="22.86" x2="-91.44" y2="33.02" width="0.1524" layer="91"/>
+<label x="-93.98" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
@@ -2636,7 +2646,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-55.88" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BUTTON_1" gate="1" pin="P1"/>
+<pinref part="BUTTON_1_SYNC" gate="1" pin="P1"/>
 <wire x1="-66.04" y1="15.24" x2="-66.04" y2="5.08" width="0.1524" layer="91"/>
 <label x="-58.42" y="7.62" size="1.778" layer="95"/>
 </segment>
@@ -2648,9 +2658,21 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-76.2" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BUTTON_1" gate="1" pin="S"/>
+<pinref part="BUTTON_1_SYNC" gate="1" pin="S"/>
 <wire x1="-68.58" y1="25.4" x2="-68.58" y2="35.56" width="0.1524" layer="91"/>
 <label x="-68.58" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B2_OUTPUT" class="0">
+<segment>
+<pinref part="BUTTON_INPUTS" gate="G$1" pin="2"/>
+<wire x1="-78.74" y1="45.72" x2="-78.74" y2="68.58" width="0.1524" layer="91"/>
+<label x="-78.74" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BUTTON_2" gate="1" pin="P1"/>
+<wire x1="-88.9" y1="12.7" x2="-88.9" y2="2.54" width="0.1524" layer="91"/>
+<label x="-88.9" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
