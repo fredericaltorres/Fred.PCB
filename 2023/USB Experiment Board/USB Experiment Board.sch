@@ -2163,7 +2163,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="BB_19" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="BB_20" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="R_ARRAY_2" library="resistor-sip" deviceset="4610X" device=""/>
-<part name="R_ARRAY_2_EXT" library="adafruit" deviceset="PINHD-1X10" device=""/>
+<part name="R_ARRAY_2_CON" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="BUTTON_1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="BUTTON_INPUTS" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
@@ -2309,7 +2309,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <attribute name="NAME" x="-20.955" y="132.08" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-23.495" y="121.92" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R_ARRAY_2_EXT" gate="G$1" x="-55.88" y="121.92" smashed="yes" rot="R180">
+<instance part="R_ARRAY_2_CON" gate="G$1" x="-55.88" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="-44.45" y="108.585" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-49.53" y="139.7" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -2575,7 +2575,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="10"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="10"/>
 <pinref part="R_ARRAY_2" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="134.62" x2="-35.56" y2="134.62" width="0.1524" layer="91"/>
 </segment>
@@ -2583,49 +2583,49 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="3"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="9"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="9"/>
 <wire x1="-35.56" y1="132.08" x2="-53.34" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="4"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="8"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="8"/>
 <wire x1="-35.56" y1="129.54" x2="-53.34" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="5"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="7"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="7"/>
 <wire x1="-35.56" y1="127" x2="-53.34" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="6"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="6"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="6"/>
 <wire x1="-35.56" y1="124.46" x2="-53.34" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="7"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="5"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="5"/>
 <wire x1="-35.56" y1="121.92" x2="-53.34" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="8"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="4"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="4"/>
 <wire x1="-35.56" y1="119.38" x2="-53.34" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R_ARRAY_2" gate="G$1" pin="9"/>
-<pinref part="R_ARRAY_2_EXT" gate="G$1" pin="3"/>
+<pinref part="R_ARRAY_2_CON" gate="G$1" pin="3"/>
 <wire x1="-35.56" y1="116.84" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
