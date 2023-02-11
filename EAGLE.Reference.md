@@ -275,11 +275,19 @@ French USB -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Useless USB Gift Board\Gerbers
 - Convert the image to 2 colors black and white
 - in the board , menu File -> Import -> Bitmap
 	* Select the bitmap
-	* Select the color style mostly choice number 2 - Chose both color white and black
+	* Select the color style mostly choice number 2 - Chose black
 	* Select DPI, the greater the DPI the smaller the image will be
 	* Select the layer mostly 25, top text
 
 # SPI SOIC 8 and 16
+
+SPI_SOIC_8_FLASH
+25AA080SN (25*)
+SO-08
+microchip
+
+
+Write enable: SOLDERJUMPERREFLOW (SOLDERJUMPER) / SOLDERJUMPER_REFLOW / microbuilder
 
 C:\DVT\Fred.PCB\EXTENSIONS\Ex EEPROM.SOP16
 

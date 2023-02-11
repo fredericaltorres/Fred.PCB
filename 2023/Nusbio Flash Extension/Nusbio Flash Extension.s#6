@@ -4036,7 +4036,6 @@ package type ST</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="USE_CS_3" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="USE_CS_4" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4046,8 +4045,8 @@ package type ST</description>
 <instance part="NUSBIO_IN" gate="G$1" x="17.78" y="55.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.13" y="42.545" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="GND1" gate="1" x="7.62" y="76.2" smashed="yes" rot="R90">
-<attribute name="VALUE" x="10.16" y="73.66" size="1.778" layer="96" rot="R90"/>
+<instance part="GND1" gate="1" x="22.86" y="78.74" smashed="yes" rot="R90">
+<attribute name="VALUE" x="25.4" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="NUSBIO_OUT" gate="G$1" x="99.06" y="55.88" smashed="yes">
 <attribute name="NAME" x="92.71" y="69.215" size="1.778" layer="95"/>
@@ -4084,9 +4083,6 @@ package type ST</description>
 <attribute name="NAME" x="17.78" y="99.06" size="1.778" layer="95"/>
 <attribute name="VALUE" x="17.78" y="92.71" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="17.78" y="76.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="15.24" y="78.74" size="1.778" layer="96" rot="R270"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -4095,7 +4091,7 @@ package type ST</description>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="NUSBIO_IN" gate="G$1" pin="10"/>
-<wire x1="5.08" y1="76.2" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="78.74" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -4111,11 +4107,6 @@ package type ST</description>
 <pinref part="R_1K" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="88.9" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="WRITE_DISABLE" gate="1" pin="1"/>
-<wire x1="20.32" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4138,6 +4129,11 @@ package type ST</description>
 <pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="!HOLD"/>
 <wire x1="43.18" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 <label x="38.1" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="WRITE_DISABLE" gate="1" pin="1"/>
+<wire x1="30.48" y1="76.2" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<label x="30.48" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED_POWER" gate="G$1" pin="A"/>

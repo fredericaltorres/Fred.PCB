@@ -154,7 +154,7 @@ Board</text>
 <text x="3" y="58.5" size="1.016" layer="25">GND</text>
 <text x="39" y="10" size="1.6764" layer="26" rot="MR0" align="center">www.FredericTorres.com</text>
 <text x="4.5" y="35" size="1.016" layer="26" rot="MR0" align="center">GND</text>
-<text x="66.5" y="46.2" size="1.016" layer="25" rot="R90" align="center">&lt; LED1</text>
+<text x="67" y="46.2" size="1.016" layer="25" rot="R90" align="center">&lt; LED1</text>
 <text x="64" y="46.2" size="1.016" layer="25" rot="R90" align="center">&lt; LED2</text>
 <text x="61.5" y="46.2" size="1.016" layer="25" rot="R90" align="center">&lt; LED3</text>
 <text x="59" y="46.2" size="1.016" layer="25" rot="R90" align="center">&lt; LED4</text>
@@ -719,9 +719,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="53.23" y="74.23" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="57.04" y="74.23" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="LED_HEADER" library="pinhead" package="1X04" value="" x="62.8" y="41.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="75.4562" y="43.5" size="0.8128" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="67.88" y="44.675" size="1.27" layer="27" rot="R180"/>
+<element name="LED_HEADER" library="pinhead" package="1X04" value="" x="63" y="41.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="75.6562" y="43.5" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="68.08" y="44.675" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="BB_11" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="55" y="23" smashed="yes" rot="R180"/>
 <element name="BB_12" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="55" y="18" smashed="yes" rot="R180"/>
@@ -879,22 +879,22 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="LED_HEADER" pad="1"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="66.61" y1="41.5" x2="77" y2="74.078" width="0" layer="19" extent="1-1"/>
+<wire x1="66.81" y1="41.5" x2="77" y2="74.078" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="LED_HEADER" pad="2"/>
 <contactref element="LED2" pad="A"/>
-<wire x1="64.07" y1="41.5" x2="69.5" y2="74.078" width="0" layer="19" extent="1-1"/>
+<wire x1="64.27" y1="41.5" x2="69.5" y2="74.078" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="LED_HEADER" pad="3"/>
 <contactref element="LED3" pad="A"/>
-<wire x1="61.53" y1="41.5" x2="62" y2="74.078" width="0" layer="19" extent="1-1"/>
+<wire x1="61.73" y1="41.5" x2="62" y2="74.078" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="LED_HEADER" pad="4"/>
 <contactref element="LED4" pad="A"/>
-<wire x1="58.99" y1="41.5" x2="54.5" y2="74.078" width="0" layer="19" extent="1-1"/>
+<wire x1="59.19" y1="41.5" x2="54.5" y2="74.078" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="LED1" pad="C"/>

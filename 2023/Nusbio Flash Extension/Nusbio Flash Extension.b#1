@@ -554,9 +554,9 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1816072" x="22" y="21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="92C7351" x="22" y="21" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="WRITE_DISABLE" library="microbuilder" package="SOLDERJUMPER_REFLOW" value="" x="7" y="21.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="5" y="21" size="0.8128" layer="25" ratio="18" rot="R90" align="center"/>
-<attribute name="VALUE" x="7" y="21.9001" size="0.02" layer="27" rot="R90"/>
+<element name="WRITE_DISABLE" library="microbuilder" package="SOLDERJUMPER_REFLOW" value="" x="4" y="21.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.5" y="22" size="0.8128" layer="25" ratio="18" rot="R270" align="center"/>
+<attribute name="VALUE" x="4" y="21.0999" size="0.02" layer="27" rot="R270"/>
 </element>
 <element name="R_1K" library="adafruit" package="R1206" value="" x="38" y="28" smashed="yes">
 <attribute name="NAME" x="38" y="30.143" size="0.8128" layer="25" align="center"/>
@@ -582,9 +582,9 @@ design rules under a new name.</description>
 <contactref element="R_1K" pad="1"/>
 <contactref element="WRITE_DISABLE" pad="1"/>
 <wire x1="19.4" y1="19.095" x2="36.578" y2="28" width="0" layer="19" extent="1-1"/>
-<wire x1="7" y1="20.738" x2="19.4" y2="19.095" width="0" layer="19" extent="1-1"/>
+<wire x1="4" y1="22.262" x2="19.4" y2="19.095" width="0" layer="19" extent="1-1"/>
 <wire x1="33.76" y1="2" x2="19.4" y2="19.095" width="0" layer="19" extent="1-1"/>
-<wire x1="10.9" y1="48" x2="7" y2="20.738" width="0" layer="19" extent="1-1"/>
+<wire x1="10.9" y1="48" x2="4" y2="22.262" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="NUSBIO_IN" pad="9"/>
@@ -628,7 +628,7 @@ design rules under a new name.</description>
 <signal name="WP">
 <contactref element="WRITE_DISABLE" pad="2"/>
 <contactref element="SPI_SOIC_8_FLASH" pad="3"/>
-<wire x1="7" y1="22.262" x2="19.4" y2="20.365" width="0" layer="19" extent="1-1"/>
+<wire x1="4" y1="20.738" x2="19.4" y2="20.365" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO6">
 <contactref element="NUSBIO_OUT" pad="6"/>
