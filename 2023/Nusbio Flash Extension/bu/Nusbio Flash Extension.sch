@@ -4030,13 +4030,11 @@ package type ST</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SPI_SOIC_8_FLASH" library="microchip" deviceset="25*" device="SN" technology="AA080"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="WRITE_DISABLE" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="R_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="USE_CS_3" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="USE_CS_4" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4061,10 +4059,6 @@ package type ST</description>
 <instance part="GND2" gate="1" x="63.5" y="53.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="66.04" y="50.8" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="WRITE_DISABLE" gate="1" x="35.56" y="76.2" smashed="yes">
-<attribute name="NAME" x="33.02" y="78.74" size="1.778" layer="95"/>
-<attribute name="VALUE" x="33.02" y="72.39" size="1.778" layer="96"/>
-</instance>
 <instance part="R_1K" gate="G$1" x="93.98" y="93.98" smashed="yes">
 <attribute name="NAME" x="90.17" y="95.4786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="90.17" y="90.678" size="1.778" layer="96"/>
@@ -4083,9 +4077,6 @@ package type ST</description>
 <instance part="USE_CS_4" gate="1" x="20.32" y="96.52" smashed="yes">
 <attribute name="NAME" x="17.78" y="99.06" size="1.778" layer="95"/>
 <attribute name="VALUE" x="17.78" y="92.71" size="1.778" layer="96"/>
-</instance>
-<instance part="GND5" gate="1" x="17.78" y="76.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="15.24" y="78.74" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -4112,11 +4103,6 @@ package type ST</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="88.9" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="WRITE_DISABLE" gate="1" pin="1"/>
-<wire x1="20.32" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4142,6 +4128,11 @@ package type ST</description>
 <segment>
 <pinref part="LED_POWER" gate="G$1" pin="A"/>
 <wire x1="114.3" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="!WP"/>
+<wire x1="43.18" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<label x="30.48" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -4210,14 +4201,6 @@ package type ST</description>
 <pinref part="USE_CS_4" gate="1" pin="2"/>
 <wire x1="25.4" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
 <label x="53.34" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WP" class="0">
-<segment>
-<pinref part="WRITE_DISABLE" gate="1" pin="2"/>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="!WP"/>
-<wire x1="40.64" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
-<label x="40.64" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
