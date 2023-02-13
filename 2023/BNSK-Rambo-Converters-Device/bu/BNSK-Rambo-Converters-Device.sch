@@ -1826,7 +1826,6 @@ With round pins</description>
 <part name="FAILED" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="RUNNING" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="CHECK_NOW" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="CHECKING" library="adafruit" deviceset="LED" device="SMT1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -1870,10 +1869,6 @@ With round pins</description>
 <instance part="CHECK_NOW" gate="1" x="-116.84" y="106.68" smashed="yes">
 <attribute name="NAME" x="-123.19" y="104.14" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-120.65" y="109.855" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="CHECKING" gate="G$1" x="-114.3" y="149.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="-118.872" y="146.304" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-118.872" y="144.145" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1922,11 +1917,6 @@ With round pins</description>
 <pinref part="MCU_RIGHT_SIDE" gate="A" pin="5"/>
 <wire x1="-25.4" y1="124.46" x2="-25.4" y2="114.3" width="0.1524" layer="91"/>
 <label x="-25.4" y="104.14" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="CHECKING" gate="G$1" pin="A"/>
-<wire x1="-111.76" y1="149.86" x2="-93.98" y2="149.86" width="0.1524" layer="91"/>
-<label x="-99.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_D3" class="0">
@@ -2077,11 +2067,6 @@ With round pins</description>
 <pinref part="R_ARRAY_8" gate="G$1" pin="7"/>
 <wire x1="-66.04" y1="127" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
 <label x="-66.04" y="96.52" size="1.778" layer="95" rot="R270"/>
-</segment>
-<segment>
-<pinref part="CHECKING" gate="G$1" pin="C"/>
-<wire x1="-119.38" y1="149.86" x2="-129.54" y2="149.86" width="0.1524" layer="91"/>
-<label x="-129.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

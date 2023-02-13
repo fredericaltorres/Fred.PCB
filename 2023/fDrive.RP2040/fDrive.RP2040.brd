@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0025" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2129,6 +2129,7 @@
 <rectangle x1="49.68748125" y1="59.02325" x2="50.07101875" y2="59.08675" layer="25"/>
 <rectangle x1="53.56351875" y1="59.02325" x2="53.94198125" y2="59.08675" layer="25"/>
 <text x="0" y="-0.3175" size="0.127" layer="25" font="vector">C:/DVT/Fred.PCB/2023/fDrive.RP2040/MadeInTheUSB.Logo.Gray.50.bmp</text>
+<text x="59.15725" y="39.57625" size="1.016" layer="25" rot="R180" align="center">XIAO RP2040</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -2502,7 +2503,7 @@ design rules under a new name.</description>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
 <param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
+<param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="a"/>
@@ -2657,8 +2658,23 @@ design rules under a new name.</description>
 <contactref element="R_ARRAY_8" pad="1"/>
 <contactref element="MCU_LEFT_SIDE" pad="6"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="4"/>
-<wire x1="30.4" y1="38.095" x2="63.08" y2="32" width="0" layer="19" extent="1-1"/>
-<wire x1="5.8095" y1="49.71525" x2="30.4" y2="38.095" width="0" layer="19" extent="1-1"/>
+<wire x1="14.1732" y1="38.1762" x2="30.1752" y2="38.1762" width="0.254" layer="1"/>
+<wire x1="6.4008" y1="45.9486" x2="14.1732" y2="38.1762" width="0.254" layer="1"/>
+<wire x1="5.2578" y1="45.9486" x2="6.4008" y2="45.9486" width="0.254" layer="1"/>
+<wire x1="4.572" y1="46.6344" x2="5.2578" y2="45.9486" width="0.254" layer="1"/>
+<wire x1="4.572" y1="48.4632" x2="4.572" y2="46.6344" width="0.254" layer="1"/>
+<wire x1="5.715" y1="49.6062" x2="4.572" y2="48.4632" width="0.254" layer="1"/>
+<wire x1="30.1752" y1="38.1762" x2="30.4" y2="38.095" width="0.254" layer="1"/>
+<wire x1="5.715" y1="49.6062" x2="5.8095" y2="49.71525" width="0.254" layer="1"/>
+<wire x1="58.7502" y1="27.6606" x2="62.865" y2="31.7754" width="0.254" layer="1"/>
+<wire x1="50.0634" y1="27.6606" x2="58.7502" y2="27.6606" width="0.254" layer="1"/>
+<wire x1="43.434" y1="34.29" x2="50.0634" y2="27.6606" width="0.254" layer="1"/>
+<wire x1="43.434" y1="35.433" x2="43.434" y2="34.29" width="0.254" layer="1"/>
+<wire x1="42.9768" y1="35.8902" x2="43.434" y2="35.433" width="0.254" layer="1"/>
+<wire x1="32.4612" y1="35.8902" x2="42.9768" y2="35.8902" width="0.254" layer="1"/>
+<wire x1="30.4038" y1="37.9476" x2="32.4612" y2="35.8902" width="0.254" layer="1"/>
+<wire x1="62.865" y1="31.7754" x2="63.08" y2="32" width="0.254" layer="1"/>
+<wire x1="30.4038" y1="37.9476" x2="30.4" y2="38.095" width="0.254" layer="1"/>
 </signal>
 <signal name="VCC_33">
 <contactref element="POWER" pad="A"/>
@@ -2666,10 +2682,31 @@ design rules under a new name.</description>
 <contactref element="FLASH_AT25SF321B_4MB" pad="8"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="7"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="3"/>
-<wire x1="60.54" y1="32" x2="61.0885" y2="65.291959375" width="0" layer="19" extent="1-1"/>
-<wire x1="35.6" y1="40.635" x2="60.54" y2="32" width="0" layer="19" extent="1-1"/>
-<wire x1="35.6" y1="41.905" x2="35.6" y2="40.635" width="0" layer="19" extent="1-1"/>
-<wire x1="30.4" y1="39.365" x2="35.6" y2="40.635" width="0" layer="19" extent="1-1"/>
+<wire x1="35.6616" y1="41.8338" x2="35.6616" y2="40.6908" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="40.6908" x2="35.6" y2="40.635" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="41.8338" x2="35.6" y2="41.905" width="0.254" layer="1"/>
+<wire x1="61.2648" y1="53.721" x2="61.2648" y2="65.151" width="0.254" layer="1"/>
+<wire x1="66.7512" y1="48.2346" x2="61.2648" y2="53.721" width="0.254" layer="1"/>
+<wire x1="66.7512" y1="38.1762" x2="66.7512" y2="48.2346" width="0.254" layer="1"/>
+<wire x1="60.579" y1="32.004" x2="66.7512" y2="38.1762" width="0.254" layer="1"/>
+<wire x1="61.2648" y1="65.151" x2="61.0885" y2="65.291959375" width="0.254" layer="1"/>
+<wire x1="60.579" y1="32.004" x2="60.54" y2="32" width="0.254" layer="1"/>
+<wire x1="31.7754" y1="39.3192" x2="30.4038" y2="39.3192" width="0.254" layer="1"/>
+<wire x1="34.7472" y1="36.3474" x2="31.7754" y2="39.3192" width="0.254" layer="1"/>
+<wire x1="43.2054" y1="36.3474" x2="34.7472" y2="36.3474" width="0.254" layer="1"/>
+<wire x1="48.2346" y1="31.3182" x2="43.2054" y2="36.3474" width="0.254" layer="1"/>
+<wire x1="48.2346" y1="30.1752" x2="48.2346" y2="31.3182" width="0.254" layer="1"/>
+<wire x1="50.292" y1="28.1178" x2="48.2346" y2="30.1752" width="0.254" layer="1"/>
+<wire x1="56.6928" y1="28.1178" x2="50.292" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="60.3504" y1="31.7754" x2="56.6928" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="30.4038" y1="39.3192" x2="30.4" y2="39.365" width="0.254" layer="1"/>
+<wire x1="60.3504" y1="31.7754" x2="60.54" y2="32" width="0.254" layer="1"/>
+<wire x1="45.4914" y1="40.4622" x2="35.6616" y2="40.4622" width="0.254" layer="1"/>
+<wire x1="51.8922" y1="34.0614" x2="45.4914" y2="40.4622" width="0.254" layer="1"/>
+<wire x1="58.293" y1="34.0614" x2="51.8922" y2="34.0614" width="0.254" layer="1"/>
+<wire x1="60.3504" y1="32.004" x2="58.293" y2="34.0614" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="40.4622" x2="35.6" y2="40.635" width="0.254" layer="1"/>
+<wire x1="60.3504" y1="32.004" x2="60.54" y2="32" width="0.254" layer="1"/>
 </signal>
 <signal name="MCU_D6">
 <contactref element="MCU_RIGHT_SIDE" pad="7"/>
@@ -2680,62 +2717,134 @@ design rules under a new name.</description>
 <signal name="MCU_D4">
 <contactref element="MCU_RIGHT_SIDE" pad="5"/>
 <contactref element="BUTTON_PRESSED" pad="A"/>
-<wire x1="37.422" y1="20" x2="55.46" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="37.4904" y1="27.2034" x2="37.4904" y2="20.1168" width="0.254" layer="1"/>
+<wire x1="37.4904" y1="28.575" x2="37.4904" y2="27.2034" width="0.254" layer="16"/>
+<wire x1="55.3212" y1="46.4058" x2="37.4904" y2="28.575" width="0.254" layer="16"/>
+<wire x1="55.3212" y1="46.863" x2="55.3212" y2="46.4058" width="0.254" layer="16"/>
+<wire x1="37.4904" y1="20.1168" x2="37.422" y2="20" width="0.254" layer="1"/>
+<wire x1="55.3212" y1="46.863" x2="55.46" y2="47" width="0.254" layer="16"/>
+<via x="37.4904" y="27.2034" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="MCU_D3">
 <contactref element="MCU_RIGHT_SIDE" pad="4"/>
 <contactref element="AUTHORIZE" pad="1"/>
-<wire x1="25.2512" y1="17.7394" x2="58" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="44.8056" y1="17.8308" x2="25.3746" y2="17.8308" width="0.254" layer="16"/>
+<wire x1="48.006" y1="21.0312" x2="44.8056" y2="17.8308" width="0.254" layer="16"/>
+<wire x1="48.2346" y1="21.0312" x2="48.006" y2="21.0312" width="0.254" layer="16"/>
+<wire x1="56.6928" y1="29.4894" x2="48.2346" y2="21.0312" width="0.254" layer="16"/>
+<wire x1="56.6928" y1="45.72" x2="56.6928" y2="29.4894" width="0.254" layer="16"/>
+<wire x1="57.8358" y1="46.863" x2="56.6928" y2="45.72" width="0.254" layer="16"/>
+<wire x1="25.3746" y1="17.8308" x2="25.2512" y2="17.7394" width="0.254" layer="16"/>
+<wire x1="57.8358" y1="46.863" x2="58" y2="47" width="0.254" layer="16"/>
 </signal>
 <signal name="MCU_D2">
 <contactref element="MCU_RIGHT_SIDE" pad="3"/>
 <contactref element="MODE" pad="1"/>
-<wire x1="53.65175" y1="17.7394" x2="60.54" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="53.721" y1="19.8882" x2="53.721" y2="17.8308" width="0.254" layer="16"/>
+<wire x1="59.436" y1="25.6032" x2="53.721" y2="19.8882" width="0.254" layer="16"/>
+<wire x1="59.436" y1="45.9486" x2="59.436" y2="25.6032" width="0.254" layer="16"/>
+<wire x1="60.3504" y1="46.863" x2="59.436" y2="45.9486" width="0.254" layer="16"/>
+<wire x1="53.721" y1="17.8308" x2="53.65175" y2="17.7394" width="0.254" layer="16"/>
+<wire x1="60.3504" y1="46.863" x2="60.54" y2="47" width="0.254" layer="16"/>
 </signal>
 <signal name="MCU_D1">
 <contactref element="MCU_RIGHT_SIDE" pad="2"/>
 <contactref element="RUNNING" pad="A"/>
-<wire x1="36.422" y1="28.96775" x2="63.08" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="42.5196" y1="34.9758" x2="36.576" y2="29.0322" width="0.254" layer="1"/>
+<wire x1="43.2054" y1="34.9758" x2="42.5196" y2="34.9758" width="0.254" layer="16"/>
+<wire x1="54.1782" y1="45.9486" x2="43.2054" y2="34.9758" width="0.254" layer="16"/>
+<wire x1="54.1782" y1="48.2346" x2="54.1782" y2="45.9486" width="0.254" layer="16"/>
+<wire x1="54.864" y1="48.9204" x2="54.1782" y2="48.2346" width="0.254" layer="16"/>
+<wire x1="61.0362" y1="48.9204" x2="54.864" y2="48.9204" width="0.254" layer="16"/>
+<wire x1="62.865" y1="47.0916" x2="61.0362" y2="48.9204" width="0.254" layer="16"/>
+<wire x1="36.576" y1="29.0322" x2="36.422" y2="28.96775" width="0.254" layer="1"/>
+<wire x1="62.865" y1="47.0916" x2="63.08" y2="47" width="0.254" layer="16"/>
+<via x="42.5196" y="34.9758" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="MCU_D0">
 <contactref element="MCU_RIGHT_SIDE" pad="1"/>
 <contactref element="AUTHORIZED" pad="A"/>
-<wire x1="36.422" y1="51.66725" x2="65.62" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="61.0362" y1="51.6636" x2="36.576" y2="51.6636" width="0.254" layer="1"/>
+<wire x1="65.6082" y1="47.0916" x2="61.0362" y2="51.6636" width="0.254" layer="1"/>
+<wire x1="36.576" y1="51.6636" x2="36.422" y2="51.66725" width="0.254" layer="1"/>
+<wire x1="65.6082" y1="47.0916" x2="65.62" y2="47" width="0.254" layer="1"/>
 </signal>
 <signal name="MCU_D7_CS">
 <contactref element="MCU_LEFT_SIDE" pad="1"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="1"/>
-<wire x1="30.4" y1="41.905" x2="50.38" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="31.0896" y1="41.8338" x2="30.4038" y2="41.8338" width="0.254" layer="1"/>
+<wire x1="34.0614" y1="38.862" x2="31.0896" y2="41.8338" width="0.254" layer="1"/>
+<wire x1="34.0614" y1="37.719" x2="34.0614" y2="38.862" width="0.254" layer="1"/>
+<wire x1="34.9758" y1="36.8046" x2="34.0614" y2="37.719" width="0.254" layer="1"/>
+<wire x1="43.434" y1="36.8046" x2="34.9758" y2="36.8046" width="0.254" layer="1"/>
+<wire x1="48.6918" y1="31.5468" x2="43.434" y2="36.8046" width="0.254" layer="1"/>
+<wire x1="48.6918" y1="30.6324" x2="48.6918" y2="31.5468" width="0.254" layer="1"/>
+<wire x1="50.292" y1="29.0322" x2="48.6918" y2="30.6324" width="0.254" layer="1"/>
+<wire x1="50.7492" y1="29.0322" x2="50.292" y2="29.0322" width="0.254" layer="1"/>
+<wire x1="50.7492" y1="31.5468" x2="50.7492" y2="29.0322" width="0.254" layer="16"/>
+<wire x1="50.5206" y1="31.7754" x2="50.7492" y2="31.5468" width="0.254" layer="16"/>
+<wire x1="30.4038" y1="41.8338" x2="30.4" y2="41.905" width="0.254" layer="1"/>
+<wire x1="50.5206" y1="31.7754" x2="50.38" y2="32" width="0.254" layer="16"/>
+<via x="50.7492" y="29.0322" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="MCU_D8_SCK">
 <contactref element="MCU_LEFT_SIDE" pad="2"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="6"/>
-<wire x1="35.6" y1="39.365" x2="52.92" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="45.4914" y1="39.3192" x2="35.6616" y2="39.3192" width="0.254" layer="1"/>
+<wire x1="52.8066" y1="32.004" x2="45.4914" y2="39.3192" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="39.3192" x2="35.6" y2="39.365" width="0.254" layer="1"/>
+<wire x1="52.8066" y1="32.004" x2="52.92" y2="32" width="0.254" layer="1"/>
 </signal>
 <signal name="MCU_D9_MISO">
 <contactref element="MCU_LEFT_SIDE" pad="3"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="2"/>
-<wire x1="30.4" y1="40.635" x2="55.46" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="29.718" y1="40.6908" x2="30.1752" y2="40.6908" width="0.254" layer="1"/>
+<wire x1="28.8036" y1="41.6052" x2="29.718" y2="40.6908" width="0.254" layer="1"/>
+<wire x1="28.8036" y1="42.291" x2="28.8036" y2="41.6052" width="0.254" layer="1"/>
+<wire x1="29.2608" y1="42.7482" x2="28.8036" y2="42.291" width="0.254" layer="1"/>
+<wire x1="44.577" y1="42.7482" x2="29.2608" y2="42.7482" width="0.254" layer="1"/>
+<wire x1="52.3494" y1="34.9758" x2="44.577" y2="42.7482" width="0.254" layer="1"/>
+<wire x1="55.3212" y1="32.004" x2="52.3494" y2="34.9758" width="0.254" layer="16"/>
+<wire x1="30.1752" y1="40.6908" x2="30.4" y2="40.635" width="0.254" layer="1"/>
+<wire x1="55.3212" y1="32.004" x2="55.46" y2="32" width="0.254" layer="16"/>
+<via x="52.3494" y="34.9758" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="MCU_D10_MOSI">
 <contactref element="MCU_LEFT_SIDE" pad="4"/>
 <contactref element="FLASH_AT25SF321B_4MB" pad="5"/>
-<wire x1="35.6" y1="38.095" x2="58" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="42.9768" y1="37.9476" x2="35.6616" y2="37.9476" width="0.254" layer="1"/>
+<wire x1="49.149" y1="31.7754" x2="42.9768" y2="37.9476" width="0.254" layer="1"/>
+<wire x1="49.149" y1="30.861" x2="49.149" y2="31.7754" width="0.254" layer="1"/>
+<wire x1="50.0634" y1="29.9466" x2="49.149" y2="30.861" width="0.254" layer="1"/>
+<wire x1="56.007" y1="29.9466" x2="50.0634" y2="29.9466" width="0.254" layer="1"/>
+<wire x1="57.8358" y1="31.7754" x2="56.007" y2="29.9466" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="37.9476" x2="35.6" y2="38.095" width="0.254" layer="1"/>
+<wire x1="57.8358" y1="31.7754" x2="58" y2="32" width="0.254" layer="1"/>
 </signal>
 <signal name="RA_1">
 <contactref element="R_ARRAY_8" pad="2"/>
 <contactref element="POWER" pad="C"/>
-<wire x1="5.8095" y1="47.17525" x2="58.2445" y2="65.291959375" width="0" layer="19" extent="1-1"/>
+<wire x1="23.7744" y1="65.151" x2="58.0644" y2="65.151" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="47.3202" x2="23.7744" y2="65.151" width="0.254" layer="1"/>
+<wire x1="58.0644" y1="65.151" x2="58.2445" y2="65.291959375" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="47.3202" x2="5.8095" y2="47.17525" width="0.254" layer="1"/>
 </signal>
 <signal name="RA_2">
 <contactref element="R_ARRAY_8" pad="3"/>
 <contactref element="AUTHORIZED" pad="C"/>
-<wire x1="5.8095" y1="44.63525" x2="33.578" y2="51.66725" width="0" layer="19" extent="1-1"/>
+<wire x1="12.8016" y1="51.6636" x2="33.3756" y2="51.6636" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="44.8056" x2="12.8016" y2="51.6636" width="0.254" layer="16"/>
+<wire x1="33.3756" y1="51.6636" x2="33.578" y2="51.66725" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="44.8056" x2="5.8095" y2="44.63525" width="0.254" layer="16"/>
+<via x="12.8016" y="51.6636" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="RA_3">
 <contactref element="R_ARRAY_8" pad="4"/>
 <contactref element="RUNNING" pad="C"/>
-<wire x1="5.8095" y1="42.09525" x2="33.578" y2="28.96775" width="0" layer="19" extent="1-1"/>
+<wire x1="18.9738" y1="29.0322" x2="33.3756" y2="29.0322" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="42.0624" x2="18.9738" y2="29.0322" width="0.254" layer="1"/>
+<wire x1="33.3756" y1="29.0322" x2="33.578" y2="28.96775" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="42.0624" x2="5.8095" y2="42.09525" width="0.254" layer="1"/>
 </signal>
 <signal name="RA_4">
 <contactref element="R_ARRAY_8" pad="5"/>
@@ -2743,17 +2852,27 @@ design rules under a new name.</description>
 <signal name="RA_5">
 <contactref element="R_ARRAY_8" pad="6"/>
 <contactref element="MODE" pad="4"/>
-<wire x1="5.8095" y1="37.01525" x2="47.14935" y2="22.2606" width="0" layer="19" extent="1-1"/>
+<wire x1="27.432" y1="22.4028" x2="47.0916" y2="22.4028" width="0.254" layer="16"/>
+<wire x1="13.0302" y1="36.8046" x2="27.432" y2="22.4028" width="0.254" layer="16"/>
+<wire x1="5.9436" y1="36.8046" x2="13.0302" y2="36.8046" width="0.254" layer="16"/>
+<wire x1="47.0916" y1="22.4028" x2="47.14935" y2="22.2606" width="0.254" layer="16"/>
+<wire x1="5.9436" y1="36.8046" x2="5.8095" y2="37.01525" width="0.254" layer="16"/>
 </signal>
 <signal name="RA_6">
 <contactref element="R_ARRAY_8" pad="7"/>
 <contactref element="AUTHORIZE" pad="4"/>
-<wire x1="18.7488" y1="22.2606" x2="5.8095" y2="34.47525" width="0" layer="19" extent="1-1"/>
+<wire x1="17.8308" y1="22.4028" x2="18.7452" y2="22.4028" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="34.29" x2="17.8308" y2="22.4028" width="0.254" layer="1"/>
+<wire x1="18.7452" y1="22.4028" x2="18.7488" y2="22.2606" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="34.29" x2="5.8095" y2="34.47525" width="0.254" layer="1"/>
 </signal>
 <signal name="RA_7">
 <contactref element="R_ARRAY_8" pad="8"/>
 <contactref element="BUTTON_PRESSED" pad="C"/>
-<wire x1="5.8095" y1="31.93525" x2="34.578" y2="20" width="0" layer="19" extent="1-1"/>
+<wire x1="17.6022" y1="20.1168" x2="34.5186" y2="20.1168" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="31.7754" x2="17.6022" y2="20.1168" width="0.254" layer="1"/>
+<wire x1="34.5186" y1="20.1168" x2="34.578" y2="20" width="0.254" layer="1"/>
+<wire x1="5.9436" y1="31.7754" x2="5.8095" y2="31.93525" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
