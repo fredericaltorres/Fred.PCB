@@ -3,6 +3,9 @@ http://www.elecrom.com/eagle-library-list-of-most-commonly-used-electronics-comp
 SEED PCB http://www.seeedstudio.com/blog/2016/03/01/guideline-for-seeed-is-back-in-march/
 
 EAGLE REFERENCE
+Adafruit MOUNTINGHOLE_2.5_PLATED - microbuilder
+fred  MOUNT-PAD-ROUND3.3 (MOUNT-PAD-ROUND) (Version 2)
+
 Thru Hole
 	- Resistor 0207/10
 	- 10 Pin header adafruit => PINHD-1X10, PINHD-1X8, PINHD-1X4
