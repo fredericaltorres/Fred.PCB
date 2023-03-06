@@ -1,0 +1,327 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kk_adafruit
+LIBS:kk_power
+LIBS:adafruitft232H_i2c_adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "I2C Adapter for FT232H Adafruit Breakout"
+Date "2018-01-04"
+Rev ""
+Comp "Karol Krizka"
+Comment1 "Lawrence Berkeley National Laboratory"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L adafruit_ft232h U1
+U 1 1 5A4E99E0
+P 3800 2800
+F 0 "U1" H 3450 3650 60  0000 C CNN
+F 1 "adafruit_ft232h" H 3800 3450 60  0000 C CNN
+F 2 "kk_adafruit:adafruit_ft232h_nohole" H 3800 2800 60  0001 C CNN
+F 3 "" H 3800 2800 60  0001 C CNN
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L APD123 U2
+U 1 1 5A4E9A5B
+P 7100 1300
+F 0 "U2" H 6850 1300 60  0000 C CNN
+F 1 "APD123" H 7350 1300 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-5_HandSoldering" H 6850 1300 60  0001 C CNN
+F 3 "" H 6850 1300 60  0001 C CNN
+	1    7100 1300
+	1    0    0    -1  
+$EndComp
+Text Label 4450 2050 0    60   ~ 0
+5V
+Text Label 6500 850  2    60   ~ 0
+5V
+$Comp
+L C C1
+U 1 1 5A4E9B63
+P 6550 1500
+F 0 "C1" H 6575 1600 50  0000 L CNN
+F 1 "1uF" H 6575 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6588 1350 50  0001 C CNN
+F 3 "" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A4E9BE6
+P 8100 1500
+F 0 "C2" H 8125 1600 50  0000 L CNN
+F 1 "1uF" H 8125 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8138 1350 50  0001 C CNN
+F 3 "" H 8100 1500 50  0001 C CNN
+	1    8100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A4E9C90
+P 7800 1000
+F 0 "R3" V 7880 1000 50  0000 C CNN
+F 1 "R" V 7800 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7730 1000 50  0001 C CNN
+F 3 "" H 7800 1000 50  0001 C CNN
+	1    7800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A4E9CDB
+P 7800 1350
+F 0 "R4" V 7880 1350 50  0000 C CNN
+F 1 "R" V 7800 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7730 1350 50  0001 C CNN
+F 3 "" H 7800 1350 50  0001 C CNN
+	1    7800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 850  8200 850 
+Wire Wire Line
+	7600 1150 7800 1150
+Wire Wire Line
+	7800 1150 7800 1200
+Wire Wire Line
+	7800 1500 7800 1700
+$Comp
+L GND #PWR01
+U 1 1 5A4E9D4D
+P 7800 1700
+F 0 "#PWR01" H 7800 1450 50  0001 C CNN
+F 1 "GND" H 7800 1550 50  0000 C CNN
+F 2 "" H 7800 1700 50  0001 C CNN
+F 3 "" H 7800 1700 50  0001 C CNN
+	1    7800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A4E9D6D
+P 8100 1700
+F 0 "#PWR02" H 8100 1450 50  0001 C CNN
+F 1 "GND" H 8100 1550 50  0000 C CNN
+F 2 "" H 8100 1700 50  0001 C CNN
+F 3 "" H 8100 1700 50  0001 C CNN
+	1    8100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A4E9D8D
+P 6550 1700
+F 0 "#PWR03" H 6550 1450 50  0001 C CNN
+F 1 "GND" H 6550 1550 50  0000 C CNN
+F 2 "" H 6550 1700 50  0001 C CNN
+F 3 "" H 6550 1700 50  0001 C CNN
+	1    6550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 850  6550 1350
+Wire Wire Line
+	6550 1650 6550 1650
+Wire Wire Line
+	6600 1150 6550 1150
+Connection ~ 6550 1150
+Wire Wire Line
+	8100 850  8100 1350
+Connection ~ 7800 850 
+$Comp
+L GND #PWR04
+U 1 1 5A4E9E44
+P 7100 1700
+F 0 "#PWR04" H 7100 1450 50  0001 C CNN
+F 1 "GND" H 7100 1550 50  0000 C CNN
+F 2 "" H 7100 1700 50  0001 C CNN
+F 3 "" H 7100 1700 50  0001 C CNN
+	1    7100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1400 7100 1700
+Connection ~ 8100 850 
+Text Label 8200 850  0    60   ~ 0
+VREF
+$Comp
+L GND #PWR05
+U 1 1 5A4EA157
+P 3800 3600
+F 0 "#PWR05" H 3800 3350 50  0001 C CNN
+F 1 "GND" H 3800 3450 50  0000 C CNN
+F 2 "" H 3800 3600 50  0001 C CNN
+F 3 "" H 3800 3600 50  0001 C CNN
+	1    3800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3550 3800 3600
+NoConn ~ 3200 2250
+NoConn ~ 3200 2350
+NoConn ~ 3200 2450
+NoConn ~ 3200 2550
+NoConn ~ 3200 2650
+NoConn ~ 3200 2750
+NoConn ~ 3200 2850
+NoConn ~ 3200 2950
+NoConn ~ 3200 3050
+NoConn ~ 3200 3150
+Text Label 4450 2250 0    60   ~ 0
+SCL
+Text Label 4450 2350 0    60   ~ 0
+SDA
+Wire Wire Line
+	4450 2050 4400 2050
+Wire Wire Line
+	4400 2250 4450 2250
+Wire Wire Line
+	4400 2350 4450 2350
+Wire Wire Line
+	4400 2450 4400 2350
+NoConn ~ 4400 2550
+NoConn ~ 4400 2650
+NoConn ~ 4400 2750
+NoConn ~ 4400 2850
+NoConn ~ 4400 2950
+$Comp
+L CONN_01X04 J1
+U 1 1 5A4EA345
+P 6600 2950
+F 0 "J1" H 6600 3200 50  0000 C CNN
+F 1 "CONN_01X04" V 6700 2950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 6600 2950 50  0001 C CNN
+F 3 "" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3000 6400 3000
+$Comp
+L R R2
+U 1 1 5A4EA483
+P 5900 2750
+F 0 "R2" V 5980 2750 50  0000 C CNN
+F 1 "R" V 5900 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5830 2750 50  0001 C CNN
+F 3 "" H 5900 2750 50  0001 C CNN
+	1    5900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A4EA596
+P 6300 2750
+F 0 "R1" V 6380 2750 50  0000 C CNN
+F 1 "R" V 6300 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6230 2750 50  0001 C CNN
+F 3 "" H 6300 2750 50  0001 C CNN
+	1    6300 2750
+	1    0    0    -1  
+$EndComp
+Text Label 5850 3100 2    60   ~ 0
+SDA
+Text Label 6200 2900 2    60   ~ 0
+SCL
+Text Label 5650 2600 2    60   ~ 0
+VREF
+$Comp
+L GND #PWR06
+U 1 1 5A4EA681
+P 5500 3150
+F 0 "#PWR06" H 5500 2900 50  0001 C CNN
+F 1 "GND" H 5500 3000 50  0000 C CNN
+F 2 "" H 5500 3150 50  0001 C CNN
+F 3 "" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+Text Label 6550 2500 0    60   ~ 0
+VREF
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 5A4EA9B2
+P 9300 850
+F 0 "#FLG07" H 9300 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 9300 1000 50  0000 C CNN
+F 2 "" H 9300 850 50  0001 C CNN
+F 3 "" H 9300 850 50  0001 C CNN
+	1    9300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5A4EA9D8
+P 9300 1050
+F 0 "#PWR08" H 9300 800 50  0001 C CNN
+F 1 "GND" H 9300 900 50  0000 C CNN
+F 2 "" H 9300 1050 50  0001 C CNN
+F 3 "" H 9300 1050 50  0001 C CNN
+	1    9300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 850  9300 1050
+Wire Wire Line
+	6500 850  6600 850 
+Connection ~ 6550 850 
+Connection ~ 7800 1150
+Wire Wire Line
+	8100 1650 8100 1700
+Wire Wire Line
+	6550 1700 6550 1650
+Wire Wire Line
+	5500 3000 5500 3150
+Wire Wire Line
+	6400 3100 5850 3100
+Wire Wire Line
+	6400 2900 6200 2900
+Wire Wire Line
+	6400 2800 6400 2600
+Wire Wire Line
+	6400 2600 5650 2600
+Wire Wire Line
+	5900 2900 5900 3100
+Connection ~ 5900 3100
+Connection ~ 6300 2900
+Connection ~ 6300 2600
+Connection ~ 5900 2600
+$EndSCHEMATC
