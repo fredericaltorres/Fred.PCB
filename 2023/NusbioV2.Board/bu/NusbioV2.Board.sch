@@ -5060,19 +5060,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-101.6" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C_OUT_1" gate="A" pin="1"/>
-<wire x1="-121.92" y1="104.14" x2="-132.08" y2="104.14" width="0.1524" layer="91"/>
-<label x="-137.16" y="106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R_PULL_UP_SCL_4K" gate="G$1" pin="1"/>
 <wire x1="-149.86" y1="71.12" x2="-165.1" y2="71.12" width="0.1524" layer="91"/>
 <label x="-162.56" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C_OUT_2" gate="A" pin="1"/>
-<wire x1="-121.92" y1="124.46" x2="-144.78" y2="124.46" width="0.1524" layer="91"/>
-<label x="-144.78" y="127" size="1.778" layer="95"/>
+<pinref part="I2C_OUT_2" gate="A" pin="2"/>
+<wire x1="-121.92" y1="121.92" x2="-144.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="-142.24" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C_OUT_1" gate="A" pin="2"/>
+<wire x1="-121.92" y1="101.6" x2="-134.62" y2="101.6" width="0.1524" layer="91"/>
+<label x="-137.16" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D1_MOSI" class="0">
@@ -5119,19 +5119,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-119.38" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C_OUT_1" gate="A" pin="2"/>
-<wire x1="-121.92" y1="101.6" x2="-134.62" y2="101.6" width="0.1524" layer="91"/>
-<label x="-137.16" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C_OUT_2" gate="A" pin="2"/>
-<wire x1="-121.92" y1="121.92" x2="-144.78" y2="121.92" width="0.1524" layer="91"/>
-<label x="-142.24" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="I2C_DTA_CONN" gate="1" pin="O"/>
 <wire x1="-142.24" y1="40.64" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
 <label x="-162.56" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C_OUT_2" gate="A" pin="1"/>
+<wire x1="-121.92" y1="124.46" x2="-144.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="-144.78" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C_OUT_1" gate="A" pin="1"/>
+<wire x1="-121.92" y1="104.14" x2="-132.08" y2="104.14" width="0.1524" layer="91"/>
+<label x="-137.16" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D3_CS0" class="0">
