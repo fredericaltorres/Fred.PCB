@@ -174,7 +174,7 @@
 <text x="35.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">C5</text>
 <text x="38" y="18.5" size="1.27" layer="25" rot="R90" align="center">C6\</text>
 <text x="40.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">C7</text>
-<text x="22.3255" y="23.939" size="1.4224" layer="25" rot="R180" align="center">+</text>
+<text x="20.3255" y="25.939" size="1.4224" layer="25" rot="R180" align="center">+</text>
 <text x="0" y="-0.3175" size="0.127" layer="25" font="vector">C:/DVT/Fred.PCB/2023/MadeInTheUSB.Logo.Gray.50.bmp</text>
 <wire x1="87" y1="13" x2="90" y2="16" width="0.1524" layer="20" curve="90"/>
 <wire x1="5" y1="13" x2="2" y2="16" width="0.1524" layer="20" curve="-90"/>
