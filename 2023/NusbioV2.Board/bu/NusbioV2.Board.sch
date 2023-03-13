@@ -4686,7 +4686,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <parts>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R_4K" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_2K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="FT232H__SPI" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X11" device="" package3d_urn="urn:adsk.eagle:package:22410/2"/>
 <part name="FT232H_GPIO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X11" device="" package3d_urn="urn:adsk.eagle:package:22410/2"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -4734,7 +4734,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND1" gate="1" x="-48.26" y="73.66" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-50.8" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R_4K" gate="G$1" x="-27.94" y="73.66" smashed="yes">
+<instance part="R_2K" gate="G$1" x="-27.94" y="73.66" smashed="yes">
 <attribute name="NAME" x="-31.75" y="75.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-31.75" y="70.358" size="1.778" layer="96"/>
 </instance>
@@ -4871,7 +4871,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="R_4K" gate="G$1" pin="1"/>
+<pinref part="R_2K" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-33.02" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
 </segment>
@@ -4974,11 +4974,16 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-121.92" y1="119.38" x2="-144.78" y2="119.38" width="0.1524" layer="91"/>
 <label x="-144.78" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<wire x1="7.62" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="17.78" y="76.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="LED_POWER" gate="G$1" pin="C"/>
-<pinref part="R_4K" gate="G$1" pin="2"/>
+<pinref part="R_2K" gate="G$1" pin="2"/>
 <wire x1="0" y1="73.66" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4987,11 +4992,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="FT232H__SPI" gate="A" pin="10"/>
 <wire x1="-33.02" y1="104.14" x2="-45.72" y2="104.14" width="0.1524" layer="91"/>
 <label x="-45.72" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
-<label x="17.78" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="VCC_5" gate="G$1" pin="1"/>
