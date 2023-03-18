@@ -19,8 +19,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -144,10 +144,10 @@
 <text x="29.8" y="1.7" size="0.8128" layer="25" rot="R90">D+</text>
 <text x="3.4" y="8.2" size="1.016" layer="25" rot="R90">VCC &gt;</text>
 <text x="6.4" y="8.2" size="1.016" layer="25" rot="R90">GND &gt;</text>
-<text x="66.4" y="8.2" size="1.016" layer="25" rot="R90">GND &gt;</text>
-<text x="63.4" y="8.2" size="1.016" layer="25" rot="R90">VCC &gt;</text>
+<text x="63.4" y="8.2" size="1.016" layer="25" rot="R90">GND &gt;</text>
+<text x="66.4" y="8.2" size="1.016" layer="25" rot="R90">VCC &gt;</text>
 <text x="12.5" y="37" size="1.016" layer="26" rot="MR0" align="center">Resistor Array In the Bottom</text>
-<text x="64" y="3" size="1.4224" layer="26" rot="MR0" align="center">PCBv3 - 2023.02</text>
+<text x="59" y="3" size="1.4224" layer="26" rot="MR0" align="center">PCBv4 - 2023.03</text>
 <text x="28.5" y="42" size="1.2" layer="26" rot="MR0" align="center">USB Experimentation
 Board</text>
 <text x="10" y="31" size="1.016" layer="25" rot="R90">+</text>
