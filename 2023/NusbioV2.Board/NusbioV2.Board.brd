@@ -166,14 +166,14 @@
 <text x="61.5" y="37" size="1.27" layer="25" rot="R270" align="center">C0</text>
 <text x="45.5" y="19" size="1.27" layer="25" rot="R90" align="center">GND</text>
 <text x="43" y="20.7" size="1.27" layer="25" rot="R90" align="center">VCC_3V</text>
-<text x="22.7" y="18.5" size="1.27" layer="25" rot="R90" align="center">C0</text>
-<text x="25.2" y="18.5" size="1.27" layer="25" rot="R90" align="center">C1</text>
-<text x="27.7" y="18.5" size="1.27" layer="25" rot="R90" align="center">C2</text>
-<text x="30.2" y="18.5" size="1.27" layer="25" rot="R90" align="center">C3\</text>
-<text x="32.8" y="18.5" size="1.27" layer="25" rot="R90" align="center">C4</text>
-<text x="35.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">C5</text>
-<text x="38" y="18.5" size="1.27" layer="25" rot="R90" align="center">C6\</text>
-<text x="40.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">C7</text>
+<text x="22.7" y="18.5" size="1.27" layer="25" rot="R90" align="center">G0</text>
+<text x="25.2" y="18.5" size="1.27" layer="25" rot="R90" align="center">G1</text>
+<text x="27.7" y="18.5" size="1.27" layer="25" rot="R90" align="center">G2</text>
+<text x="30.2" y="18.5" size="1.27" layer="25" rot="R90" align="center">G3</text>
+<text x="32.8" y="18.5" size="1.27" layer="25" rot="R90" align="center">G4</text>
+<text x="35.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">G5</text>
+<text x="38" y="18.5" size="1.27" layer="25" rot="R90" align="center">G6</text>
+<text x="40.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">G7</text>
 <text x="20.3255" y="25.939" size="1.4224" layer="25" rot="R180" align="center">+</text>
 <text x="0" y="-0.3175" size="0.127" layer="25" font="vector">C:/DVT/Fred.PCB/2023/MadeInTheUSB.Logo.Gray.50.bmp</text>
 <wire x1="87" y1="13" x2="90" y2="16" width="0.1524" layer="20" curve="90"/>
