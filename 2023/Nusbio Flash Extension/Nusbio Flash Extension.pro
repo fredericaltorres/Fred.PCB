@@ -2,8 +2,8 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/DVT/Fred.PCB/2023/Nusbio Flash Extension/Nusbio Flash Extension.brd
 
-Start at      : 16:32:50 (2/12/2023)
-End at        : 16:32:52 (2/12/2023)
+Start at      : 00:11:10 (3/22/2023)
+End at        : 00:11:12 (3/22/2023)
 Elapsed time  : 00:00:00
 
 Signals       :    12   RoutingGrid: 19.685 mil  Layers: 2
@@ -19,7 +19,7 @@ max. Level        :         0         0         0         0         0         0
 max. Total        :         0         0         0         0         0         0
 
 Routed            :         0        24        24        24        24        24
-Vias              :         0        28        16        12        11        11
+Vias              :         0        30        15        12        12        12
 Resolution        :     0.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
