@@ -142,7 +142,7 @@
 <board>
 <plain>
 <text x="46" y="73.5" size="3.81" layer="26" rot="SMR0" align="center">Nusbio /2</text>
-<text x="46" y="20.5" size="1.4224" layer="26" rot="MR0" align="center">PCBv2 - 2023.03</text>
+<text x="46" y="20.5" size="1.4224" layer="26" rot="MR0" align="center">PCBv3 - 2023.04</text>
 <text x="46" y="28.5" size="2.54" layer="26" rot="SMR0" align="center">www.FredericTorres.com</text>
 <text x="86.5" y="36" size="1.27" layer="25" rot="R270" align="center">GND</text>
 <text x="15.47376875" y="73.468759375" size="1.27" layer="25" rot="R180" align="center">+</text>
@@ -2731,7 +2731,6 @@ design rules under a new name.</description>
 <contactref element="FT232H_GPIO" pad="11"/>
 <contactref element="SPI_OUT_1" pad="1"/>
 <contactref element="GPIO_OUT" pad="1"/>
-<contactref element="R_ARRAY_1" pad="1"/>
 <contactref element="SPI_OUT_2" pad="1"/>
 <contactref element="I2C_OUT_1" pad="4"/>
 <contactref element="I2C_OUT_2" pad="4"/>
@@ -2739,18 +2738,19 @@ design rules under a new name.</description>
 <contactref element="H2" pad="B3,3"/>
 <contactref element="H3" pad="B3,3"/>
 <contactref element="H4" pad="B3,3"/>
+<contactref element="R_ARRAY_1" pad="10"/>
 <wire x1="81.62" y1="60" x2="84" y2="84" width="0" layer="19" extent="1-1"/>
 <wire x1="86.7" y1="40" x2="81.62" y2="60" width="0" layer="19" extent="1-1"/>
 <wire x1="84" y1="19" x2="86.7" y2="40" width="0" layer="19" extent="1-1"/>
 <wire x1="66.81" y1="15.7" x2="84" y2="19" width="0" layer="19" extent="1-1"/>
 <wire x1="45.63" y1="15.5" x2="66.81" y2="15.7" width="0" layer="19" extent="1-1"/>
-<wire x1="48.77" y1="88" x2="84" y2="84" width="0" layer="19" extent="1-1"/>
-<wire x1="23.89" y1="87.3" x2="48.77" y2="88" width="0" layer="19" extent="1-1"/>
-<wire x1="8" y1="84" x2="23.89" y2="87.3" width="0" layer="19" extent="1-1"/>
-<wire x1="12.152" y1="70" x2="8" y2="84" width="0" layer="19" extent="1-1"/>
-<wire x1="34.5" y1="63.585" x2="12.152" y2="70" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="39.57" x2="12.152" y2="70" width="0" layer="19" extent="1-1"/>
+<wire x1="34.5" y1="40.725" x2="45.63" y2="15.5" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="39.57" x2="34.5" y2="40.725" width="0" layer="19" extent="1-1"/>
 <wire x1="8" y1="19" x2="4.5" y2="39.57" width="0" layer="19" extent="1-1"/>
+<wire x1="12.152" y1="70" x2="4.5" y2="39.57" width="0" layer="19" extent="1-1"/>
+<wire x1="8" y1="84" x2="12.152" y2="70" width="0" layer="19" extent="1-1"/>
+<wire x1="23.89" y1="87.3" x2="8" y2="84" width="0" layer="19" extent="1-1"/>
+<wire x1="48.77" y1="88" x2="23.89" y2="87.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_33">
 <contactref element="FT232H__SPI" pad="11"/>
@@ -2907,9 +2907,6 @@ design rules under a new name.</description>
 <wire x1="23.5" y1="25.578" x2="61.3" y2="40" width="0" layer="19" extent="1-1"/>
 <wire x1="22.77" y1="15.5" x2="23.5" y2="25.578" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DO_NOT_USE">
-<contactref element="R_ARRAY_1" pad="10"/>
-</signal>
 <signal name="R_G_0">
 <contactref element="R_ARRAY_1" pad="2"/>
 <contactref element="LED_G_0" pad="C"/>
@@ -2956,6 +2953,9 @@ design rules under a new name.</description>
 <contactref element="I2C_PULL_UP_MODE" pad="O"/>
 <wire x1="27" y1="61.422" x2="45.46" y2="54" width="0" layer="19" extent="1-1"/>
 <wire x1="27" y1="43.578" x2="27" y2="61.422" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DO_NOT_USE">
+<contactref element="R_ARRAY_1" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
