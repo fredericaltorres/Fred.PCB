@@ -4722,7 +4722,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="VCC_5" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="LED_I2C_MODE" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="R_LED_I2C_MODE" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_PULL_UP_SCL_4K1" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -4872,7 +4872,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <attribute name="NAME" x="-146.812" y="80.264" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-146.812" y="78.105" size="1.778" layer="96"/>
 </instance>
-<instance part="R_LED_I2C_MODE" gate="G$1" x="-165.1" y="83.82" smashed="yes">
+<instance part="R_PULL_UP_SCL_4K1" gate="G$1" x="-165.1" y="83.82" smashed="yes">
 <attribute name="NAME" x="-168.91" y="85.3186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-168.91" y="80.518" size="1.778" layer="96"/>
 </instance>
@@ -4953,7 +4953,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="R_LED_I2C_MODE" gate="G$1" pin="1"/>
+<pinref part="R_PULL_UP_SCL_4K1" gate="G$1" pin="1"/>
 <wire x1="-175.26" y1="83.82" x2="-170.18" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5451,7 +5451,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="LED_I2C_MODE" gate="G$1" pin="C"/>
-<pinref part="R_LED_I2C_MODE" gate="G$1" pin="2"/>
+<pinref part="R_PULL_UP_SCL_4K1" gate="G$1" pin="2"/>
 <wire x1="-147.32" y1="83.82" x2="-160.02" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>

@@ -2051,8 +2051,8 @@
 <text x="26.3" y="80.5" size="1.27" layer="25" rot="R270" align="center">VCC_3.3V</text>
 <text x="29" y="83" size="1.27" layer="25" rot="R270" align="center">SCL</text>
 <text x="31.5" y="83" size="1.27" layer="25" rot="R270" align="center">SDA</text>
-<text x="52" y="50.2" size="1.6764" layer="25" rot="R180" align="center">OFF</text>
-<text x="43.5" y="50.2" size="1.6764" layer="25" rot="R180" align="center">ON</text>
+<text x="52" y="50.2" size="1.4224" layer="25" rot="R180" align="center">OFF</text>
+<text x="43.5" y="50.2" size="1.4224" layer="25" rot="R180" align="center">ON</text>
 <text x="66.7" y="20" size="1.27" layer="25" rot="R90" align="center">GND</text>
 <text x="64.2" y="22.5" size="1.27" layer="25" rot="R90" align="center">VCC_3.3V</text>
 <text x="61.5" y="20" size="1.27" layer="25" rot="R90" align="center">SCL</text>
@@ -2060,7 +2060,6 @@
 <text x="74" y="66.2" size="1.27" layer="25" rot="R270" align="center">MISO SDA</text>
 <text x="76.5" y="64.2" size="1.27" layer="25" rot="R270" align="center">MOSI</text>
 <text x="79" y="66.5" size="1.27" layer="25" rot="R270" align="center">SCLK SCL</text>
-<text x="42.3255" y="37.939" size="1.4224" layer="25" rot="R180" align="center">+</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -2724,13 +2723,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.9538" y="27.8288" size="1.27" layer="25" ratio="10" align="center"/>
 <attribute name="VALUE" x="3.03" y="24.825" size="1.27" layer="27"/>
 </element>
-<element name="LED_I2C_MODE" library="adafruit" package="1206" value="" x="47" y="38" smashed="yes">
-<attribute name="NAME" x="42" y="39.5" size="1.016" layer="25"/>
-<attribute name="VALUE" x="45.73" y="35.46" size="1.27" layer="27"/>
-</element>
-<element name="R_LED_I2C_MODE" library="adafruit" package="R1206" value="" x="48" y="61" smashed="yes">
-<attribute name="NAME" x="42.603" y="63.143" size="1.016" layer="25"/>
-<attribute name="VALUE" x="46.603" y="58.587" size="1.27" layer="27"/>
+<element name="LED_I2C_MODE" library="adafruit" package="1206" value="" x="2" y="-5" smashed="yes">
+<attribute name="NAME" x="0.73" y="-3.73" size="1.27" layer="25"/>
+<attribute name="VALUE" x="0.73" y="-7.54" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -2748,20 +2743,18 @@ design rules under a new name.</description>
 <contactref element="H3" pad="B3,3"/>
 <contactref element="H4" pad="B3,3"/>
 <contactref element="R_ARRAY_1" pad="10"/>
-<contactref element="R_LED_I2C_MODE" pad="1"/>
 <wire x1="81.62" y1="60" x2="84" y2="84" width="0" layer="19" extent="1-1"/>
 <wire x1="86.7" y1="40" x2="81.62" y2="60" width="0" layer="19" extent="1-1"/>
 <wire x1="84" y1="19" x2="86.7" y2="40" width="0" layer="19" extent="1-1"/>
 <wire x1="66.81" y1="15.7" x2="84" y2="19" width="0" layer="19" extent="1-1"/>
 <wire x1="45.63" y1="15.5" x2="66.81" y2="15.7" width="0" layer="19" extent="1-1"/>
 <wire x1="34.5" y1="40.725" x2="45.63" y2="15.5" width="0" layer="19" extent="1-1"/>
-<wire x1="46.578" y1="61" x2="34.5" y2="40.725" width="0" layer="19" extent="1-1"/>
-<wire x1="48.77" y1="88" x2="46.578" y2="61" width="0" layer="19" extent="1-1"/>
-<wire x1="23.89" y1="87.3" x2="48.77" y2="88" width="0" layer="19" extent="1-1"/>
-<wire x1="8" y1="84" x2="23.89" y2="87.3" width="0" layer="19" extent="1-1"/>
-<wire x1="12.152" y1="70" x2="8" y2="84" width="0" layer="19" extent="1-1"/>
 <wire x1="4.5" y1="39.57" x2="34.5" y2="40.725" width="0" layer="19" extent="1-1"/>
 <wire x1="8" y1="19" x2="4.5" y2="39.57" width="0" layer="19" extent="1-1"/>
+<wire x1="12.152" y1="70" x2="4.5" y2="39.57" width="0" layer="19" extent="1-1"/>
+<wire x1="8" y1="84" x2="12.152" y2="70" width="0" layer="19" extent="1-1"/>
+<wire x1="23.89" y1="87.3" x2="8" y2="84" width="0" layer="19" extent="1-1"/>
+<wire x1="48.77" y1="88" x2="23.89" y2="87.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_33">
 <contactref element="FT232H__SPI" pad="11"/>
@@ -2962,18 +2955,11 @@ design rules under a new name.</description>
 <contactref element="R_PULL_UP_SDA_4K" pad="2"/>
 <contactref element="R_PULL_UP_SCL_4K" pad="2"/>
 <contactref element="I2C_PULL_UP_MODE" pad="O"/>
-<contactref element="LED_I2C_MODE" pad="A"/>
-<wire x1="45.578" y1="38" x2="45.46" y2="54" width="0" layer="19" extent="1-1"/>
-<wire x1="27" y1="43.578" x2="45.578" y2="38" width="0" layer="19" extent="1-1"/>
-<wire x1="27" y1="61.422" x2="27" y2="43.578" width="0" layer="19" extent="1-1"/>
+<wire x1="27" y1="61.422" x2="45.46" y2="54" width="0" layer="19" extent="1-1"/>
+<wire x1="27" y1="43.578" x2="27" y2="61.422" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DO_NOT_USE">
 <contactref element="R_ARRAY_1" pad="1"/>
-</signal>
-<signal name="N$3">
-<contactref element="LED_I2C_MODE" pad="C"/>
-<contactref element="R_LED_I2C_MODE" pad="2"/>
-<wire x1="48.422" y1="38" x2="49.422" y2="61" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
