@@ -144,36 +144,36 @@
 <text x="46" y="73.5" size="3.81" layer="26" rot="SMR0" align="center">Nusbio /2</text>
 <text x="46" y="20.5" size="1.4224" layer="26" rot="MR0" align="center">PCBv3 - 2023.04</text>
 <text x="46" y="28.5" size="2.54" layer="26" rot="SMR0" align="center">www.FredericTorres.com</text>
-<text x="86.5" y="36" size="1.27" layer="25" rot="R270" align="center">GND</text>
+<text x="86.5" y="36" size="1.4224" layer="25" rot="R270" align="center">GND</text>
 <text x="15.47376875" y="73.468759375" size="1.27" layer="25" rot="R180" align="center">+</text>
 <wire x1="2" y1="16" x2="2" y2="86" width="0.1524" layer="20"/>
 <wire x1="6" y1="90" x2="86" y2="90" width="0.1524" layer="20"/>
 <wire x1="90" y1="86" x2="90" y2="16" width="0.1524" layer="20"/>
 <wire x1="87" y1="13" x2="5" y2="13" width="0.1524" layer="20"/>
-<text x="81.5" y="64" size="1.27" layer="25" rot="R270" align="center">GND</text>
-<text x="84" y="63.6" size="1.27" layer="25" rot="R270" align="center">5V</text>
-<text x="86.5" y="64.4" size="1.27" layer="25" rot="R270" align="center">3.3V</text>
-<text x="8.5" y="39.4" size="1.27" layer="25" align="center">GND</text>
-<text x="11" y="42" size="1.27" layer="25" align="center">VCC_3.3V</text>
-<text x="9" y="62.5" size="1.27" layer="25" align="center">SCLK</text>
-<text x="9" y="60" size="1.27" layer="25" align="center">MOSI</text>
-<text x="9" y="57.5" size="1.27" layer="25" align="center">MISO</text>
-<text x="10" y="52.5" size="1.27" layer="25" align="center">D4 CS1</text>
-<text x="10" y="50" size="1.27" layer="25" align="center">D5 CS2</text>
-<text x="10" y="47.5" size="1.27" layer="25" align="center">D6 CS3</text>
-<text x="10" y="45" size="1.27" layer="25" align="center">D7 CS4</text>
-<text x="61" y="63.4" size="1.27" layer="25" rot="R270" align="center">D7</text>
-<text x="61.5" y="37" size="1.27" layer="25" rot="R270" align="center">C0</text>
-<text x="45.5" y="19" size="1.27" layer="25" rot="R90" align="center">GND</text>
-<text x="43" y="20.7" size="1.27" layer="25" rot="R90" align="center">VCC_3V</text>
-<text x="22.7" y="18.5" size="1.27" layer="25" rot="R90" align="center">G0</text>
-<text x="25.2" y="18.5" size="1.27" layer="25" rot="R90" align="center">G1</text>
-<text x="27.7" y="18.5" size="1.27" layer="25" rot="R90" align="center">G2</text>
-<text x="30.2" y="18.5" size="1.27" layer="25" rot="R90" align="center">G3</text>
-<text x="32.8" y="18.5" size="1.27" layer="25" rot="R90" align="center">G4</text>
-<text x="35.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">G5</text>
-<text x="38" y="18.5" size="1.27" layer="25" rot="R90" align="center">G6</text>
-<text x="40.5" y="18.5" size="1.27" layer="25" rot="R90" align="center">G7</text>
+<text x="81.5" y="64" size="1.4224" layer="25" rot="R270" align="center">GND</text>
+<text x="84" y="63.6" size="1.4224" layer="25" rot="R270" align="center">5V</text>
+<text x="86.5" y="64.4" size="1.4224" layer="25" rot="R270" align="center">3.3V</text>
+<text x="8.5" y="39.4" size="1.4224" layer="25" align="center">GND</text>
+<text x="11" y="42" size="1.4224" layer="25" align="center">VCC_3.3V</text>
+<text x="9" y="62.5" size="1.4224" layer="25" align="center">SCLK</text>
+<text x="9" y="60" size="1.4224" layer="25" align="center">MOSI</text>
+<text x="9" y="57.5" size="1.4224" layer="25" align="center">MISO</text>
+<text x="10" y="52.5" size="1.4224" layer="25" align="center">D4 CS1</text>
+<text x="10" y="50" size="1.4224" layer="25" align="center">D5 CS2</text>
+<text x="10" y="47.5" size="1.4224" layer="25" align="center">D6 CS3</text>
+<text x="10" y="45" size="1.4224" layer="25" align="center">D7 CS4</text>
+<text x="61" y="63.4" size="1.4224" layer="25" rot="R270" align="center">D7</text>
+<text x="61.5" y="37" size="1.4224" layer="25" rot="R270" align="center">C0</text>
+<text x="45.5" y="19" size="1.4224" layer="25" rot="R90" align="center">GND</text>
+<text x="43" y="20.7" size="1.4224" layer="25" rot="R90" align="center">VCC_3V</text>
+<text x="22.7" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G0</text>
+<text x="25.2" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G1</text>
+<text x="27.7" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G2</text>
+<text x="30.2" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G3</text>
+<text x="32.8" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G4</text>
+<text x="35.5" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G5</text>
+<text x="38" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G6</text>
+<text x="40.5" y="18.5" size="1.4224" layer="25" rot="R90" align="center">G7</text>
 <text x="20.3255" y="25.939" size="1.4224" layer="25" rot="R180" align="center">+</text>
 <text x="0" y="-0.3175" size="0.127" layer="25" font="vector">C:/DVT/Fred.PCB/2023/MadeInTheUSB.Logo.Gray.50.bmp</text>
 <wire x1="87" y1="13" x2="90" y2="16" width="0.1524" layer="20" curve="90"/>
@@ -1347,17 +1347,17 @@
 <rectangle x1="83.18651875" y1="32.16875" x2="83.56498125" y2="32.23225" layer="25"/>
 <text x="0" y="-0.3175" size="0.127" layer="25" font="vector">C:/DVT/Fred.PCB/2023/MadeInTheUSB.Logo.Gray.50.bmp</text>
 <text x="32.084" y="40.002" size="1.27" layer="25" rot="R90" align="center">GND</text>
-<text x="79" y="37" size="1.27" layer="25" rot="R270" align="center">C7</text>
-<text x="49" y="84.5" size="1.27" layer="25" rot="R90" align="center">GND</text>
-<text x="51.5" y="82" size="1.27" layer="25" rot="R90" align="center">VCC_3.3V</text>
-<text x="54" y="83" size="1.27" layer="25" rot="R90" align="center">D7 CS4</text>
-<text x="56.5" y="83" size="1.27" layer="25" rot="R90" align="center">D6 CS3</text>
-<text x="59" y="83" size="1.27" layer="25" rot="R90" align="center">D5 CS2</text>
-<text x="61.5" y="83" size="1.27" layer="25" rot="R90" align="center">D4 CS1</text>
-<text x="64" y="83" size="1.27" layer="25" rot="R90" align="center">D3 CS0</text>
-<text x="66.5" y="84.2" size="1.27" layer="25" rot="R90" align="center">MISO</text>
-<text x="69.5" y="84.2" size="1.27" layer="25" rot="R90" align="center">MOSI</text>
-<text x="71.5" y="84.2" size="1.27" layer="25" rot="R90" align="center">SCLK</text>
+<text x="79" y="37" size="1.4224" layer="25" rot="R270" align="center">C7</text>
+<text x="49" y="84" size="1.4224" layer="25" rot="R90" align="center">GND</text>
+<text x="51.5" y="81.3" size="1.4224" layer="25" rot="R90" align="center">VCC_3.3V</text>
+<text x="54" y="82.5" size="1.4224" layer="25" rot="R90" align="center">D7 CS4</text>
+<text x="56.5" y="82.5" size="1.4224" layer="25" rot="R90" align="center">D6 CS3</text>
+<text x="59" y="82.5" size="1.4224" layer="25" rot="R90" align="center">D5 CS2</text>
+<text x="61.5" y="82.5" size="1.4224" layer="25" rot="R90" align="center">D4 CS1</text>
+<text x="64" y="82.5" size="1.4224" layer="25" rot="R90" align="center">D3 CS0</text>
+<text x="66.5" y="83.5" size="1.4224" layer="25" rot="R90" align="center">MISO</text>
+<text x="69.1" y="83.5" size="1.4224" layer="25" rot="R90" align="center">MOSI</text>
+<text x="71.5" y="83.5" size="1.4224" layer="25" rot="R90" align="center">SCLK</text>
 <rectangle x1="56.699503125" y1="67.1926" x2="57.629140625" y2="67.27718125" layer="25"/>
 <rectangle x1="56.783321875" y1="67.27718125" x2="57.715503125" y2="67.3617625" layer="25"/>
 <rectangle x1="56.783321875" y1="67.3617625" x2="57.715503125" y2="67.4466" layer="25"/>
@@ -2046,20 +2046,20 @@
 <rectangle x1="46.929140625" y1="73.7117625" x2="47.691140625" y2="73.7966" layer="25"/>
 <rectangle x1="46.099321875" y1="74.7966" x2="46.523503125" y2="74.88118125" layer="25"/>
 <text x="0" y="-0.42418125" size="0.17018125" layer="25" font="vector">C:/DVT/Fred.PCB/2023/FredT232H.Board/Nusbio.Slash.2.Gray.bmp</text>
-<text x="10" y="55" size="1.27" layer="25" rot="R180" align="center">D3 CS0</text>
-<text x="23.5" y="83" size="1.27" layer="25" rot="R270" align="center">GND</text>
-<text x="26.3" y="80.5" size="1.27" layer="25" rot="R270" align="center">VCC_3.3V</text>
-<text x="29" y="83" size="1.27" layer="25" rot="R270" align="center">SCL</text>
-<text x="31.5" y="83" size="1.27" layer="25" rot="R270" align="center">SDA</text>
+<text x="10" y="55" size="1.4224" layer="25" rot="R180" align="center">D3 CS0</text>
+<text x="23.5" y="83" size="1.4224" layer="25" rot="R270" align="center">GND</text>
+<text x="26.3" y="80.2" size="1.4224" layer="25" rot="R270" align="center">VCC_3.3V</text>
+<text x="29" y="83" size="1.4224" layer="25" rot="R270" align="center">SCL</text>
+<text x="31.5" y="83" size="1.4224" layer="25" rot="R270" align="center">SDA</text>
 <text x="52" y="50.2" size="1.6764" layer="25" rot="R180" align="center">OFF</text>
 <text x="43.5" y="50.2" size="1.6764" layer="25" rot="R180" align="center">ON</text>
-<text x="66.7" y="20" size="1.27" layer="25" rot="R90" align="center">GND</text>
-<text x="64.2" y="22.5" size="1.27" layer="25" rot="R90" align="center">VCC_3.3V</text>
-<text x="61.5" y="20" size="1.27" layer="25" rot="R90" align="center">SCL</text>
-<text x="59" y="20" size="1.27" layer="25" rot="R90" align="center">SDA</text>
-<text x="74" y="66.2" size="1.27" layer="25" rot="R270" align="center">MISO SDA</text>
-<text x="76.5" y="64.2" size="1.27" layer="25" rot="R270" align="center">MOSI</text>
-<text x="79" y="66.5" size="1.27" layer="25" rot="R270" align="center">SCLK SCL</text>
+<text x="66.7" y="20" size="1.4224" layer="25" rot="R90" align="center">GND</text>
+<text x="64.2" y="22.5" size="1.4224" layer="25" rot="R90" align="center">VCC_3.3V</text>
+<text x="61.5" y="20" size="1.4224" layer="25" rot="R90" align="center">SCL</text>
+<text x="59" y="20" size="1.4224" layer="25" rot="R90" align="center">SDA</text>
+<text x="74" y="66.2" size="1.4224" layer="25" rot="R270" align="center">MISO SDA</text>
+<text x="76.5" y="64.2" size="1.4224" layer="25" rot="R270" align="center">MOSI</text>
+<text x="79" y="66.5" size="1.4224" layer="25" rot="R270" align="center">SCLK SCL</text>
 <text x="42.3255" y="37.939" size="1.4224" layer="25" rot="R180" align="center">+</text>
 </plain>
 <libraries>
@@ -2681,7 +2681,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="43.641209375" y="25.73" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="SPI_OUT_2" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="60.2" y="88" smashed="yes">
-<attribute name="NAME" x="60.6938" y="77.2" size="1.4224" layer="25" ratio="10" align="center"/>
+<attribute name="NAME" x="75.6938" y="82.2" size="1.4224" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="48.77" y="84.825" size="1.27" layer="27"/>
 </element>
 <element name="I2C_OUT_1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="" x="27.7" y="87.3" smashed="yes" rot="R180">

@@ -4721,6 +4721,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
 <part name="VCC_5" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="LED_I2C_MODE" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="R_LED_I2C_MODE" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4865,6 +4868,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND8" gate="1" x="-73.66" y="60.96" smashed="yes">
 <attribute name="VALUE" x="-76.2" y="58.42" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="LED_I2C_MODE" gate="G$1" x="-142.24" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="-146.812" y="80.264" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-146.812" y="78.105" size="1.778" layer="96"/>
+</instance>
+<instance part="R_LED_I2C_MODE" gate="G$1" x="-165.1" y="83.82" smashed="yes">
+<attribute name="NAME" x="-168.91" y="85.3186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-168.91" y="80.518" size="1.778" layer="96"/>
+</instance>
+<instance part="GND6" gate="1" x="-177.8" y="83.82" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-180.34" y="86.36" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4936,6 +4950,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="R_ARRAY_1" gate="G$1" pin="10"/>
 <wire x1="-73.66" y1="63.5" x2="-73.66" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R_LED_I2C_MODE" gate="G$1" pin="1"/>
+<wire x1="-175.26" y1="83.82" x2="-170.18" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_33" class="0">
@@ -5058,6 +5077,16 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-132.08" y1="43.18" x2="-119.38" y2="43.18" width="0.1524" layer="91"/>
 <label x="-127" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="I2C_OUT_2" gate="A" pin="1"/>
+<wire x1="-121.92" y1="124.46" x2="-144.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="-144.78" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C_OUT_1" gate="A" pin="1"/>
+<wire x1="-121.92" y1="104.14" x2="-132.08" y2="104.14" width="0.1524" layer="91"/>
+<label x="-137.16" y="106.68" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D2_MISO" class="0">
 <segment>
@@ -5079,16 +5108,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="I2C_DTA_CONN" gate="1" pin="O"/>
 <wire x1="-142.24" y1="40.64" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
 <label x="-162.56" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C_OUT_2" gate="A" pin="1"/>
-<wire x1="-121.92" y1="124.46" x2="-144.78" y2="124.46" width="0.1524" layer="91"/>
-<label x="-144.78" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C_OUT_1" gate="A" pin="1"/>
-<wire x1="-121.92" y1="104.14" x2="-132.08" y2="104.14" width="0.1524" layer="91"/>
-<label x="-137.16" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D3_CS0" class="0">
@@ -5413,8 +5432,13 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="R_PULL_UP_SCL_4K" gate="G$1" pin="2"/>
 <wire x1="-139.7" y1="63.5" x2="-139.7" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="I2C_PULL_UP_MODE" gate="1" pin="O"/>
-<wire x1="-139.7" y1="71.12" x2="-124.46" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="71.12" x2="-129.54" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-139.7" y="71.12"/>
+<wire x1="-129.54" y1="71.12" x2="-124.46" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="71.12" x2="-129.54" y2="83.82" width="0.1524" layer="91"/>
+<junction x="-129.54" y="71.12"/>
+<pinref part="LED_I2C_MODE" gate="G$1" pin="A"/>
+<wire x1="-129.54" y1="83.82" x2="-139.7" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DO_NOT_USE" class="0">
@@ -5422,6 +5446,13 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="R_ARRAY_1" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="68.58" x2="-96.52" y2="60.96" width="0.1524" layer="91"/>
 <label x="-96.52" y="58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED_I2C_MODE" gate="G$1" pin="C"/>
+<pinref part="R_LED_I2C_MODE" gate="G$1" pin="2"/>
+<wire x1="-147.32" y1="83.82" x2="-160.02" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

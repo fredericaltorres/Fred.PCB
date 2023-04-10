@@ -3543,264 +3543,6 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="microchip">
-<description>&lt;b&gt;Microchip PIC Microcontrollers and other Devices&lt;/b&gt;&lt;p&gt;
-Based on the following sources :
-&lt;ul&gt;
-&lt;li&gt;Microchip Data Book, 1993
-&lt;li&gt;THE EMERGING WORLD STANDARD, 1995/1996
-&lt;li&gt;Microchip, Technical Library CD-ROM, June 1998
-&lt;li&gt;www.microchip.com
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DIL8">
-<description>&lt;B&gt;Dual In Line&lt;/B&gt;&lt;p&gt;
-package type P</description>
-<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="0.635" width="0.1524" layer="21" curve="180"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.2578" y="-2.54" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="7.239" y="-2.54" size="1.778" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TSSOP8">
-<description>&lt;b&gt;Thin Shrink Small Outline Package&lt;/b&gt;&lt;p&gt;
-package type ST</description>
-<wire x1="1.4" y1="-2.15" x2="1.4" y2="2.15" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="2.15" x2="-1.4" y2="2.15" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="2.15" x2="-1.4" y2="-2.15" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="-2.15" x2="1.4" y2="-2.15" width="0.2032" layer="21"/>
-<circle x="-0.65" y="-1.625" radius="0.325" width="0" layer="21"/>
-<smd name="1" x="-0.975" y="-2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="2" x="-0.325" y="-2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="3" x="0.325" y="-2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="4" x="0.975" y="-2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="5" x="0.975" y="2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="6" x="0.325" y="2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="7" x="-0.325" y="2.925" dx="0.35" dy="1.2" layer="1"/>
-<smd name="8" x="-0.975" y="2.925" dx="0.35" dy="1.2" layer="1"/>
-<text x="-1.625" y="-2.925" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.925" y="-3.25" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.1" y1="-3.2" x2="-0.85" y2="-2.2" layer="51"/>
-<rectangle x1="-0.45" y1="-3.2" x2="-0.2" y2="-2.2" layer="51"/>
-<rectangle x1="0.2" y1="-3.2" x2="0.45" y2="-2.2" layer="51"/>
-<rectangle x1="0.85" y1="-3.2" x2="1.1" y2="-2.2" layer="51"/>
-<rectangle x1="0.85" y1="2.2" x2="1.1" y2="3.2" layer="51"/>
-<rectangle x1="0.2" y1="2.2" x2="0.45" y2="3.2" layer="51"/>
-<rectangle x1="-0.45" y1="2.2" x2="-0.2" y2="3.2" layer="51"/>
-<rectangle x1="-1.1" y1="2.2" x2="-0.85" y2="3.2" layer="51"/>
-</package>
-<package name="SO-08">
-<description>&lt;B&gt;Small Outline Narrow Plastic Gull Wing&lt;/B&gt;&lt;p&gt;
-150-mil body, package type SN</description>
-<wire x1="-2.9" y1="3.9" x2="2.9" y2="3.9" width="0.1998" layer="39"/>
-<wire x1="2.9" y1="3.9" x2="2.9" y2="-3.9" width="0.1998" layer="39"/>
-<wire x1="2.9" y1="-3.9" x2="-2.9" y2="-3.9" width="0.1998" layer="39"/>
-<wire x1="-2.9" y1="-3.9" x2="-2.9" y2="3.9" width="0.1998" layer="39"/>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-1.905" y="-0.635" size="0.4064" layer="48">IPC SO8</text>
-<text x="-1.905" y="0.365" size="0.3048" layer="48">JEDEC MS-012 AA</text>
-<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
-<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
-<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
-<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
-<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
-<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
-<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
-<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
-</package>
-</packages>
-<symbols>
-<symbol name="25SERIAL">
-<wire x1="-10.16" y1="10.06" x2="12.7" y2="10.06" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.06" x2="12.7" y2="-0.1" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-0.1" x2="12.7" y2="-7.72" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.72" x2="-10.16" y2="-7.72" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.72" x2="-10.16" y2="9.806" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="8.79" x2="0.508" y2="8.79" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="8.79" x2="6.35" y2="8.79" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="8.79" x2="6.35" y2="-0.1" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-0.1" x2="6.35" y2="-6.704" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-6.704" x2="0.508" y2="-6.704" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-6.704" x2="-1.016" y2="-6.704" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="-6.704" x2="-1.016" y2="3.456" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="3.456" x2="-1.016" y2="5.996" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="5.996" x2="-1.016" y2="8.79" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-0.1" x2="11.43" y2="-0.1" width="0.1524" layer="94"/>
-<wire x1="6.858" y1="-0.1" x2="6.35" y2="-0.1" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="8.79" x2="0.508" y2="5.996" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="5.996" x2="-1.016" y2="5.996" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="3.456" x2="0.508" y2="-6.704" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="3.456" x2="0.508" y2="3.456" width="0.1524" layer="94"/>
-<text x="5.334" y="-4.926" size="1.778" layer="94" rot="R90">Array</text>
-<text x="6.604" y="7.52" size="1.778" layer="95">VCC</text>
-<text x="6.858" y="-6.958" size="1.778" layer="95">GND</text>
-<text x="-10.16" y="11.33" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.26" size="1.778" layer="96">&gt;VALUE</text>
-<text x="3.048" y="-4.926" size="1.778" layer="94" rot="R90">EEPROM</text>
-<pin name="VCC" x="7.62" y="12.7" visible="pad" length="short" direction="pwr" rot="R270"/>
-<pin name="GND" x="7.62" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
-<pin name="!CS" x="-12.7" y="2.54" length="short" direction="in"/>
-<pin name="SO" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="!HOLD" x="-12.7" y="-5.08" length="short" direction="in"/>
-<pin name="SCK" x="-12.7" y="-2.54" length="short" direction="in"/>
-<pin name="SI" x="-12.7" y="0" length="short" direction="in"/>
-<pin name="!WP" x="-12.7" y="7.62" length="short" direction="in"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="25*" prefix="IC">
-<description>Serial &lt;B&gt;EEPROM&lt;/B&gt; 4K/ 8K , SPI bus&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="25SERIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="P" package="DIL8">
-<connects>
-<connect gate="G$1" pin="!CS" pad="1"/>
-<connect gate="G$1" pin="!HOLD" pad="7"/>
-<connect gate="G$1" pin="!WP" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI" pad="5"/>
-<connect gate="G$1" pin="SO" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="AA040">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25AA040-I/P" constant="no"/>
-<attribute name="OC_FARNELL" value="1331347" constant="no"/>
-<attribute name="OC_NEWARK" value="92C7334" constant="no"/>
-</technology>
-<technology name="AA080">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25AA080/P" constant="no"/>
-<attribute name="OC_FARNELL" value="1331352" constant="no"/>
-<attribute name="OC_NEWARK" value="92C7349" constant="no"/>
-</technology>
-<technology name="C040">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25C040/P" constant="no"/>
-<attribute name="OC_FARNELL" value="1607554" constant="no"/>
-<attribute name="OC_NEWARK" value="96K4084" constant="no"/>
-</technology>
-<technology name="C080">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25C080-I/P" constant="no"/>
-<attribute name="OC_FARNELL" value="1816073" constant="no"/>
-<attribute name="OC_NEWARK" value="92C7398" constant="no"/>
-</technology>
-<technology name="LC040">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25LC040/P" constant="no"/>
-<attribute name="OC_FARNELL" value="9758100" constant="no"/>
-<attribute name="OC_NEWARK" value="96K4091" constant="no"/>
-</technology>
-<technology name="LC080">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25LC080/P" constant="no"/>
-<attribute name="OC_FARNELL" value="1556143" constant="no"/>
-<attribute name="OC_NEWARK" value="92C7440" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="ST" package="TSSOP8">
-<connects>
-<connect gate="G$1" pin="!CS" pad="1"/>
-<connect gate="G$1" pin="!HOLD" pad="7"/>
-<connect gate="G$1" pin="!WP" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI" pad="5"/>
-<connect gate="G$1" pin="SO" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="AA040">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="25AA040A-I/MS" constant="no"/>
-<attribute name="OC_FARNELL" value="1331345" constant="no"/>
-<attribute name="OC_NEWARK" value="35M0801" constant="no"/>
-</technology>
-<technology name="C040">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25C040T/SN" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="30C5312" constant="no"/>
-</technology>
-<technology name="LC040">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25LC040A-I/ST" constant="no"/>
-<attribute name="OC_FARNELL" value="1815998" constant="no"/>
-<attribute name="OC_NEWARK" value="72J3684" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SN" package="SO-08">
-<connects>
-<connect gate="G$1" pin="!CS" pad="1"/>
-<connect gate="G$1" pin="!HOLD" pad="7"/>
-<connect gate="G$1" pin="!WP" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI" pad="5"/>
-<connect gate="G$1" pin="SO" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="AA080">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25AA080/SN" constant="no"/>
-<attribute name="OC_FARNELL" value="1816072" constant="no"/>
-<attribute name="OC_NEWARK" value="92C7351" constant="no"/>
-</technology>
-<technology name="C080">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25C080/SN" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="96K4086" constant="no"/>
-</technology>
-<technology name="LC080">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="25LC080/SN" constant="no"/>
-<attribute name="OC_FARNELL" value="1137302" constant="no"/>
-<attribute name="OC_NEWARK" value="96K4092" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="microbuilder">
 <description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
 
@@ -3939,6 +3681,65 @@ package type ST</description>
 </polygon>
 <rectangle x1="-1.4605" y1="-0.8255" x2="1.4605" y2="0.8255" layer="29"/>
 </package>
+<package name="SOIC8_150MIL">
+<description>&lt;b&gt;Small Outline IC - 150mil Wide&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<circle x="-1.9304" y="-0.889" radius="0.254" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-1.905" y="0.381" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-0.381" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
+<package name="SOIC8_208MIL">
+<description>&lt;b&gt;Small Outline IC - 208mil Wide&lt;/b&gt;</description>
+<wire x1="2.4" y1="2.615" x2="2.4" y2="-2.615" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-2.615" x2="-2.4" y2="-2.615" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-2.615" x2="-2.4" y2="2.615" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="2.615" x2="2.4" y2="2.615" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<circle x="-1.9304" y="-0.889" radius="0.254" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<text x="-1.905" y="0.635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-0.381" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.815" x2="-1.66" y2="-2.715" layer="51"/>
+<rectangle x1="-0.88" y1="-3.815" x2="-0.39" y2="-2.715" layer="51"/>
+<rectangle x1="0.39" y1="-3.815" x2="0.88" y2="-2.715" layer="51"/>
+<rectangle x1="1.66" y1="-3.815" x2="2.15" y2="-2.715" layer="51"/>
+<rectangle x1="1.66" y1="2.715" x2="2.15" y2="3.815" layer="51"/>
+<rectangle x1="0.39" y1="2.715" x2="0.88" y2="3.815" layer="51"/>
+<rectangle x1="-0.88" y1="2.715" x2="-0.39" y2="3.815" layer="51"/>
+<rectangle x1="-2.15" y1="2.715" x2="-1.66" y2="3.815" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SOLDERJUMPER">
@@ -3950,6 +3751,22 @@ package type ST</description>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="M25P16">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="SCK" x="-15.24" y="7.62" length="short"/>
+<pin name="MOSI" x="-15.24" y="5.08" length="short"/>
+<pin name="MISO" x="-15.24" y="2.54" length="short"/>
+<pin name="SSEL" x="-15.24" y="0" length="short"/>
+<pin name="#WP/IO2" x="-15.24" y="-2.54" length="short"/>
+<pin name="#HOLD/IO3" x="-15.24" y="-5.08" length="short"/>
+<pin name="VCC" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="VSS" x="15.24" y="-5.08" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4012,6 +3829,56 @@ package type ST</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SPIFLASH_SOIC8" prefix="U" uservalue="yes">
+<description>&lt;b&gt;SOIC8 SPI Flash&lt;/b&gt;
+&lt;p&gt;Be careful with the size since SOIC8 flash comes in several 'widths'&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SOIC8 150 mil&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;M25P16&lt;/b&gt; - 16Mbit (2Mbit x 8) Serial Flash (75MHz SPI Bus), Supply: 2.7-3.6V &lt;br/&gt;&lt;b&gt;Digikey: &lt;/b&gt; SOIC8 - M25P16-VMN6P-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;SOIC8 208 mil&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;W25Q16BVSSIG&lt;/b&gt; - 16Mbit (2Mbit x 8) Serial Flash (104MHz SPI Bus), Supply: 2.7-3.6V &lt;br/&gt;&lt;b&gt;Digikey: &lt;/b&gt; SOIC8 - W25Q16BVSSIG-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="M25P16" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8_150MIL">
+<connects>
+<connect gate="G$1" pin="#HOLD/IO3" pad="7"/>
+<connect gate="G$1" pin="#WP/IO2" pad="3"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SSEL" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="208MIL" package="SOIC8_208MIL">
+<connects>
+<connect gate="G$1" pin="#HOLD/IO3" pad="7"/>
+<connect gate="G$1" pin="#WP/IO2" pad="3"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SSEL" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -4028,36 +3895,33 @@ package type ST</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GPIO_OUT" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="SPI_SOIC_8_FLASH" library="microchip" deviceset="25*" device="SN" technology="AA080"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="R_4K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="USE_CS_3" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="USE_CS_4" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="SOIC8_208MIL_EEPROM" library="microbuilder" deviceset="SPIFLASH_SOIC8" device="208MIL"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="GPIO_IN" gate="G$1" x="17.78" y="55.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.13" y="42.545" size="1.778" layer="95" rot="R180"/>
+<instance part="GPIO_IN" gate="G$1" x="-15.24" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="-8.89" y="42.545" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="GND1" gate="1" x="20.32" y="81.28" smashed="yes" rot="R180">
-<attribute name="VALUE" x="27.94" y="83.82" size="1.778" layer="96" rot="R180"/>
+<instance part="GND1" gate="1" x="-12.7" y="81.28" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-5.08" y="83.82" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GPIO_OUT" gate="G$1" x="99.06" y="55.88" smashed="yes">
-<attribute name="NAME" x="92.71" y="69.215" size="1.778" layer="95"/>
+<instance part="GPIO_OUT" gate="G$1" x="134.62" y="55.88" smashed="yes">
+<attribute name="NAME" x="128.27" y="69.215" size="1.778" layer="95"/>
 </instance>
-<instance part="GND3" gate="1" x="63.5" y="43.18" smashed="yes" rot="R270">
-<attribute name="VALUE" x="60.96" y="45.72" size="1.778" layer="96" rot="R270"/>
+<instance part="GND3" gate="1" x="104.14" y="43.18" smashed="yes" rot="R270">
+<attribute name="VALUE" x="101.6" y="45.72" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SPI_SOIC_8_FLASH" gate="G$1" x="55.88" y="68.58" smashed="yes">
-<attribute name="NAME" x="40.64" y="82.45" size="1.778" layer="95"/>
-</instance>
-<instance part="GND2" gate="1" x="63.5" y="53.34" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="66.04" y="50.8" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND2" gate="1" x="78.74" y="58.42" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="81.28" y="60.96" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="R_4K" gate="G$1" x="93.98" y="93.98" smashed="yes">
 <attribute name="NAME" x="90.17" y="95.4786" size="1.778" layer="95"/>
@@ -4078,6 +3942,10 @@ package type ST</description>
 <attribute name="NAME" x="17.78" y="99.06" size="1.778" layer="95"/>
 <attribute name="VALUE" x="17.78" y="92.71" size="1.778" layer="96"/>
 </instance>
+<instance part="SOIC8_208MIL_EEPROM" gate="G$1" x="48.26" y="63.5" smashed="yes">
+<attribute name="NAME" x="35.56" y="76.2" size="1.778" layer="95"/>
+<attribute name="VALUE" x="35.56" y="53.34" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4086,112 +3954,103 @@ package type ST</description>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="GPIO_IN" gate="G$1" pin="10"/>
-<wire x1="20.32" y1="78.74" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="78.74" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="GPIO_OUT" gate="G$1" pin="10"/>
-<wire x1="66.04" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="GND"/>
-<wire x1="63.5" y1="55.88" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R_4K" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="88.9" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="VSS"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="63.5" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="9"/>
-<wire x1="20.32" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<label x="27.94" y="68.58" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="-5.08" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="9"/>
-<wire x1="96.52" y1="45.72" x2="87.376" y2="45.72" width="0.1524" layer="91"/>
-<label x="82.296" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="VCC"/>
-<wire x1="63.5" y1="81.28" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
-<label x="63.5" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="!HOLD"/>
-<wire x1="43.18" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
-<label x="38.1" y="63.5" size="1.778" layer="95"/>
+<wire x1="132.08" y1="45.72" x2="112.776" y2="45.72" width="0.1524" layer="91"/>
+<label x="107.696" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED_POWER" gate="G$1" pin="A"/>
 <wire x1="114.3" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="!WP"/>
-<wire x1="43.18" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-<label x="30.48" y="78.74" size="1.778" layer="95"/>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="VCC"/>
+<wire x1="63.5" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="#WP/IO2"/>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="#HOLD/IO3"/>
+<wire x1="33.02" y1="60.96" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+<junction x="33.02" y="58.42"/>
+<label x="20.32" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
-<label x="27.94" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="SCK"/>
-<wire x1="43.18" y1="66.04" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
-<label x="38.1" y="66.04" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="45.72" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
+<label x="-5.08" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="66.04" x2="84.582" y2="66.04" width="0.1524" layer="91"/>
-<label x="82.042" y="66.04" size="1.778" layer="95"/>
+<wire x1="132.08" y1="66.04" x2="120.142" y2="66.04" width="0.1524" layer="91"/>
+<label x="115.062" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="SCK"/>
+<wire x1="33.02" y1="71.12" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
-<label x="27.94" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="SI"/>
-<wire x1="43.18" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
-<label x="38.1" y="68.58" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
+<label x="-5.08" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="63.5" x2="84.582" y2="63.5" width="0.1524" layer="91"/>
-<label x="82.042" y="63.5" size="1.778" layer="95"/>
+<wire x1="132.08" y1="63.5" x2="117.602" y2="63.5" width="0.1524" layer="91"/>
+<label x="112.522" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="MOSI"/>
+<wire x1="33.02" y1="68.58" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<label x="20.32" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="3"/>
-<wire x1="20.32" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
-<label x="27.94" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="SO"/>
-<wire x1="71.12" y1="68.58" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
-<label x="71.12" y="71.12" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="-5.08" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="3"/>
-<wire x1="96.52" y1="60.96" x2="84.582" y2="60.96" width="0.1524" layer="91"/>
-<label x="82.042" y="60.96" size="1.778" layer="95"/>
+<wire x1="132.08" y1="60.96" x2="117.602" y2="60.96" width="0.1524" layer="91"/>
+<label x="109.982" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="MISO"/>
+<wire x1="33.02" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
+<label x="25.4" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CS" class="0">
-<segment>
-<pinref part="SPI_SOIC_8_FLASH" gate="G$1" pin="!CS"/>
-<wire x1="43.18" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="38.1" y="71.12" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="USE_CS_3" gate="1" pin="2"/>
 <wire x1="25.4" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
@@ -4202,41 +4061,46 @@ package type ST</description>
 <wire x1="25.4" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
 <label x="53.34" y="96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SOIC8_208MIL_EEPROM" gate="G$1" pin="SSEL"/>
+<wire x1="33.02" y1="63.5" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
+<label x="17.78" y="63.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO6" class="0">
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="6"/>
-<wire x1="96.52" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-<label x="83.82" y="53.34" size="1.778" layer="95"/>
+<wire x1="132.08" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
+<label x="109.22" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="6"/>
-<wire x1="20.32" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<label x="27.94" y="58.42" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="58.42" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
+<label x="-5.08" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO7" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="7"/>
-<wire x1="20.32" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
-<label x="27.94" y="60.96" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="60.96" x2="-5.08" y2="60.96" width="0.1524" layer="91"/>
+<label x="-5.08" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="7"/>
-<wire x1="96.52" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="86.36" y="50.8" size="1.778" layer="95"/>
+<wire x1="132.08" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<label x="106.68" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO8" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="8"/>
-<wire x1="20.32" y1="63.5" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
-<label x="27.94" y="63.5" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="63.5" x2="-5.08" y2="63.5" width="0.1524" layer="91"/>
+<label x="-5.08" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="8"/>
-<wire x1="96.52" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-<label x="86.36" y="48.26" size="1.778" layer="95"/>
+<wire x1="132.08" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<label x="106.68" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4249,13 +4113,13 @@ package type ST</description>
 <net name="CS_4" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="5"/>
-<wire x1="20.32" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
-<label x="27.94" y="55.88" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
+<label x="-5.08" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="5"/>
-<wire x1="96.52" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
-<label x="81.28" y="55.88" size="1.778" layer="95"/>
+<wire x1="132.08" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<label x="109.22" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="USE_CS_4" gate="1" pin="1"/>
@@ -4265,14 +4129,13 @@ package type ST</description>
 <net name="CS_3" class="0">
 <segment>
 <pinref part="GPIO_IN" gate="G$1" pin="4"/>
-<wire x1="20.32" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
-<label x="27.94" y="53.34" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="53.34" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
+<label x="-5.08" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO_OUT" gate="G$1" pin="4"/>
-<wire x1="96.52" y1="58.42" x2="84.582" y2="58.42" width="0.1524" layer="91"/>
-<label x="82.042" y="58.42" size="1.778" layer="95"/>
+<wire x1="132.08" y1="58.42" x2="112.522" y2="58.42" width="0.1524" layer="91"/>
+<label x="109.982" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="USE_CS_3" gate="1" pin="1"/>
