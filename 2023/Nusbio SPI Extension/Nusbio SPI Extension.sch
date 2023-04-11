@@ -3562,6 +3562,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GPIO_OUT_2" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GPIO_OUT_3" library="adafruit" deviceset="PINHD-1X10" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3597,6 +3599,12 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="GND2" gate="1" x="53.34" y="45.72" smashed="yes" rot="R270">
 <attribute name="VALUE" x="50.8" y="48.26" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="GPIO_OUT_3" gate="G$1" x="38.1" y="55.88" smashed="yes">
+<attribute name="NAME" x="31.75" y="69.215" size="1.778" layer="95"/>
+</instance>
+<instance part="GND5" gate="1" x="20.32" y="43.18" smashed="yes" rot="R270">
+<attribute name="VALUE" x="17.78" y="45.72" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3623,6 +3631,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="83.82" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="43.18" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="10"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="35.56" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -3644,6 +3657,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="83.82" y1="45.72" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
 <label x="63.5" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="9"/>
+<wire x1="35.56" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<label x="22.86" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO6" class="0">
 <segment>
@@ -3661,6 +3679,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="83.82" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 <label x="60.96" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="7"/>
+<wire x1="35.56" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<label x="22.86" y="50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO7" class="0">
 <segment>
@@ -3677,6 +3700,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_2" gate="G$1" pin="8"/>
 <wire x1="83.82" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 <label x="63.5" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="8"/>
+<wire x1="35.56" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<label x="22.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3702,6 +3730,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="83.82" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <label x="63.5" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="5"/>
+<wire x1="35.56" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<label x="22.86" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO3" class="0">
 <segment>
@@ -3718,6 +3751,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_2" gate="G$1" pin="4"/>
 <wire x1="83.82" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <label x="66.04" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
+<label x="22.86" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -3736,6 +3774,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="83.82" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <label x="68.58" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="3"/>
+<wire x1="35.56" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<label x="22.86" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO1" class="0">
 <segment>
@@ -3752,6 +3795,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="66.04" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="63.5" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
+<label x="22.86" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -3770,6 +3818,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="83.82" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <label x="66.04" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<label x="22.86" y="66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO5" class="0">
 <segment>
@@ -3786,6 +3839,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_2" gate="G$1" pin="6"/>
 <wire x1="83.82" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
 <label x="66.04" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPIO_OUT_3" gate="G$1" pin="6"/>
+<wire x1="35.56" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<label x="22.86" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
