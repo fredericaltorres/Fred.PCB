@@ -308,3 +308,10 @@ Vendor
 
 
 SOLDERJUMPERREFLOW (SOLDERJUMPER)
+
+# Eagle cad library
+	https://github.com/fluorumlabs/eagle-library
+	https://github.com/fluorumlabs/eagle-library.git
+
+	http://eagle.autodesk.com/eagle/libraries?page=40
+	

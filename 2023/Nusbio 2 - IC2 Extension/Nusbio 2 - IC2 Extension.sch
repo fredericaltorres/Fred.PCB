@@ -4251,7 +4251,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IC2_OUT_3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="IC2_OUT_4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="IC2_OUT_5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="IC2_OUT_6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="IC2_OLED_OUT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="ADS_1115_CONNECTOR" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="ADS_1115_IN" library="adafruit" deviceset="PINHD-1X6" device=""/>
 </parts>
@@ -4318,7 +4318,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="85.09" y="46.355" size="1.778" layer="95"/>
 <attribute name="VALUE" x="85.09" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="IC2_OUT_6" gate="A" x="91.44" y="22.86" smashed="yes">
+<instance part="IC2_OLED_OUT" gate="A" x="91.44" y="22.86" smashed="yes">
 <attribute name="NAME" x="85.09" y="31.115" size="1.778" layer="95"/>
 <attribute name="VALUE" x="85.09" y="15.24" size="1.778" layer="96"/>
 </instance>
@@ -4397,11 +4397,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="68.58" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2_OUT_6" gate="A" pin="2"/>
-<wire x1="88.9" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<label x="71.12" y="25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="ADS_1115_CONNECTOR" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
 <label x="106.68" y="22.86" size="1.778" layer="95"/>
@@ -4415,6 +4410,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="ADS_1115_IN" gate="A" pin="1"/>
 <wire x1="175.26" y1="7.62" x2="149.86" y2="7.62" width="0.1524" layer="91"/>
 <label x="149.86" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2_OLED_OUT" gate="A" pin="1"/>
+<wire x1="88.9" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4458,11 +4458,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="71.12" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2_OUT_6" gate="A" pin="1"/>
-<wire x1="88.9" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
-<label x="71.12" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="ADS_1115_CONNECTOR" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="25.4" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
 <label x="109.22" y="27.94" size="1.778" layer="95"/>
@@ -4477,6 +4472,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="38.1" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="104.14" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
 <label x="58.42" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2_OLED_OUT" gate="A" pin="2"/>
+<wire x1="88.9" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<label x="71.12" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4528,7 +4528,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="73.66" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2_OUT_6" gate="A" pin="3"/>
+<pinref part="IC2_OLED_OUT" gate="A" pin="3"/>
 <wire x1="88.9" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
 <label x="71.12" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -4580,7 +4580,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="76.2" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2_OUT_6" gate="A" pin="4"/>
+<pinref part="IC2_OLED_OUT" gate="A" pin="4"/>
 <wire x1="88.9" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
 <label x="71.12" y="20.32" size="1.778" layer="95"/>
 </segment>
