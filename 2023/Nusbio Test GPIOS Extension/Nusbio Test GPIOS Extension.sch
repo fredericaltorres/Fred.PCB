@@ -3966,7 +3966,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <parts>
 <part name="GPIO_IN" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R_4K" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_4K0" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="GPIO_3_7_CONN" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="LED_0" library="adafruit" deviceset="LED" device="SMT1206"/>
@@ -3993,7 +3993,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND1" gate="1" x="-12.7" y="81.28" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-5.08" y="83.82" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R_4K" gate="G$1" x="53.34" y="104.14" smashed="yes">
+<instance part="R_4K0" gate="G$1" x="53.34" y="104.14" smashed="yes">
 <attribute name="NAME" x="49.53" y="105.6386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="49.53" y="100.838" size="1.778" layer="96"/>
 </instance>
@@ -4149,7 +4149,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-5.08" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R_4K" gate="G$1" pin="2"/>
+<pinref part="R_4K0" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
 <label x="60.96" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -4258,7 +4258,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="GPIO_3_7_CONN" gate="1" pin="2"/>
-<pinref part="R_4K" gate="G$1" pin="1"/>
+<pinref part="R_4K0" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
