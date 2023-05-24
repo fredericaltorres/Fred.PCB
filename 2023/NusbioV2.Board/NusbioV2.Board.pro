@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/DVT/Fred.PCB/2023/NusbioV2.Board/NusbioV2.Board.brd
 
-Start at      : 10:57:47 (4/10/2023)
-End at        : 10:57:51 (4/10/2023)
-Elapsed time  : 00:00:01
+Start at      : 11:00:48 (5/23/2023)
+End at        : 11:01:12 (5/23/2023)
+Elapsed time  : 00:00:20
 
-Signals       :    34   RoutingGrid: 19.685 mil  Layers: 2
+Signals       :    34   RoutingGrid: 9 mil  Layers: 2
 Connections   :    70   predefined:  0 ( 0 Vias )
 
-Router memory :   143640
+Router memory :   546680
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:03  00:00:02  00:00:02  00:00:02  00:00:01  00:00:01  00:00:01  00:00:01  00:00:01  00:00:02  00:00:01  00:00:01  00:00:01  00:00:01
+Number of Ripups  :         0         1         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         1         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         7         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         3        70        70        70        70        70
-Vias              :         0        67        27        19        17        15
-Resolution        :     4.3 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        43        70        69        70        70        70        70        70        70        70        70        70        70        70
+Vias              :         0        17        34        25        21        17        17        17        17        16        16        17        17        17
+Resolution        :    61.4 %   100.0 %    98.6 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

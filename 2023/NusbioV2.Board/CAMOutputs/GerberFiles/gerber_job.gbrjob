@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2023-05-23T15:02:03Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "NusbioV2.Board"
+        },
+        "Owner": "FREDERIC TORRES <fredericaltorres@gmail.com>",
+        "Size": {
+            "X": 88,
+            "Y": 77
+        }
+    }
+}

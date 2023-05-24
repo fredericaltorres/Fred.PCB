@@ -3543,6 +3543,253 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="microbuilder">
+<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
+
+&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
+
+&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
+&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
+
+&lt;h3&gt;License&lt;/h3&gt;
+&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;/p&gt;</description>
+<packages>
+<package name="SOIC8_150MIL">
+<description>&lt;b&gt;Small Outline IC - 150mil Wide&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<circle x="-1.9304" y="-0.889" radius="0.254" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-1.905" y="0.381" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-0.381" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
+<package name="SOIC8_208MIL">
+<description>&lt;b&gt;Small Outline IC - 208mil Wide&lt;/b&gt;</description>
+<wire x1="2.4" y1="2.615" x2="2.4" y2="-2.615" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-2.615" x2="-2.4" y2="-2.615" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-2.615" x2="-2.4" y2="2.615" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="2.615" x2="2.4" y2="2.615" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<circle x="-1.9304" y="-0.889" radius="0.254" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="3.315" dx="0.6" dy="2.2" layer="1"/>
+<text x="-1.905" y="0.635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-0.381" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.815" x2="-1.66" y2="-2.715" layer="51"/>
+<rectangle x1="-0.88" y1="-3.815" x2="-0.39" y2="-2.715" layer="51"/>
+<rectangle x1="0.39" y1="-3.815" x2="0.88" y2="-2.715" layer="51"/>
+<rectangle x1="1.66" y1="-3.815" x2="2.15" y2="-2.715" layer="51"/>
+<rectangle x1="1.66" y1="2.715" x2="2.15" y2="3.815" layer="51"/>
+<rectangle x1="0.39" y1="2.715" x2="0.88" y2="3.815" layer="51"/>
+<rectangle x1="-0.88" y1="2.715" x2="-0.39" y2="3.815" layer="51"/>
+<rectangle x1="-2.15" y1="2.715" x2="-1.66" y2="3.815" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="M25P16">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="SCK" x="-15.24" y="7.62" length="short"/>
+<pin name="MOSI" x="-15.24" y="5.08" length="short"/>
+<pin name="MISO" x="-15.24" y="2.54" length="short"/>
+<pin name="SSEL" x="-15.24" y="0" length="short"/>
+<pin name="#WP/IO2" x="-15.24" y="-2.54" length="short"/>
+<pin name="#HOLD/IO3" x="-15.24" y="-5.08" length="short"/>
+<pin name="VCC" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="VSS" x="15.24" y="-5.08" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SPIFLASH_SOIC8" prefix="U" uservalue="yes">
+<description>&lt;b&gt;SOIC8 SPI Flash&lt;/b&gt;
+&lt;p&gt;Be careful with the size since SOIC8 flash comes in several 'widths'&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SOIC8 150 mil&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;M25P16&lt;/b&gt; - 16Mbit (2Mbit x 8) Serial Flash (75MHz SPI Bus), Supply: 2.7-3.6V &lt;br/&gt;&lt;b&gt;Digikey: &lt;/b&gt; SOIC8 - M25P16-VMN6P-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;SOIC8 208 mil&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;W25Q16BVSSIG&lt;/b&gt; - 16Mbit (2Mbit x 8) Serial Flash (104MHz SPI Bus), Supply: 2.7-3.6V &lt;br/&gt;&lt;b&gt;Digikey: &lt;/b&gt; SOIC8 - W25Q16BVSSIG-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="M25P16" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8_150MIL">
+<connects>
+<connect gate="G$1" pin="#HOLD/IO3" pad="7"/>
+<connect gate="G$1" pin="#WP/IO2" pad="3"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SSEL" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="208MIL" package="SOIC8_208MIL">
+<connects>
+<connect gate="G$1" pin="#HOLD/IO3" pad="7"/>
+<connect gate="G$1" pin="#WP/IO2" pad="3"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SSEL" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="MCP3008-I_SL">
+<packages>
+<package name="SOIC127P600X175-16N">
+<circle x="-4.355" y="5.045" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.355" y="5.045" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-1.95" y1="4.95" x2="1.95" y2="4.95" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="-4.95" x2="1.95" y2="-4.95" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="5.065" x2="1.95" y2="5.065" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-5.065" x2="1.95" y2="-5.065" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="4.95" x2="-1.95" y2="-4.95" width="0.127" layer="51"/>
+<wire x1="1.95" y1="4.95" x2="1.95" y2="-4.95" width="0.127" layer="51"/>
+<wire x1="-3.655" y1="5.2" x2="3.655" y2="5.2" width="0.05" layer="39"/>
+<wire x1="-3.655" y1="-5.2" x2="3.655" y2="-5.2" width="0.05" layer="39"/>
+<wire x1="-3.655" y1="5.2" x2="-3.655" y2="-5.2" width="0.05" layer="39"/>
+<wire x1="3.655" y1="5.2" x2="3.655" y2="-5.2" width="0.05" layer="39"/>
+<text x="-3.85" y="-5.242" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.85" y="5.242" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-2.455" y="4.445" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="2" x="-2.455" y="3.175" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="3" x="-2.455" y="1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="4" x="-2.455" y="0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="5" x="-2.455" y="-0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="6" x="-2.455" y="-1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="7" x="-2.455" y="-3.175" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="8" x="-2.455" y="-4.445" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="9" x="2.455" y="-4.445" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="10" x="2.455" y="-3.175" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="11" x="2.455" y="-1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="12" x="2.455" y="-0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="13" x="2.455" y="0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="14" x="2.455" y="1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="15" x="2.455" y="3.175" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="16" x="2.455" y="4.445" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCP3008-I/SL">
+<wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.41" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="-25.4" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="-12.7" y2="-25.4" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="25.4" width="0.41" layer="94"/>
+<text x="-12.7" y="26.4" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-29.4" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="!CS/SHDN" x="-17.78" y="17.78" length="middle" direction="in"/>
+<pin name="CH0" x="-17.78" y="15.24" length="middle" direction="in"/>
+<pin name="CH1" x="-17.78" y="12.7" length="middle" direction="in"/>
+<pin name="CH2" x="-17.78" y="10.16" length="middle" direction="in"/>
+<pin name="CH3" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="CH4" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="CH5" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="CH6" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="CH7" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="CLK" x="-17.78" y="-5.08" length="middle" direction="in" function="clk"/>
+<pin name="DIN" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="VREF" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="VDD" x="17.78" y="22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="DOUT" x="17.78" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="AGND" x="17.78" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="DGND" x="17.78" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCP3008-I/SL" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/MCP3008-I/SL/Microchip/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="MCP3008-I/SL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P600X175-16N">
+<connects>
+<connect gate="A" pin="!CS/SHDN" pad="10"/>
+<connect gate="A" pin="AGND" pad="14"/>
+<connect gate="A" pin="CH0" pad="1"/>
+<connect gate="A" pin="CH1" pad="2"/>
+<connect gate="A" pin="CH2" pad="3"/>
+<connect gate="A" pin="CH3" pad="4"/>
+<connect gate="A" pin="CH4" pad="5"/>
+<connect gate="A" pin="CH5" pad="6"/>
+<connect gate="A" pin="CH6" pad="7"/>
+<connect gate="A" pin="CH7" pad="8"/>
+<connect gate="A" pin="CLK" pad="13"/>
+<connect gate="A" pin="DGND" pad="9"/>
+<connect gate="A" pin="DIN" pad="11"/>
+<connect gate="A" pin="DOUT" pad="12"/>
+<connect gate="A" pin="VDD" pad="16"/>
+<connect gate="A" pin="VREF" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" 10 Bit Analog to Digital Converter 4, 8 Input 1 SAR 16-SOIC "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MP" value="MCP3008-I/SL"/>
+<attribute name="PACKAGE" value="SOIC-16 Microchip"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MCP3008-I/SL/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3564,6 +3811,12 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GPIO_OUT_3" library="adafruit" deviceset="PINHD-1X10" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="SOIC8_208MIL" library="microbuilder" deviceset="SPIFLASH_SOIC8" device="208MIL"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="MCP_3008_3_3V" library="MCP3008-I_SL" deviceset="MCP3008-I/SL" device=""/>
+<part name="ADC_IN_3_3V" library="adafruit" deviceset="PINHD-1X10" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3605,6 +3858,26 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="GND5" gate="1" x="20.32" y="43.18" smashed="yes" rot="R270">
 <attribute name="VALUE" x="17.78" y="45.72" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="SOIC8_208MIL" gate="G$1" x="30.48" y="96.52" smashed="yes">
+<attribute name="NAME" x="17.78" y="109.22" size="1.778" layer="95"/>
+<attribute name="VALUE" x="17.78" y="86.36" size="1.778" layer="95"/>
+</instance>
+<instance part="GND6" gate="1" x="60.96" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="63.5" y="88.9" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="MCP_3008_3_3V" gate="A" x="83.82" y="139.7" smashed="yes">
+<attribute name="NAME" x="71.12" y="166.1" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="71.12" y="110.3" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="ADC_IN_3_3V" gate="G$1" x="-45.72" y="129.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="-39.37" y="116.205" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="GND7" gate="1" x="-12.7" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-10.16" y="134.62" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND8" gate="1" x="119.38" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="121.92" y="111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3636,6 +3909,24 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="35.56" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="VSS"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="45.72" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="10"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="-43.18" y1="142.24" x2="-15.24" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="MCP_3008_3_3V" gate="A" pin="DGND"/>
+<wire x1="116.84" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="MCP_3008_3_3V" gate="A" pin="AGND"/>
+<wire x1="101.6" y1="121.92" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
+<junction x="101.6" y="119.38"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -3662,6 +3953,34 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="35.56" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
 <label x="22.86" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="VCC"/>
+<wire x1="45.72" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
+<label x="48.26" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="#WP/IO2"/>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="#HOLD/IO3"/>
+<wire x1="15.24" y1="93.98" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="91.44" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
+<junction x="15.24" y="91.44"/>
+<label x="7.62" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="9"/>
+<wire x1="-43.18" y1="139.7" x2="-20.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="-33.02" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="VDD"/>
+<wire x1="101.6" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
+<label x="109.22" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="VREF"/>
+<wire x1="66.04" y1="129.54" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
+<label x="45.72" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO6" class="0">
 <segment>
@@ -3683,6 +4002,12 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_3" gate="G$1" pin="7"/>
 <wire x1="35.56" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <label x="22.86" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="!CS/SHDN"/>
+<wire x1="66.04" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="157.48" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
+<label x="40.64" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO7" class="0">
@@ -3706,12 +4031,10 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="35.56" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
 <label x="22.86" y="48.26" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
-<pinref part="R_4K" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="SSEL"/>
+<wire x1="15.24" y1="96.52" x2="-10.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="-7.62" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -3779,6 +4102,16 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="35.56" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <label x="22.86" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="MISO"/>
+<wire x1="15.24" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
+<label x="-2.54" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="DOUT"/>
+<wire x1="101.6" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="116.84" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO1" class="0">
 <segment>
@@ -3800,6 +4133,16 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_3" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="63.5" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
 <label x="22.86" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="MOSI"/>
+<wire x1="15.24" y1="101.6" x2="-10.16" y2="101.6" width="0.1524" layer="91"/>
+<label x="0" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="DIN"/>
+<wire x1="66.04" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
+<label x="48.26" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -3823,6 +4166,16 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="35.56" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="22.86" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SOIC8_208MIL" gate="G$1" pin="SCK"/>
+<wire x1="15.24" y1="104.14" x2="-10.16" y2="104.14" width="0.1524" layer="91"/>
+<label x="2.54" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CLK"/>
+<wire x1="66.04" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<label x="50.8" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO5" class="0">
 <segment>
@@ -3844,6 +4197,109 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="GPIO_OUT_3" gate="G$1" pin="6"/>
 <wire x1="35.56" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
 <label x="22.86" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R_4K" gate="G$1" pin="2"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<wire x1="99.06" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC0" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="1"/>
+<wire x1="-43.18" y1="119.38" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="-30.48" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH0"/>
+<wire x1="66.04" y1="154.94" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
+<label x="30.48" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="121.92" x2="-15.24" y2="121.92" width="0.1524" layer="91"/>
+<label x="-27.94" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH1"/>
+<wire x1="66.04" y1="152.4" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
+<label x="45.72" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC2" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="3"/>
+<wire x1="-43.18" y1="124.46" x2="-17.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="-27.94" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH2"/>
+<wire x1="66.04" y1="149.86" x2="35.56" y2="149.86" width="0.1524" layer="91"/>
+<label x="40.64" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC3" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="4"/>
+<wire x1="-43.18" y1="127" x2="-17.78" y2="127" width="0.1524" layer="91"/>
+<label x="-30.48" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH3"/>
+<wire x1="66.04" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
+<label x="43.18" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC4" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="5"/>
+<wire x1="-43.18" y1="129.54" x2="-17.78" y2="129.54" width="0.1524" layer="91"/>
+<label x="-27.94" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH4"/>
+<wire x1="66.04" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
+<label x="38.1" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC5" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="6"/>
+<wire x1="-43.18" y1="132.08" x2="-20.32" y2="132.08" width="0.1524" layer="91"/>
+<label x="-27.94" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH5"/>
+<wire x1="66.04" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
+<label x="38.1" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC6" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="7"/>
+<wire x1="-43.18" y1="134.62" x2="-20.32" y2="134.62" width="0.1524" layer="91"/>
+<label x="-27.94" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH6"/>
+<wire x1="66.04" y1="139.7" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
+<label x="38.1" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC7" class="0">
+<segment>
+<pinref part="ADC_IN_3_3V" gate="G$1" pin="8"/>
+<wire x1="-43.18" y1="137.16" x2="-22.86" y2="137.16" width="0.1524" layer="91"/>
+<label x="-30.48" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="CH7"/>
+<wire x1="66.04" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
+<label x="45.72" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
