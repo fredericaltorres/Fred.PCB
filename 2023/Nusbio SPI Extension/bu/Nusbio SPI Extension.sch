@@ -4132,6 +4132,69 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X01" urn="urn:adsk.eagle:footprint:22382/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X01" urn="urn:adsk.eagle:package:22485/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X01"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="PINHD1" urn="urn:adsk.eagle:symbol:22381/1" library_version="4">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X1" urn="urn:adsk.eagle:component:22540/3" prefix="JP" uservalue="yes" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22485/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="64" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4162,6 +4225,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="2.8" package3d_urn="urn:adsk.eagle:package:14281/1"/>
 <part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="2.8" package3d_urn="urn:adsk.eagle:package:14281/1"/>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="2.8" package3d_urn="urn:adsk.eagle:package:14281/1"/>
+<part name="HDR_5V" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -4234,6 +4298,10 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="H3" gate="G$1" x="-20.32" y="154.94" smashed="yes">
 <attribute name="NAME" x="-17.526" y="155.5242" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-17.526" y="152.4762" size="1.778" layer="96"/>
+</instance>
+<instance part="HDR_5V" gate="G$1" x="-50.8" y="83.82" smashed="yes">
+<attribute name="NAME" x="-57.15" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-57.15" y="78.74" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4327,11 +4395,6 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="ADC_IN_3_3V" gate="G$1" pin="9"/>
 <wire x1="-43.18" y1="139.7" x2="-20.32" y2="139.7" width="0.1524" layer="91"/>
 <label x="-33.02" y="139.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="MCP_3008_3_3V" gate="A" pin="VDD"/>
-<wire x1="101.6" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
-<label x="109.22" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MCP_3008_3_3V" gate="A" pin="VREF"/>
@@ -4657,6 +4720,17 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="MCP_3008_3_3V" gate="A" pin="CH7"/>
 <wire x1="66.04" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
 <label x="45.72" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC_5V" class="0">
+<segment>
+<pinref part="MCP_3008_3_3V" gate="A" pin="VDD"/>
+<wire x1="101.6" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
+<label x="109.22" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HDR_5V" gate="G$1" pin="1"/>
+<wire x1="-53.34" y1="83.82" x2="-73.66" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

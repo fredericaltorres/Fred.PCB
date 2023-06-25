@@ -162,7 +162,7 @@
 <wire x1="60" y1="0" x2="5" y2="0" width="0.1524" layer="20"/>
 <wire x1="5" y1="0" x2="4" y2="0" width="0.1524" layer="20"/>
 <wire x1="4" y1="0" x2="0" y2="4" width="0.1524" layer="20" curve="-90"/>
-<text x="31.5" y="41" size="1.4224" layer="26" rot="MR0" align="center">PCBv2 - 2023.04</text>
+<text x="31.5" y="41" size="1.4224" layer="26" rot="MR0" align="center">PCBv1 - 2023.04</text>
 <rectangle x1="16.5608" y1="38.9001" x2="17.3736" y2="38.9509" layer="25"/>
 <rectangle x1="19.5072" y1="38.9001" x2="20.32" y2="38.9509" layer="25"/>
 <rectangle x1="22.5044" y1="38.9001" x2="23.3172" y2="38.9509" layer="25"/>
@@ -2863,105 +2863,220 @@ design rules under a new name.</description>
 <signal name="GND">
 <contactref element="GPIO_IN" pad="10"/>
 <contactref element="R_ARRAY" pad="1"/>
-<wire x1="20.356071875" y1="2.00419375" x2="3" y2="32.46" width="0" layer="19" extent="1-1"/>
+<wire x1="3.2004" y1="31.5468" x2="3.2004" y2="32.2326" width="0.254" layer="16"/>
+<wire x1="20.3454" y1="14.4018" x2="3.2004" y2="31.5468" width="0.254" layer="16"/>
+<wire x1="20.3454" y1="2.0574" x2="20.3454" y2="14.4018" width="0.254" layer="16"/>
+<wire x1="3.2004" y1="32.2326" x2="3" y2="32.46" width="0.254" layer="16"/>
+<wire x1="20.3454" y1="2.0574" x2="20.356071875" y2="2.00419375" width="0.254" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="GPIO_IN" pad="9"/>
 <contactref element="LED_POWER" pad="A"/>
-<wire x1="22.896071875" y1="2.00419375" x2="36.287" y2="34.0465" width="0" layer="19" extent="1-1"/>
+<wire x1="36.3474" y1="29.4894" x2="36.3474" y2="33.8328" width="0.254" layer="1"/>
+<wire x1="36.8046" y1="29.0322" x2="36.3474" y2="29.4894" width="0.254" layer="1"/>
+<wire x1="36.8046" y1="26.9748" x2="36.8046" y2="29.0322" width="0.254" layer="1"/>
+<wire x1="36.576" y1="26.7462" x2="36.8046" y2="26.9748" width="0.254" layer="1"/>
+<wire x1="29.2608" y1="26.7462" x2="36.576" y2="26.7462" width="0.254" layer="1"/>
+<wire x1="26.5176" y1="29.4894" x2="29.2608" y2="26.7462" width="0.254" layer="1"/>
+<wire x1="24.4602" y1="29.4894" x2="26.5176" y2="29.4894" width="0.254" layer="1"/>
+<wire x1="24.003" y1="29.0322" x2="24.4602" y2="29.4894" width="0.254" layer="1"/>
+<wire x1="24.003" y1="2.9718" x2="24.003" y2="29.0322" width="0.254" layer="1"/>
+<wire x1="23.0886" y1="2.0574" x2="24.003" y2="2.9718" width="0.254" layer="1"/>
+<wire x1="36.3474" y1="33.8328" x2="36.287" y2="34.0465" width="0.254" layer="1"/>
+<wire x1="23.0886" y1="2.0574" x2="22.896071875" y2="2.00419375" width="0.254" layer="1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="GPIO_IN" pad="1"/>
 <contactref element="LED_0" pad="A"/>
 <contactref element="GPIO_0_4_CONN" pad="1"/>
-<wire x1="43.216071875" y1="2.00419375" x2="47.762" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="11.976" y1="28.3015" x2="47.762" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="47.5488" y1="6.1722" x2="47.5488" y2="13.9446" width="0.254" layer="1"/>
+<wire x1="43.434" y1="2.0574" x2="47.5488" y2="6.1722" width="0.254" layer="1"/>
+<wire x1="47.5488" y1="13.9446" x2="47.762" y2="14" width="0.254" layer="1"/>
+<wire x1="43.434" y1="2.0574" x2="43.216071875" y2="2.00419375" width="0.254" layer="1"/>
+<wire x1="19.8882" y1="28.1178" x2="12.1158" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="21.0312" y1="26.9748" x2="19.8882" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="35.433" y1="26.9748" x2="21.0312" y2="26.9748" width="0.254" layer="16"/>
+<wire x1="43.2054" y1="19.2024" x2="35.433" y2="26.9748" width="0.254" layer="16"/>
+<wire x1="43.2054" y1="2.0574" x2="43.2054" y2="19.2024" width="0.254" layer="16"/>
+<wire x1="12.1158" y1="28.1178" x2="11.976" y2="28.3015" width="0.254" layer="1"/>
+<wire x1="43.2054" y1="2.0574" x2="43.216071875" y2="2.00419375" width="0.254" layer="16"/>
+<via x="21.0312" y="26.9748" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="GPIO1">
 <contactref element="GPIO_IN" pad="2"/>
 <contactref element="LED_1" pad="A"/>
 <contactref element="GPIO_1_5_CONN" pad="1"/>
-<wire x1="37.762" y1="14" x2="25.5015" y2="28.159" width="0" layer="19" extent="1-1"/>
-<wire x1="40.676071875" y1="2.00419375" x2="37.762" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="37.719" y1="20.1168" x2="37.719" y2="14.1732" width="0.254" layer="1"/>
+<wire x1="31.5468" y1="26.289" x2="37.719" y2="20.1168" width="0.254" layer="1"/>
+<wire x1="27.432" y1="26.289" x2="31.5468" y2="26.289" width="0.254" layer="1"/>
+<wire x1="25.6032" y1="28.1178" x2="27.432" y2="26.289" width="0.254" layer="1"/>
+<wire x1="37.719" y1="14.1732" x2="37.762" y2="14" width="0.254" layer="1"/>
+<wire x1="25.6032" y1="28.1178" x2="25.5015" y2="28.159" width="0.254" layer="1"/>
+<wire x1="40.4622" y1="9.8298" x2="40.4622" y2="2.0574" width="0.254" layer="16"/>
+<wire x1="37.9476" y1="12.3444" x2="40.4622" y2="9.8298" width="0.254" layer="16"/>
+<wire x1="37.9476" y1="13.9446" x2="37.9476" y2="12.3444" width="0.254" layer="1"/>
+<wire x1="40.4622" y1="2.0574" x2="40.676071875" y2="2.00419375" width="0.254" layer="16"/>
+<wire x1="37.9476" y1="13.9446" x2="37.762" y2="14" width="0.254" layer="1"/>
+<via x="37.9476" y="12.3444" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="GPIO2">
 <contactref element="GPIO_IN" pad="3"/>
 <contactref element="LED_2" pad="A"/>
 <contactref element="GPIO_2_6_CONN" pad="1"/>
-<wire x1="27.762" y1="14" x2="38.422" y2="28" width="0" layer="19" extent="1-1"/>
-<wire x1="38.136071875" y1="2.00419375" x2="27.762" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="27.8892" y1="12.1158" x2="27.8892" y2="13.9446" width="0.254" layer="1"/>
+<wire x1="37.9476" y1="2.0574" x2="27.8892" y2="12.1158" width="0.254" layer="16"/>
+<wire x1="27.8892" y1="13.9446" x2="27.762" y2="14" width="0.254" layer="1"/>
+<wire x1="37.9476" y1="2.0574" x2="38.136071875" y2="2.00419375" width="0.254" layer="16"/>
+<wire x1="38.4048" y1="22.6314" x2="38.4048" y2="27.8892" width="0.254" layer="1"/>
+<wire x1="27.8892" y1="12.1158" x2="38.4048" y2="22.6314" width="0.254" layer="16"/>
+<wire x1="38.4048" y1="27.8892" x2="38.422" y2="28" width="0.254" layer="1"/>
+<via x="27.8892" y="12.1158" extent="1-16" drill="0.6096"/>
+<via x="38.4048" y="22.6314" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="GPIO6">
 <contactref element="GPIO_IN" pad="7"/>
 <contactref element="R_4K1" pad="2"/>
-<wire x1="27.976071875" y1="2.00419375" x2="28.922" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="28.8036" y1="2.7432" x2="28.8036" y2="19.431" width="0.254" layer="1"/>
+<wire x1="28.1178" y1="2.0574" x2="28.8036" y2="2.7432" width="0.254" layer="1"/>
+<wire x1="28.8036" y1="19.431" x2="28.922" y2="19.5" width="0.254" layer="1"/>
+<wire x1="28.1178" y1="2.0574" x2="27.976071875" y2="2.00419375" width="0.254" layer="1"/>
 </signal>
 <signal name="GPIO7">
 <contactref element="GPIO_IN" pad="8"/>
 <contactref element="R_4K0" pad="2"/>
-<wire x1="25.436071875" y1="2.00419375" x2="18.0885" y2="19.426" width="0" layer="19" extent="1-1"/>
+<wire x1="22.1742" y1="15.3162" x2="18.288" y2="19.2024" width="0.254" layer="1"/>
+<wire x1="22.1742" y1="5.2578" x2="22.1742" y2="15.3162" width="0.254" layer="16"/>
+<wire x1="25.3746" y1="2.0574" x2="22.1742" y2="5.2578" width="0.254" layer="16"/>
+<wire x1="18.288" y1="19.2024" x2="18.0885" y2="19.426" width="0.254" layer="1"/>
+<wire x1="25.3746" y1="2.0574" x2="25.436071875" y2="2.00419375" width="0.254" layer="16"/>
+<via x="22.1742" y="15.3162" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="GPIO4">
 <contactref element="GPIO_IN" pad="5"/>
 <contactref element="R_4K3" pad="2"/>
-<wire x1="33.056071875" y1="2.00419375" x2="47.922" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="46.1772" y1="21.2598" x2="47.7774" y2="19.6596" width="0.254" layer="1"/>
+<wire x1="43.8912" y1="21.2598" x2="46.1772" y2="21.2598" width="0.254" layer="1"/>
+<wire x1="39.3192" y1="16.6878" x2="43.8912" y2="21.2598" width="0.254" layer="1"/>
+<wire x1="39.3192" y1="8.2296" x2="39.3192" y2="16.6878" width="0.254" layer="1"/>
+<wire x1="33.147" y1="2.0574" x2="39.3192" y2="8.2296" width="0.254" layer="1"/>
+<wire x1="47.7774" y1="19.6596" x2="47.922" y2="19.5" width="0.254" layer="1"/>
+<wire x1="33.147" y1="2.0574" x2="33.056071875" y2="2.00419375" width="0.254" layer="1"/>
 </signal>
 <signal name="GPIO3">
 <contactref element="GPIO_IN" pad="4"/>
 <contactref element="LED_3" pad="A"/>
 <contactref element="GPIO_3_7_CONN" pad="1"/>
-<wire x1="35.596071875" y1="2.00419375" x2="52.422" y2="28" width="0" layer="19" extent="1-1"/>
-<wire x1="17.056" y1="13.6575" x2="35.596071875" y2="2.00419375" width="0" layer="19" extent="1-1"/>
+<wire x1="23.0886" y1="13.4874" x2="17.145" y2="13.4874" width="0.254" layer="1"/>
+<wire x1="24.003" y1="13.4874" x2="23.0886" y2="13.4874" width="0.254" layer="16"/>
+<wire x1="35.433" y1="2.0574" x2="24.003" y2="13.4874" width="0.254" layer="16"/>
+<wire x1="17.145" y1="13.4874" x2="17.056" y2="13.6575" width="0.254" layer="1"/>
+<wire x1="35.433" y1="2.0574" x2="35.596071875" y2="2.00419375" width="0.254" layer="16"/>
+<wire x1="52.3494" y1="21.717" x2="52.3494" y2="27.8892" width="0.254" layer="1"/>
+<wire x1="48.6918" y1="18.0594" x2="52.3494" y2="21.717" width="0.254" layer="1"/>
+<wire x1="47.0916" y1="18.0594" x2="48.6918" y2="18.0594" width="0.254" layer="1"/>
+<wire x1="46.4058" y1="18.7452" x2="47.0916" y2="18.0594" width="0.254" layer="1"/>
+<wire x1="46.4058" y1="20.3454" x2="46.4058" y2="18.7452" width="0.254" layer="1"/>
+<wire x1="45.9486" y1="20.8026" x2="46.4058" y2="20.3454" width="0.254" layer="1"/>
+<wire x1="44.1198" y1="20.8026" x2="45.9486" y2="20.8026" width="0.254" layer="1"/>
+<wire x1="39.7764" y1="16.4592" x2="44.1198" y2="20.8026" width="0.254" layer="1"/>
+<wire x1="39.7764" y1="6.1722" x2="39.7764" y2="16.4592" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="2.0574" x2="39.7764" y2="6.1722" width="0.254" layer="1"/>
+<wire x1="52.3494" y1="27.8892" x2="52.422" y2="28" width="0.254" layer="1"/>
+<wire x1="35.6616" y1="2.0574" x2="35.596071875" y2="2.00419375" width="0.254" layer="1"/>
+<via x="23.0886" y="13.4874" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="R_LED_0">
 <contactref element="LED_0" pad="C"/>
 <contactref element="R_ARRAY" pad="2"/>
-<wire x1="3" y1="29.92" x2="9.132" y2="28.3015" width="0" layer="19" extent="1-1"/>
+<wire x1="4.572" y1="28.3464" x2="8.9154" y2="28.3464" width="0.254" layer="1"/>
+<wire x1="3.2004" y1="29.718" x2="4.572" y2="28.3464" width="0.254" layer="1"/>
+<wire x1="8.9154" y1="28.3464" x2="9.132" y2="28.3015" width="0.254" layer="1"/>
+<wire x1="3.2004" y1="29.718" x2="3" y2="29.92" width="0.254" layer="1"/>
 </signal>
 <signal name="R_LED_1">
 <contactref element="LED_1" pad="C"/>
 <contactref element="R_ARRAY" pad="3"/>
-<wire x1="3" y1="27.38" x2="22.6575" y2="28.159" width="0" layer="19" extent="1-1"/>
+<wire x1="22.6314" y1="27.2034" x2="22.6314" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="21.4884" y1="26.0604" x2="22.6314" y2="27.2034" width="0.254" layer="1"/>
+<wire x1="11.43" y1="26.0604" x2="21.4884" y2="26.0604" width="0.254" layer="1"/>
+<wire x1="10.5156" y1="26.9748" x2="11.43" y2="26.0604" width="0.254" layer="1"/>
+<wire x1="3.429" y1="26.9748" x2="10.5156" y2="26.9748" width="0.254" layer="1"/>
+<wire x1="3.2004" y1="27.2034" x2="3.429" y2="26.9748" width="0.254" layer="1"/>
+<wire x1="22.6314" y1="28.1178" x2="22.6575" y2="28.159" width="0.254" layer="1"/>
+<wire x1="3.2004" y1="27.2034" x2="3" y2="27.38" width="0.254" layer="1"/>
 </signal>
 <signal name="R_LED_2">
 <contactref element="LED_2" pad="C"/>
 <contactref element="R_ARRAY" pad="4"/>
-<wire x1="3" y1="24.84" x2="35.578" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="28.575" y1="28.1178" x2="35.433" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="25.8318" y1="30.861" x2="28.575" y2="28.1178" width="0.254" layer="1"/>
+<wire x1="2.0574" y1="30.861" x2="25.8318" y2="30.861" width="0.254" layer="1"/>
+<wire x1="1.3716" y1="30.1752" x2="2.0574" y2="30.861" width="0.254" layer="1"/>
+<wire x1="1.3716" y1="26.5176" x2="1.3716" y2="30.1752" width="0.254" layer="1"/>
+<wire x1="2.9718" y1="24.9174" x2="1.3716" y2="26.5176" width="0.254" layer="1"/>
+<wire x1="35.433" y1="28.1178" x2="35.578" y2="28" width="0.254" layer="1"/>
+<wire x1="2.9718" y1="24.9174" x2="3" y2="24.84" width="0.254" layer="1"/>
 </signal>
 <signal name="R_LED_3">
 <contactref element="LED_3" pad="C"/>
 <contactref element="R_ARRAY" pad="5"/>
-<wire x1="3" y1="22.3" x2="49.578" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="40.005" y1="27.8892" x2="49.3776" y2="27.8892" width="0.254" layer="1"/>
+<wire x1="11.8872" y1="27.8892" x2="40.005" y2="27.8892" width="0.254" layer="16"/>
+<wire x1="10.0584" y1="26.0604" x2="11.8872" y2="27.8892" width="0.254" layer="16"/>
+<wire x1="6.858" y1="26.0604" x2="10.0584" y2="26.0604" width="0.254" layer="1"/>
+<wire x1="3.2004" y1="22.4028" x2="6.858" y2="26.0604" width="0.254" layer="1"/>
+<wire x1="49.3776" y1="27.8892" x2="49.578" y2="28" width="0.254" layer="1"/>
+<wire x1="3.2004" y1="22.4028" x2="3" y2="22.3" width="0.254" layer="1"/>
+<via x="40.005" y="27.8892" extent="1-16" drill="0.6096"/>
+<via x="10.0584" y="26.0604" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="GPIO5">
 <contactref element="GPIO_IN" pad="6"/>
 <contactref element="R_4K2" pad="2"/>
-<wire x1="30.516071875" y1="2.00419375" x2="38.922" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="38.862" y1="10.287" x2="38.862" y2="19.431" width="0.254" layer="1"/>
+<wire x1="30.6324" y1="2.0574" x2="38.862" y2="10.287" width="0.254" layer="1"/>
+<wire x1="38.862" y1="19.431" x2="38.922" y2="19.5" width="0.254" layer="1"/>
+<wire x1="30.6324" y1="2.0574" x2="30.516071875" y2="2.00419375" width="0.254" layer="1"/>
 </signal>
 <signal name="R_LED_PWR">
 <contactref element="LED_POWER" pad="C"/>
 <contactref element="R_ARRAY" pad="6"/>
-<wire x1="3" y1="19.76" x2="33.443" y2="34.0465" width="0" layer="19" extent="1-1"/>
+<wire x1="2.5146" y1="33.8328" x2="33.3756" y2="33.8328" width="0.254" layer="1"/>
+<wire x1="1.3716" y1="32.6898" x2="2.5146" y2="33.8328" width="0.254" layer="16"/>
+<wire x1="1.3716" y1="21.4884" x2="1.3716" y2="32.6898" width="0.254" layer="16"/>
+<wire x1="2.9718" y1="19.8882" x2="1.3716" y2="21.4884" width="0.254" layer="16"/>
+<wire x1="33.3756" y1="33.8328" x2="33.443" y2="34.0465" width="0.254" layer="1"/>
+<wire x1="2.9718" y1="19.8882" x2="3" y2="19.76" width="0.254" layer="16"/>
+<via x="2.5146" y="33.8328" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="N$1">
 <contactref element="GPIO_3_7_CONN" pad="2"/>
 <contactref element="R_4K0" pad="1"/>
-<wire x1="15.532" y1="13.6575" x2="15.2445" y2="19.426" width="0" layer="19" extent="1-1"/>
+<wire x1="15.3162" y1="19.2024" x2="15.3162" y2="13.716" width="0.254" layer="1"/>
+<wire x1="15.3162" y1="13.716" x2="15.532" y2="13.6575" width="0.254" layer="1"/>
+<wire x1="15.3162" y1="19.2024" x2="15.2445" y2="19.426" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="GPIO_2_6_CONN" pad="2"/>
 <contactref element="R_4K1" pad="1"/>
-<wire x1="26.238" y1="14" x2="26.078" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="26.289" y1="19.431" x2="26.289" y2="14.1732" width="0.254" layer="1"/>
+<wire x1="26.289" y1="14.1732" x2="26.238" y2="14" width="0.254" layer="1"/>
+<wire x1="26.289" y1="19.431" x2="26.078" y2="19.5" width="0.254" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="GPIO_1_5_CONN" pad="2"/>
 <contactref element="R_4K2" pad="1"/>
-<wire x1="36.238" y1="14" x2="36.078" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="36.1188" y1="19.431" x2="36.1188" y2="14.1732" width="0.254" layer="1"/>
+<wire x1="36.1188" y1="14.1732" x2="36.238" y2="14" width="0.254" layer="1"/>
+<wire x1="36.1188" y1="19.431" x2="36.078" y2="19.5" width="0.254" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="GPIO_0_4_CONN" pad="2"/>
 <contactref element="R_4K3" pad="1"/>
-<wire x1="46.238" y1="14" x2="45.078" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="46.1772" y1="18.288" x2="46.1772" y2="14.1732" width="0.254" layer="1"/>
+<wire x1="45.0342" y1="19.431" x2="46.1772" y2="18.288" width="0.254" layer="1"/>
+<wire x1="46.1772" y1="14.1732" x2="46.238" y2="14" width="0.254" layer="1"/>
+<wire x1="45.0342" y1="19.431" x2="45.078" y2="19.5" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
