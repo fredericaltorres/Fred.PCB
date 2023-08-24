@@ -314,4 +314,8 @@ SOLDERJUMPERREFLOW (SOLDERJUMPER)
 	https://github.com/fluorumlabs/eagle-library.git
 
 	http://eagle.autodesk.com/eagle/libraries?page=40
-	
+	25
+
+
+# LIBRARY	
+https://github.com/ThrudTheBarbarian/eagle-libs
