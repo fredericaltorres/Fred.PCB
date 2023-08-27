@@ -19,8 +19,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -145,7 +145,7 @@
 <wire x1="7" y1="90" x2="2" y2="90" width="0" layer="20"/>
 <wire x1="2" y1="90" x2="2" y2="85" width="0" layer="20"/>
 <text x="8.546" y="51.397" size="2.1844" layer="25" rot="R270" align="center">Cloud Booster- Mother Board</text>
-<text x="11.5485" y="52.75" size="1.778" layer="26" rot="MR90" align="center">PCBv2 - 2023.08</text>
+<text x="4.5" y="21" size="1.27" layer="26" rot="MR90" align="center">PCBv1 - 2019.12</text>
 <text x="41.5" y="83.5" size="1.27" layer="25" rot="R90" align="center">GND</text>
 <text x="44" y="83.5" size="1.27" layer="25" rot="R90" align="center">VCC</text>
 <text x="46.5" y="82" size="1.27" layer="25" rot="R90" align="center">VCC_1K</text>
