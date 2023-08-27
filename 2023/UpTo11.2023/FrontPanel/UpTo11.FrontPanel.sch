@@ -1839,6 +1839,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="POT_GND_(LEFT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="POT_IN_(MIDDLE)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="POT_OUT_(RIGHT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="SWITCH_IN" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="SWITCH_OUT" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 </parts>
 <sheets>
 <sheet>
@@ -1854,7 +1856,7 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="VALUE" x="51.435" y="69.088" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="BOOSTER_ON_LED" gate="G$1" x="66.04" y="76.2" smashed="yes">
-<attribute name="NAME" x="69.596" y="71.628" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="69.596" y="74.168" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.755" y="71.628" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="POT_GND_(LEFT)" gate="1" x="17.78" y="58.42" smashed="yes">
@@ -1868,6 +1870,14 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="POT_OUT_(RIGHT)" gate="1" x="17.78" y="43.18" smashed="yes">
 <attribute name="NAME" x="15.24" y="45.72" size="1.778" layer="95"/>
 <attribute name="VALUE" x="15.24" y="39.37" size="1.778" layer="96"/>
+</instance>
+<instance part="SWITCH_IN" gate="1" x="5.08" y="111.76" smashed="yes">
+<attribute name="NAME" x="2.54" y="114.3" size="1.778" layer="95"/>
+<attribute name="VALUE" x="2.54" y="107.95" size="1.778" layer="96"/>
+</instance>
+<instance part="SWITCH_OUT" gate="1" x="5.08" y="104.14" smashed="yes">
+<attribute name="NAME" x="2.54" y="106.68" size="1.778" layer="95"/>
+<attribute name="VALUE" x="2.54" y="100.33" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1936,6 +1946,23 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="POWER" gate="G$1" pin="A"/>
 <wire x1="45.72" y1="76.2" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
 <label x="45.72" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH_IN" gate="1" pin="2"/>
+<wire x1="10.16" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="27.94" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BOOSTER_ON_LED_IN" class="0">
+<segment>
+<pinref part="BOOSTER_ON_LED" gate="G$1" pin="A"/>
+<wire x1="66.04" y1="78.74" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<label x="66.04" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH_OUT" gate="1" pin="2"/>
+<wire x1="10.16" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
+<label x="25.4" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
