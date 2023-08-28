@@ -2176,7 +2176,7 @@ Source: http://www.osram.convergy.de/</description>
 </classes>
 <parts>
 <part name="FRONT_PANEL_INTERFACE" library="adafruit" deviceset="PINHD-1X6" device=""/>
-<part name="POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="CONNECTED" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="BOOSTER_ON_LED" library="adafruit" deviceset="LED" device="5MM"/>
 <part name="POT_GND_(LEFT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="POT_IN_(RIGHT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
@@ -2198,7 +2198,7 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="3.81" y="70.485" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="3.81" y="91.44" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="POWER" gate="G$1" x="68.58" y="81.28" smashed="yes">
+<instance part="CONNECTED" gate="G$1" x="68.58" y="81.28" smashed="yes">
 <attribute name="NAME" x="72.136" y="76.708" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="74.295" y="76.708" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -2257,7 +2257,7 @@ Source: http://www.osram.convergy.de/</description>
 <label x="7.62" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POWER" gate="G$1" pin="C"/>
+<pinref part="CONNECTED" gate="G$1" pin="C"/>
 <wire x1="68.58" y1="76.2" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="68.58" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -2291,7 +2291,7 @@ Source: http://www.osram.convergy.de/</description>
 <label x="15.24" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POWER" gate="G$1" pin="A"/>
+<pinref part="CONNECTED" gate="G$1" pin="A"/>
 <wire x1="68.58" y1="83.82" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <label x="68.58" y="91.44" size="1.778" layer="95"/>
 </segment>

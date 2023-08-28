@@ -6366,7 +6366,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
-<part name="POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="CONNECTED" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 </parts>
 <sheets>
@@ -6405,7 +6405,7 @@ Pot Right must go to Ground</text>
 <attribute name="NAME" x="109.474" y="112.3442" size="1.778" layer="95"/>
 <attribute name="VALUE" x="109.474" y="109.2962" size="1.778" layer="96"/>
 </instance>
-<instance part="POWER" gate="G$1" x="53.34" y="63.5" smashed="yes">
+<instance part="CONNECTED" gate="G$1" x="53.34" y="63.5" smashed="yes">
 <attribute name="NAME" x="56.896" y="58.928" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="59.055" y="58.928" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -6437,7 +6437,7 @@ Pot Right must go to Ground</text>
 <label x="33.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POWER" gate="G$1" pin="C"/>
+<pinref part="CONNECTED" gate="G$1" pin="C"/>
 <wire x1="53.34" y1="58.42" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
 <label x="60.96" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -6452,11 +6452,6 @@ Pot Right must go to Ground</text>
 <pinref part="X1" gate="G$1" pin="VBUS"/>
 <wire x1="86.36" y1="86.36" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
 <label x="78.74" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="POWER" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<label x="58.42" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R_1K" gate="G$1" pin="2"/>
@@ -6479,6 +6474,11 @@ Pot Right must go to Ground</text>
 <pinref part="R_1K" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="40.64" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
 <label x="111.76" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONNECTED" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="66.04" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<label x="58.42" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
