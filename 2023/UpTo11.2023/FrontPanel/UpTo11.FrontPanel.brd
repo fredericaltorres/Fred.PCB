@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.002857" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1264,7 +1264,7 @@
 <rectangle x1="49.33548125" y1="48.35375" x2="50.16351875" y2="48.41725" layer="21"/>
 <rectangle x1="49.46501875" y1="48.41725" x2="50.16351875" y2="48.48075" layer="21"/>
 <rectangle x1="49.65551875" y1="48.48075" x2="50.16351875" y2="48.54425" layer="21"/>
-<text x="68.397859375" y="26.488084375" size="1.27" layer="21" font="vector">+</text>
+<text x="10.44090625" y="37.098934375" size="1.27" layer="21" font="vector">+</text>
 <text x="46.5" y="20" size="1.27" layer="26" rot="MR90" align="center">VCC_1K</text>
 <wire x1="2" y1="17" x2="2" y2="12" width="0" layer="20"/>
 <wire x1="2" y1="17" x2="2" y2="85" width="0.1524" layer="20"/>
@@ -1275,7 +1275,7 @@
 <wire x1="90" y1="17" x2="85" y2="12" width="0.1524" layer="20" curve="-90"/>
 <wire x1="85" y1="12" x2="7" y2="12" width="0.1524" layer="20"/>
 <wire x1="7" y1="12" x2="2" y2="17" width="0.1524" layer="20" curve="-90"/>
-<text x="68.397859375" y="39.488084375" size="1.27" layer="21" font="vector">+</text>
+<text x="67.52704375" y="35.206584375" size="1.27" layer="21" font="vector">+</text>
 <rectangle x1="27.52851875" y1="82.70875" x2="28.54451875" y2="82.77225" layer="21"/>
 <rectangle x1="31.20898125" y1="82.70875" x2="32.22751875" y2="82.77225" layer="21"/>
 <rectangle x1="34.95548125" y1="82.70875" x2="35.97401875" y2="82.77225" layer="21"/>
@@ -3993,12 +3993,12 @@ design rules under a new name.</description>
 <element name="FRONT_PANEL_INTERFACE" library="adafruit" package="1X06" value="" x="46" y="14.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="53.62" y="17.675" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="CONNECTED" library="adafruit" package="1206" value="" x="73" y="25" smashed="yes">
-<attribute name="NAME" x="73.23" y="22.77" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="71.73" y="22.46" size="1.27" layer="27"/>
+<element name="CONNECTED" library="adafruit" package="1206" value="" x="17.04305" y="36.9577375" smashed="yes">
+<attribute name="NAME" x="17.27305" y="34.7277375" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="15.77305" y="34.4177375" size="1.27" layer="27"/>
 </element>
-<element name="BOOSTER_ON_LED" library="adafruit" package="LED5MM" value="" x="72.5555" y="62.7935" smashed="yes">
-<attribute name="VALUE" x="75.7559" y="60.9901" size="1.27" layer="27" ratio="10"/>
+<element name="BOOSTER_ON_LED" library="adafruit" package="LED5MM" value="" x="72" y="63" smashed="yes">
+<attribute name="VALUE" x="75.2004" y="61.1966" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="POT_GND_(LEFT)" library="microbuilder" package="SOLDERJUMPER_REFLOW" value="" x="29" y="27" smashed="yes" rot="MR270">
 <attribute name="NAME" x="26.73" y="35.651" size="1.27" layer="26" ratio="18" rot="MR270" align="center"/>
@@ -4020,9 +4020,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.73" y="50.651" size="1.27" layer="26" ratio="18" rot="MR90"/>
 <attribute name="VALUE" x="32" y="48.5999" size="0.02" layer="28" rot="MR270"/>
 </element>
-<element name="DIAL_LED" library="adafruit" package="LED5MM" value="" x="73" y="36" smashed="yes">
-<attribute name="NAME" x="70.5" y="31" size="0.8128" layer="25" ratio="10"/>
-<attribute name="VALUE" x="76.2004" y="34.1966" size="1.27" layer="27" ratio="10"/>
+<element name="DIAL_LED" library="adafruit" package="LED5MM" value="" x="72" y="32.444178125" smashed="yes">
+<attribute name="NAME" x="69.5" y="27.444178125" size="0.8128" layer="25" ratio="10"/>
+<attribute name="VALUE" x="75.2004" y="30.640778125" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,3-PAD" package3d_urn="urn:adsk.eagle:package:14283/1" value="MOUNT-PAD-ROUND3.3" x="8" y="84" smashed="yes">
 <attribute name="POPULARITY" value="1" x="8" y="84" size="1.778" layer="27" display="off"/>
@@ -4036,17 +4036,17 @@ design rules under a new name.</description>
 <element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,3-PAD" package3d_urn="urn:adsk.eagle:package:14283/1" value="MOUNT-PAD-ROUND3.3" x="8" y="18" smashed="yes">
 <attribute name="POPULARITY" value="1" x="8" y="18" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1" library="adafruit" package="R1206" value="" x="73" y="16" smashed="yes">
-<attribute name="NAME" x="71.603" y="17.143" size="1.27" layer="25"/>
-<attribute name="VALUE" x="71.603" y="13.587" size="1.27" layer="27"/>
+<element name="R1" library="adafruit" package="R1206" value="" x="17" y="43" smashed="yes">
+<attribute name="NAME" x="15.603" y="44.143" size="1.27" layer="25"/>
+<attribute name="VALUE" x="15.603" y="40.587" size="1.27" layer="27"/>
 </element>
 <element name="R2" library="adafruit" package="R1206" value="" x="82" y="62" smashed="yes">
 <attribute name="NAME" x="80.603" y="63.143" size="1.27" layer="25"/>
 <attribute name="VALUE" x="80.603" y="59.587" size="1.27" layer="27"/>
 </element>
-<element name="R3" library="adafruit" package="R1206" value="" x="82" y="36" smashed="yes">
-<attribute name="NAME" x="80.603" y="37.143" size="1.27" layer="25"/>
-<attribute name="VALUE" x="80.603" y="33.587" size="1.27" layer="27"/>
+<element name="R3" library="adafruit" package="R1206" value="" x="82" y="32.15390625" smashed="yes">
+<attribute name="NAME" x="80.603" y="33.29690625" size="1.27" layer="25"/>
+<attribute name="VALUE" x="80.603" y="29.74090625" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -4056,44 +4056,44 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="80.578" y1="36" x2="80.578" y2="62" width="0" layer="19" extent="1-1"/>
-<wire x1="71.578" y1="16" x2="80.578" y2="36" width="0" layer="19" extent="1-1"/>
-<wire x1="52.35" y1="14.5" x2="71.578" y2="16" width="0" layer="19" extent="1-1"/>
+<wire x1="80.578" y1="32.15390625" x2="80.578" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="52.35" y1="14.5" x2="80.578" y2="32.15390625" width="0" layer="19" extent="1-1"/>
 <wire x1="29" y1="26.238" x2="52.35" y2="14.5" width="0" layer="19" extent="16-16"/>
+<wire x1="15.578" y1="43" x2="29" y2="26.238" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DIAL_INPUT">
 <contactref element="POT_OUT_(MIDDLE)" pad="2"/>
 <contactref element="DIAL_LED" pad="A"/>
-<wire x1="20" y1="26.238" x2="71.73" y2="36" width="0" layer="19" extent="16-16"/>
+<wire x1="20" y1="26.238" x2="70.73" y2="32.444178125" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="BOOSTER_ON">
 <contactref element="SWITCH_OUT" pad="2"/>
 <contactref element="POT_IN_(RIGHT)" pad="2"/>
 <contactref element="BOOSTER_ON_LED" pad="A"/>
-<wire x1="32" y1="48.238" x2="71.2855" y2="62.7935" width="0" layer="19" extent="16-16"/>
+<wire x1="32" y1="48.238" x2="70.73" y2="63" width="0" layer="19" extent="16-16"/>
 <wire x1="8" y1="26.238" x2="32" y2="48.238" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VCC">
 <contactref element="FRONT_PANEL_INTERFACE" pad="6"/>
 <contactref element="SWITCH_IN" pad="2"/>
 <contactref element="CONNECTED" pad="A"/>
-<wire x1="39.65" y1="14.5" x2="71.578" y2="25" width="0" layer="19" extent="1-1"/>
-<wire x1="25" y1="48.238" x2="39.65" y2="14.5" width="0" layer="19" extent="16-16"/>
+<wire x1="15.62105" y1="36.9577375" x2="25" y2="48.238" width="0" layer="19" extent="1-16"/>
+<wire x1="39.65" y1="14.5" x2="15.62105" y2="36.9577375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="2"/>
 <contactref element="CONNECTED" pad="C"/>
-<wire x1="74.422" y1="16" x2="74.422" y2="25" width="0" layer="19" extent="1-1"/>
+<wire x1="18.46505" y1="36.9577375" x2="18.422" y2="43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="2"/>
 <contactref element="BOOSTER_ON_LED" pad="K"/>
-<wire x1="73.8255" y1="62.7935" x2="83.422" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="73.27" y1="63" x2="83.422" y2="62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="DIAL_LED" pad="K"/>
 <contactref element="R3" pad="2"/>
-<wire x1="74.27" y1="36" x2="83.422" y2="36" width="0" layer="19" extent="1-1"/>
+<wire x1="73.27" y1="32.444178125" x2="83.422" y2="32.15390625" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
