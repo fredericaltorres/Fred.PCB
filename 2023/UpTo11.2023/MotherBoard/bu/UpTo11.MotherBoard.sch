@@ -6349,6 +6349,148 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="microbuilder">
+<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
+
+&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
+
+&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
+&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
+
+&lt;h3&gt;License&lt;/h3&gt;
+&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;/p&gt;</description>
+<packages>
+<package name="USB_A-SMT">
+<description>4UConnector: 10017</description>
+<wire x1="-6" y1="1.8" x2="6" y2="1.8" width="0.2032" layer="51"/>
+<wire x1="-6" y1="1.8" x2="-6" y2="5.8" width="0.2032" layer="51"/>
+<wire x1="-6" y1="5.8" x2="-6" y2="20.5" width="0.2032" layer="51"/>
+<wire x1="6" y1="20.5" x2="6" y2="1.8" width="0.2032" layer="51"/>
+<wire x1="-6" y1="20.5" x2="0" y2="20.5" width="0.2032" layer="51"/>
+<wire x1="0" y1="20.5" x2="6" y2="20.5" width="0.2032" layer="51"/>
+<wire x1="-6" y1="5.8" x2="6" y2="5.8" width="0.2032" layer="51"/>
+<wire x1="0" y1="20.5" x2="0" y2="18" width="0.2032" layer="51"/>
+<wire x1="0" y1="18" x2="-1" y2="18.5" width="0.2032" layer="51"/>
+<wire x1="-1" y1="18.5" x2="-1" y2="16" width="0.2032" layer="51"/>
+<wire x1="-1" y1="16" x2="0" y2="16.5" width="0.2032" layer="51"/>
+<wire x1="0" y1="16.5" x2="0" y2="10.5" width="0.2032" layer="51"/>
+<wire x1="0" y1="10.5" x2="-1" y2="11" width="0.2032" layer="51"/>
+<wire x1="-1" y1="11" x2="-1" y2="8.5" width="0.2032" layer="51"/>
+<wire x1="-1" y1="8.5" x2="0" y2="9" width="0.2032" layer="51"/>
+<wire x1="0" y1="9" x2="0" y2="6" width="0.2032" layer="51"/>
+<wire x1="-6" y1="4.758" x2="-6" y2="5.75" width="0.2032" layer="21"/>
+<wire x1="6" y1="5.75" x2="6" y2="4.758" width="0.2032" layer="21"/>
+<pad name="D1" x="-5.85" y="2.958" drill="2.5" diameter="3.302"/>
+<pad name="D2" x="5.85" y="2.958" drill="2.5" diameter="3.302"/>
+<pad name="D3" x="-2.25" y="3" drill="1"/>
+<pad name="D4" x="2.25" y="3" drill="1"/>
+<smd name="D-" x="-1" y="0" dx="0.8" dy="2.5" layer="1"/>
+<smd name="D+" x="1" y="0" dx="0.8" dy="2.5" layer="1"/>
+<smd name="VBUS" x="-3.5" y="0" dx="0.8" dy="2.5" layer="1"/>
+<smd name="GND" x="3.5" y="0" dx="0.8" dy="2.5" layer="1"/>
+<text x="-3" y="4.5" size="0.8128" layer="51">PCB EDGE</text>
+<text x="-4.75" y="6.25" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-3.5" y="6.25" size="0.4064" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.3" y1="0" x2="-0.7" y2="1.8" layer="51"/>
+<rectangle x1="0.7" y1="0" x2="1.3" y2="1.8" layer="51"/>
+<rectangle x1="-3.8" y1="0" x2="-3.2" y2="1.8" layer="51"/>
+<rectangle x1="3.2" y1="0" x2="3.8" y2="1.8" layer="51"/>
+</package>
+<package name="USB_HOST-PTH">
+<wire x1="-7.4" y1="-6.38" x2="7.4" y2="-6.38" width="0.2032" layer="21"/>
+<wire x1="7.4" y1="-6.38" x2="7.4" y2="7.92" width="0.2032" layer="21"/>
+<wire x1="7.4" y1="7.92" x2="-7.4" y2="7.92" width="0.2032" layer="21"/>
+<wire x1="-7.4" y1="7.92" x2="-7.4" y2="-6.38" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="0.94" x2="-3.81" y2="-4.91" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-4.91" x2="-2.54" y2="-4.91" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-4.91" x2="-1.27" y2="0.94" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.94" x2="2.54" y2="-4.91" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-4.91" x2="3.81" y2="-4.91" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-4.91" x2="5.08" y2="0.94" width="0.2032" layer="21"/>
+<pad name="D-" x="-1" y="6.52" drill="0.95" shape="long" rot="R90"/>
+<pad name="D+" x="1" y="6.52" drill="0.95" shape="long" rot="R90"/>
+<pad name="VBUS" x="-3.5" y="6.52" drill="0.95" shape="long" rot="R90"/>
+<pad name="GND" x="3.5" y="6.52" drill="0.95" shape="long" rot="R90"/>
+<pad name="S1" x="-6.57" y="3.81" drill="2.3" diameter="2.9"/>
+<pad name="S2" x="6.57" y="3.81" drill="2.3" diameter="2.9" rot="R180"/>
+<text x="-7.62" y="8.89" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-7.62" y="-7.874" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="USB_NOID">
+<wire x1="-10.2" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-1.32" y1="0.33" x2="-3.47" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-3.47" y1="0.33" x2="-4.22" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-5.52" y1="1.93" x2="-4.52" y2="1.93" width="0.254" layer="94"/>
+<wire x1="-6.27" y1="-1.12" x2="-5.07" y2="-1.12" width="0.254" layer="94"/>
+<wire x1="-5.07" y1="-1.12" x2="-4.22" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-4.52" y1="1.93" x2="-3.47" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-4.22" y1="0.33" x2="-7.92" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-7.92" y1="0.33" x2="-7.92" y2="-0.47" width="0.254" layer="94"/>
+<wire x1="-7.92" y1="-0.47" x2="-8.12" y2="-0.47" width="0.254" layer="94"/>
+<wire x1="-8.12" y1="-0.47" x2="-8.92" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-8.92" y1="0.33" x2="-8.12" y2="1.13" width="0.254" layer="94"/>
+<wire x1="-8.12" y1="-0.27" x2="-8.12" y2="1.13" width="0.254" layer="94"/>
+<wire x1="-8.12" y1="1.13" x2="-7.92" y2="1.13" width="0.254" layer="94"/>
+<wire x1="-7.92" y1="1.13" x2="-7.92" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-8.52" y1="0.33" x2="-8.52" y2="0.13" width="0.254" layer="94"/>
+<wire x1="-8.52" y1="0.13" x2="-8.32" y2="-0.07" width="0.254" layer="94"/>
+<wire x1="-8.32" y1="-0.07" x2="-8.32" y2="0.73" width="0.254" layer="94"/>
+<wire x1="-8.32" y1="0.73" x2="-8.72" y2="0.33" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<circle x="-1.32" y="0.33" radius="0.5" width="1" layer="94"/>
+<circle x="-5.92" y="1.93" radius="0.2" width="1" layer="94"/>
+<text x="-10.16" y="8.636" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+<rectangle x1="-7.12" y1="-1.72" x2="-5.92" y2="-0.52" layer="94"/>
+<pin name="D+" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="D-" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VBUS" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB_TYPEA" prefix="CN" uservalue="yes">
+<description>&lt;b&gt;USB - Type A Connectors&lt;/b&gt;
+&lt;p&gt;Male types stick out and are inserted into a PC or matching females parts (these are the connectors used on USB Memory Sticks, etc.).  Female parts are generally used for USB Host and accept a male-type connector.&lt;/p&gt;
+&lt;p&gt;SMT Male - 4UCON: 10017&lt;/p&gt;
+&lt;p&gt;PTH Female - Digikey: 609-1045-ND, 4UCon: 05241&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="USB_NOID" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB_A-SMT">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTHFML" package="USB_HOST-PTH">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6368,6 +6510,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
 <part name="CONNECTED" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="CN1" library="microbuilder" deviceset="USB_TYPEA" device="PTHFML"/>
 </parts>
 <sheets>
 <sheet>
@@ -6405,13 +6548,17 @@ Pot Right must go to Ground</text>
 <attribute name="NAME" x="109.474" y="112.3442" size="1.778" layer="95"/>
 <attribute name="VALUE" x="109.474" y="109.2962" size="1.778" layer="96"/>
 </instance>
-<instance part="CONNECTED" gate="G$1" x="53.34" y="63.5" smashed="yes">
-<attribute name="NAME" x="56.896" y="58.928" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="59.055" y="58.928" size="1.778" layer="96" rot="R90"/>
+<instance part="CONNECTED" gate="G$1" x="43.18" y="50.8" smashed="yes">
+<attribute name="NAME" x="46.736" y="46.228" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="48.895" y="46.228" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R_1K" gate="G$1" x="106.68" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="105.1814" y="41.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="109.982" y="41.91" size="1.778" layer="96" rot="R90"/>
+<instance part="R_1K" gate="G$1" x="43.18" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.6814" y="59.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="46.482" y="59.69" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="CN1" gate="G$1" x="106.68" y="43.18" smashed="yes">
+<attribute name="NAME" x="96.52" y="51.816" size="1.27" layer="95"/>
+<attribute name="VALUE" x="96.52" y="33.02" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6438,32 +6585,20 @@ Pot Right must go to Ground</text>
 </segment>
 <segment>
 <pinref part="CONNECTED" gate="G$1" pin="C"/>
-<wire x1="53.34" y1="58.42" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-<label x="60.96" y="50.8" size="1.778" layer="95"/>
+<wire x1="43.18" y1="45.72" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
+<label x="45.72" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN1" gate="G$1" pin="GND"/>
+<wire x1="116.84" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
+<label x="121.92" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="FRONT_PANEL_INTERFACE" gate="A" pin="2"/>
-<wire x1="0" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-<label x="10.16" y="78.74" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="X1" gate="G$1" pin="VBUS"/>
 <wire x1="86.36" y1="86.36" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
 <label x="78.74" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_1K" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="50.8" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
-<label x="99.06" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VCC_1K" class="0">
-<segment>
-<pinref part="FRONT_PANEL_INTERFACE" gate="A" pin="3"/>
-<wire x1="0" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
-<label x="12.7" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CAP_100UF" gate="G$1" pin="2"/>
@@ -6471,14 +6606,50 @@ Pot Right must go to Ground</text>
 <label x="66.04" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R_1K" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="40.64" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
-<label x="111.76" y="33.02" size="1.778" layer="95"/>
+<pinref part="R_1K" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="68.58" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
+<label x="45.72" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="FRONT_PANEL_INTERFACE" gate="A" pin="6"/>
+<wire x1="0" y1="86.36" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<label x="7.62" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN1" gate="G$1" pin="VBUS"/>
+<wire x1="116.84" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<label x="119.38" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R_1K" gate="G$1" pin="1"/>
 <pinref part="CONNECTED" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<label x="58.42" y="71.12" size="1.778" layer="95"/>
+<wire x1="43.18" y1="58.42" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DPLUS" class="0">
+<segment>
+<pinref part="CN1" gate="G$1" pin="D-"/>
+<wire x1="116.84" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="124.46" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="D+"/>
+<wire x1="88.9" y1="86.36" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="88.9" y="96.52" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="DMINUS" class="0">
+<segment>
+<pinref part="CN1" gate="G$1" pin="D+"/>
+<wire x1="116.84" y1="43.18" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
+<label x="121.92" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="D-"/>
+<wire x1="91.44" y1="86.36" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="96.52" y="96.52" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
