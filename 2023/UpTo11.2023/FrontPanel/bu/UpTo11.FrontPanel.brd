@@ -144,7 +144,7 @@
 <wire x1="90" y1="90" x2="85" y2="90" width="0" layer="20"/>
 <wire x1="7" y1="90" x2="2" y2="90" width="0" layer="20"/>
 <wire x1="2" y1="90" x2="2" y2="85" width="0" layer="20"/>
-<text x="6.5" y="70" size="1.27" layer="26" rot="MR90" align="center">PCBv2 - 2023.08</text>
+<text x="6.5" y="64" size="1.6764" layer="26" rot="MR90" align="center">PCBv2 - 2023.09</text>
 <text x="65.5" y="50" size="3.81" layer="26" rot="MR270" align="center">www.FredericTorres.com</text>
 <text x="52" y="18.5" size="1.27" layer="26" rot="MR90" align="center">GND</text>
 <text x="49" y="18" size="1.27" layer="26" rot="MR90" align="center">VCC</text>
