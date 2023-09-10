@@ -150,10 +150,9 @@
 <text x="49" y="18" size="1.27" layer="26" rot="MR90" align="center">VCC</text>
 <hole x="46.5" y="35.5" drill="7"/>
 <rectangle x1="39.5" y1="34" x2="40.7" y2="36.6" layer="46"/>
-<hole x="46.0555" y="60.7935" drill="7"/>
+<hole x="46.5" y="60" drill="7"/>
 <text x="54.397859375" y="13.488084375" size="1.27" layer="21" font="vector">GND</text>
 <text x="65.953359375" y="63.281584375" size="1.27" layer="21" font="vector">+</text>
-<rectangle x1="39.6555" y1="59.7935" x2="40.7555" y2="62.3935" layer="46"/>
 <rectangle x1="52.38601875" y1="22.69975" x2="53.65601875" y2="22.76325" layer="21"/>
 <rectangle x1="54.03448125" y1="22.69975" x2="55.30701875" y2="22.76325" layer="21"/>
 <rectangle x1="52.38601875" y1="22.76325" x2="53.65601875" y2="22.82675" layer="21"/>
