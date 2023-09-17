@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5896,25 +5897,55 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <plain>
 </plain>
 <instances>
-<instance part="X1" gate="G$1" x="127" y="99.06" rot="R180"/>
-<instance part="GND1" gate="1" x="111.76" y="109.22" rot="R180"/>
-<instance part="C1_100MF" gate="G$1" x="38.1" y="78.74" rot="R180"/>
-<instance part="GND6" gate="1" x="38.1" y="68.58"/>
-<instance part="LED_PWR" gate="G$1" x="-12.7" y="99.06"/>
-<instance part="R_1K" gate="G$1" x="-12.7" y="81.28" rot="R90"/>
-<instance part="GND7" gate="1" x="-12.7" y="68.58"/>
-<instance part="USB_OUT_WITH_DATA_1" gate="G$1" x="55.88" y="104.14"/>
-<instance part="GND2" gate="1" x="35.56" y="106.68" rot="R270"/>
-<instance part="USB_OUT_2" gate="G$1" x="66.04" y="78.74"/>
-<instance part="USB_OUT_3" gate="G$1" x="88.9" y="78.74"/>
-<instance part="USB_OUT_4" gate="G$1" x="114.3" y="68.58"/>
-<instance part="GND3" gate="1" x="55.88" y="81.28" rot="R270"/>
-<instance part="GND4" gate="1" x="78.74" y="81.28" rot="R270"/>
-<instance part="GND5" gate="1" x="104.14" y="71.12" rot="R270"/>
-<instance part="USB_OUT_5" gate="G$1" x="88.9" y="55.88"/>
-<instance part="GND8" gate="1" x="66.04" y="58.42" rot="R270"/>
-<instance part="USB_OUT_6" gate="G$1" x="114.3" y="45.72"/>
-<instance part="GND9" gate="1" x="101.6" y="48.26" rot="R270"/>
+<instance part="X1" gate="G$1" x="127" y="99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="137.16" y="90.424" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="106.68" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="GND1" gate="1" x="111.76" y="109.22" smashed="yes" rot="R180">
+<attribute name="VALUE" x="114.3" y="111.76" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C1_100MF" gate="G$1" x="38.1" y="78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="37.084" y="78.105" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="37.084" y="82.931" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND6" gate="1" x="38.1" y="68.58" smashed="yes">
+<attribute name="VALUE" x="35.56" y="66.04" size="1.778" layer="96"/>
+</instance>
+<instance part="LED_PWR" gate="G$1" x="-12.7" y="99.06" smashed="yes">
+<attribute name="NAME" x="-9.144" y="94.488" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-6.985" y="94.488" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R_1K" gate="G$1" x="-12.7" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="-14.1986" y="77.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-9.398" y="77.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="-12.7" y="68.58" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="66.04" size="1.778" layer="96"/>
+</instance>
+<instance part="USB_OUT_WITH_DATA_1" gate="G$1" x="55.88" y="104.14" smashed="yes"/>
+<instance part="GND2" gate="1" x="35.56" y="106.68" smashed="yes" rot="R270">
+<attribute name="VALUE" x="33.02" y="109.22" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="USB_OUT_2" gate="G$1" x="66.04" y="78.74" smashed="yes"/>
+<instance part="USB_OUT_3" gate="G$1" x="88.9" y="78.74" smashed="yes"/>
+<instance part="USB_OUT_4" gate="G$1" x="114.3" y="68.58" smashed="yes"/>
+<instance part="GND3" gate="1" x="55.88" y="81.28" smashed="yes" rot="R270">
+<attribute name="VALUE" x="53.34" y="83.82" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND4" gate="1" x="78.74" y="81.28" smashed="yes" rot="R270">
+<attribute name="VALUE" x="76.2" y="83.82" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND5" gate="1" x="104.14" y="71.12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="101.6" y="73.66" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="USB_OUT_5" gate="G$1" x="88.9" y="55.88" smashed="yes"/>
+<instance part="GND8" gate="1" x="66.04" y="58.42" smashed="yes" rot="R270">
+<attribute name="VALUE" x="63.5" y="60.96" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="USB_OUT_6" gate="G$1" x="114.3" y="45.72" smashed="yes"/>
+<instance part="GND9" gate="1" x="101.6" y="48.26" smashed="yes" rot="R270">
+<attribute name="VALUE" x="99.06" y="50.8" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6030,9 +6061,9 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <label x="104.14" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D-"/>
-<wire x1="53.34" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
-<label x="20.32" y="111.76" size="1.778" layer="95"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D+"/>
+<wire x1="53.34" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
+<label x="27.94" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_DMINUS" class="0">
@@ -6042,9 +6073,9 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <label x="99.06" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D+"/>
-<wire x1="53.34" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
-<label x="27.94" y="116.84" size="1.778" layer="95"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D-"/>
+<wire x1="53.34" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
+<label x="20.32" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

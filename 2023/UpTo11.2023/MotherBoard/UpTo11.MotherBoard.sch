@@ -6630,26 +6630,26 @@ Pot Right must go to Ground</text>
 </net>
 <net name="DPLUS" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="D-"/>
-<wire x1="116.84" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
-<label x="124.46" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X1" gate="G$1" pin="D+"/>
 <wire x1="88.9" y1="86.36" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
 <label x="88.9" y="96.52" size="1.778" layer="95" rot="R90"/>
 </segment>
-</net>
-<net name="DMINUS" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="D+"/>
 <wire x1="116.84" y1="43.18" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
 <label x="121.92" y="40.64" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="DMINUS" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="D-"/>
 <wire x1="91.44" y1="86.36" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
 <label x="96.52" y="96.52" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="CN1" gate="G$1" pin="D-"/>
+<wire x1="116.84" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="124.46" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

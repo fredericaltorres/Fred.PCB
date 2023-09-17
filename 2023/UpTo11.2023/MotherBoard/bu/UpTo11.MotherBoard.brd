@@ -2962,14 +2962,14 @@ design rules under a new name.</description>
 <wire x1="45.422" y1="31" x2="42.5125" y2="38.9675" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DPLUS">
-<contactref element="CN1" pad="D-"/>
 <contactref element="X1" pad="3"/>
-<wire x1="7.52" y1="51" x2="84.4" y2="49" width="0" layer="19" extent="1-1"/>
+<contactref element="CN1" pad="D+"/>
+<wire x1="7.52" y1="49" x2="84.4" y2="49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DMINUS">
-<contactref element="CN1" pad="D+"/>
 <contactref element="X1" pad="2"/>
-<wire x1="7.52" y1="49" x2="84.4" y2="51" width="0" layer="19" extent="1-1"/>
+<contactref element="CN1" pad="D-"/>
+<wire x1="7.52" y1="51" x2="84.4" y2="51" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
