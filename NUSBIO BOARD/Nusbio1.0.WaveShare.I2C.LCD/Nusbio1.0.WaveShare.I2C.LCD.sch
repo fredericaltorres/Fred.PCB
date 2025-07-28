@@ -2793,6 +2793,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
 <part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.3" package3d_urn="urn:adsk.eagle:package:14283/1"/>
 <part name="BUTTON_1_GPIO_0" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="LED_1_GPIO_1" library="adafruit" deviceset="LED" device="SMT1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -2828,9 +2829,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND3" gate="1" x="144.78" y="71.12" smashed="yes">
 <attribute name="VALUE" x="142.24" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="LPOWER" gate="G$1" x="172.72" y="48.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="169.164" y="52.832" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="167.005" y="52.832" size="1.778" layer="96" rot="R270"/>
+<instance part="LPOWER" gate="G$1" x="200.66" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="197.104" y="57.912" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="194.945" y="57.912" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="H1" gate="G$1" x="149.86" y="35.56" smashed="yes">
 <attribute name="NAME" x="152.654" y="36.1442" size="1.778" layer="95"/>
@@ -2866,6 +2867,10 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="BUTTON_1_GPIO_0" gate="1" x="241.3" y="30.48" smashed="yes">
 <attribute name="NAME" x="234.95" y="27.94" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="237.49" y="33.655" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LED_1_GPIO_1" gate="G$1" x="213.36" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="209.804" y="57.912" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="207.645" y="57.912" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -2907,8 +2912,8 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </segment>
 <segment>
 <pinref part="LPOWER" gate="G$1" pin="A"/>
-<wire x1="172.72" y1="45.72" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
-<label x="175.26" y="35.56" size="1.778" layer="95"/>
+<wire x1="200.66" y1="50.8" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
+<label x="193.04" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2_TO_LCD" gate="A" pin="3"/>
@@ -3008,6 +3013,12 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="157.48" y1="58.42" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
 <label x="147.32" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED_1_GPIO_1" gate="G$1" pin="A"/>
+<wire x1="213.36" y1="50.8" x2="213.36" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="33.02" x2="215.9" y2="33.02" width="0.1524" layer="91"/>
+<label x="213.36" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RI_G0" class="0">
 <segment>
@@ -3045,13 +3056,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="175.26" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="LPOWER" gate="G$1" pin="C"/>
-<pinref part="RN1" gate="G$1" pin="9"/>
-<wire x1="172.72" y1="53.34" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="BUTTON_1_R" class="0">
 <segment>
 <pinref part="RN1" gate="G$1" pin="8"/>
@@ -3062,6 +3066,30 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="BUTTON_1_GPIO_0" gate="1" pin="P1"/>
 <wire x1="243.84" y1="25.4" x2="243.84" y2="10.16" width="0.1524" layer="91"/>
 <label x="243.84" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_1_R" class="0">
+<segment>
+<pinref part="RN1" gate="G$1" pin="5"/>
+<wire x1="162.56" y1="76.2" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="60.96" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<label x="160.02" y="68.58" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="LED_1_GPIO_1" gate="G$1" pin="C"/>
+<wire x1="213.36" y1="58.42" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
+<label x="210.82" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_PWR_R" class="0">
+<segment>
+<pinref part="RN1" gate="G$1" pin="9"/>
+<wire x1="172.72" y1="76.2" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LPOWER" gate="G$1" pin="C"/>
+<wire x1="200.66" y1="58.42" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
+<label x="198.12" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
