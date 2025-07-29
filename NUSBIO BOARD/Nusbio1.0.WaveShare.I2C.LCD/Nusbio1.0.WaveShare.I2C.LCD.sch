@@ -3075,6 +3075,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <segment>
 <pinref part="RN1" gate="G$1" pin="9"/>
 <wire x1="172.72" y1="76.2" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="175.26" y="43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="LPOWER" gate="G$1" pin="C"/>

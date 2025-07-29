@@ -146,8 +146,8 @@
 <wire x1="95" y1="95" x2="92" y2="98" width="0" layer="20"/>
 <text x="81.5" y="48" size="3.81" layer="25" rot="R90" align="center">Nusbio</text>
 <text x="91.5" y="45.5" size="2.54" layer="25" rot="R90" align="center">www.FredericTorres.com</text>
-<text x="11.5" y="40" size="1.27" layer="25" rot="R180">0 N/A</text>
-<text x="11.5" y="37.5" size="1.27" layer="25" rot="R180">1 N/A</text>
+<text x="12.5" y="40" size="1.27" layer="25" rot="R180">0 N/A</text>
+<text x="12.5" y="37.5" size="1.27" layer="25" rot="R180">1 N/A</text>
 <text x="8" y="35" size="1.27" layer="25" rot="R180">2</text>
 <text x="8" y="32.5" size="1.27" layer="25" rot="R180">3</text>
 <text x="8" y="30" size="1.27" layer="25" rot="R180">4</text>
@@ -155,7 +155,7 @@
 <text x="8" y="25" size="1.27" layer="25" rot="R180">6</text>
 <text x="8" y="22" size="1.27" layer="25" rot="R180">7</text>
 <text x="6.5" y="18" size="1.27" layer="25">VCC</text>
-<text x="6" y="16" size="1.27" layer="25">GND</text>
+<text x="6.5" y="16" size="1.27" layer="25">GND</text>
 <text x="87" y="47" size="1.778" layer="25" rot="R90" align="center">/LCD v1.0 2025/7</text>
 <wire x1="4" y1="98" x2="1" y2="95" width="0" layer="20"/>
 <wire x1="1" y1="4" x2="1" y2="0" width="0" layer="20"/>
@@ -178,7 +178,7 @@
 <text x="23" y="79" size="1.27" layer="25">I2C_SDA_GPIO_7</text>
 <text x="23" y="76" size="1.27" layer="25">I2C_SCL_GPIO_6</text>
 <text x="22.5" y="12.5" size="1.27" layer="25" rot="R90">+</text>
-<text x="67" y="19" size="1.778" layer="25" rot="R90" align="center">BUTTON 1</text>
+<text x="66" y="19.5" size="1.778" layer="25" rot="R90" align="center">BUTTON 1</text>
 </plain>
 <libraries>
 <library name="adafruit">
