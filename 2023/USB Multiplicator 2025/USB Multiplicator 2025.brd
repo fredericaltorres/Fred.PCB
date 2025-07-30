@@ -7208,7 +7208,7 @@ www.FredericTorres.com</text>
 <text x="80.1" y="59.1" size="1.27" layer="25" rot="R180" align="center"> ON / OFF</text>
 <text x="3.926875" y="47.93760625" size="1.016" layer="25">+</text>
 <text x="79.926875" y="46.93760625" size="1.016" layer="25">+</text>
-<text x="25" y="38.7" size="1.27" layer="25">GND</text>
+<text x="29" y="42.7" size="1.016" layer="25">GND</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -7650,16 +7650,6 @@ design rules under a new name.</description>
 <wire x1="47.5" y1="17.3" x2="46.204875" y2="26.43760625" width="0" layer="19" extent="1-1"/>
 <wire x1="12" y1="55" x2="50.4" y2="66.8" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="USB_DPLUS">
-<contactref element="X1" pad="3"/>
-<contactref element="USB_OUT_WITH_DATA_1" pad="D+"/>
-<wire x1="43" y1="17.3" x2="45.9" y2="66.8" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="USB_DMINUS">
-<contactref element="X1" pad="2"/>
-<contactref element="USB_OUT_WITH_DATA_1" pad="D-"/>
-<wire x1="45" y1="17.3" x2="47.9" y2="66.8" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="VCC_USB_2">
 <contactref element="S2" pad="O"/>
 <contactref element="USB_OUT_2" pad="VBUS"/>
@@ -7703,6 +7693,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="R8">
 <contactref element="RN1" pad="9"/>
+</signal>
+<signal name="N$1">
+<contactref element="X1" pad="2"/>
+<contactref element="USB_OUT_WITH_DATA_1" pad="D-"/>
+<wire x1="45" y1="17.3" x2="47.9" y2="66.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="X1" pad="3"/>
+<contactref element="USB_OUT_WITH_DATA_1" pad="D+"/>
+<wire x1="43" y1="17.3" x2="45.9" y2="66.8" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -4109,9 +4109,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="X1" gate="G$1" x="182.88" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="193.04" y="90.424" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="193.04" y="106.68" size="1.27" layer="96" rot="R180"/>
+<instance part="X1" gate="G$1" x="185.42" y="99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="195.58" y="90.424" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="195.58" y="106.68" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="GND1" gate="1" x="165.1" y="111.76" smashed="yes" rot="R180">
 <attribute name="VALUE" x="167.64" y="114.3" size="1.778" layer="96" rot="R180"/>
@@ -4127,9 +4127,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <attribute name="NAME" x="-34.544" y="117.348" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-32.385" y="117.348" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="USB_OUT_WITH_DATA_1" gate="G$1" x="55.88" y="104.14" smashed="yes"/>
-<instance part="GND2" gate="1" x="35.56" y="106.68" smashed="yes" rot="R270">
-<attribute name="VALUE" x="33.02" y="109.22" size="1.778" layer="96" rot="R270"/>
+<instance part="USB_OUT_WITH_DATA_1" gate="G$1" x="170.18" y="129.54" smashed="yes"/>
+<instance part="GND2" gate="1" x="149.86" y="132.08" smashed="yes" rot="R270">
+<attribute name="VALUE" x="147.32" y="134.62" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="USB_OUT_2" gate="G$1" x="66.04" y="78.74" smashed="yes"/>
 <instance part="USB_OUT_1" gate="G$1" x="109.22" y="99.06" smashed="yes"/>
@@ -4169,7 +4169,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
-<wire x1="172.72" y1="101.6" x2="165.1" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="101.6" x2="165.1" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="165.1" y1="101.6" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -4181,7 +4181,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <segment>
 <pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="53.34" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -4212,8 +4212,8 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </segment>
 <segment>
 <pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="VBUS"/>
-<wire x1="53.34" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<label x="35.56" y="109.22" size="1.778" layer="95"/>
+<wire x1="167.64" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
+<label x="149.86" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="P"/>
@@ -4222,37 +4222,13 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="VBUS"/>
-<wire x1="172.72" y1="93.98" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
 <label x="160.02" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="149.86" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
 <label x="154.94" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB_DPLUS" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="D+"/>
-<wire x1="172.72" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
-<label x="142.24" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D+"/>
-<wire x1="53.34" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
-<label x="27.94" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB_DMINUS" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="D-"/>
-<wire x1="172.72" y1="99.06" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
-<label x="142.24" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D-"/>
-<wire x1="53.34" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
-<label x="20.32" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC_USB_2" class="0">
@@ -4361,6 +4337,24 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="RN1" gate="G$1" pin="9"/>
 <wire x1="5.08" y1="134.62" x2="5.08" y2="127" width="0.1524" layer="91"/>
 <label x="5.08" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="D-"/>
+<wire x1="175.26" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="99.06" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D-"/>
+<wire x1="142.24" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="D+"/>
+<wire x1="175.26" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="96.52" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D+"/>
+<wire x1="137.16" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
