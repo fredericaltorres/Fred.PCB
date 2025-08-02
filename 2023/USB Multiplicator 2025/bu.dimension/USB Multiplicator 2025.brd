@@ -145,9 +145,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="8" y1="12" x2="84" y2="12" width="0" layer="20"/>
-<wire x1="90" y1="17" x2="90" y2="68" width="0" layer="20"/>
-<wire x1="84" y1="73" x2="8" y2="73" width="0" layer="20"/>
+<wire x1="2" y1="12" x2="90" y2="12" width="0" layer="20"/>
+<wire x1="90" y1="12" x2="90" y2="73" width="0" layer="20"/>
+<wire x1="90" y1="73" x2="2" y2="73" width="0" layer="20"/>
+<wire x1="2" y1="73" x2="2" y2="12" width="0" layer="20"/>
 <text x="66" y="40.2" size="2.54" layer="26" rot="SMR90" align="center">USB Multiplicator
 
 
@@ -158,6 +159,14 @@ www.FredericTorres.com</text>
 <text x="43.926875" y="25.93760625" size="1.016" layer="25">+</text>
 <text x="47.58824375" y="24.0302125" size="1.27" layer="25" align="center">POWER</text>
 <text x="70.1" y="17.1" size="2.1844" layer="25" rot="R180" align="center">USB Multiplicator</text>
+<wire x1="2" y1="18.402225" x2="2" y2="69" width="0.1524" layer="20"/>
+<wire x1="2" y1="69" x2="7" y2="73" width="0.1524" layer="20" curve="-90"/>
+<wire x1="7" y1="73" x2="86" y2="73" width="0.1524" layer="20"/>
+<wire x1="86" y1="73" x2="90" y2="69" width="0.1524" layer="20" curve="-90"/>
+<wire x1="90" y1="69" x2="90" y2="17" width="0.1524" layer="20"/>
+<wire x1="90" y1="17" x2="85" y2="12" width="0.1524" layer="20" curve="-90"/>
+<wire x1="85" y1="12" x2="8.37043125" y2="12.08465625" width="0.1524" layer="20"/>
+<wire x1="8.37043125" y1="12.08465625" x2="2" y2="18.402225" width="0.1524" layer="20" curve="-90"/>
 <rectangle x1="54.95798125" y1="0.28575" x2="55.78601875" y2="0.34925" layer="21"/>
 <rectangle x1="54.95798125" y1="0.34925" x2="55.78601875" y2="0.41275" layer="21"/>
 <rectangle x1="54.95798125" y1="0.41275" x2="55.78601875" y2="0.47625" layer="21"/>
@@ -7203,15 +7212,6 @@ www.FredericTorres.com</text>
 <text x="13" y="26.7" size="1.016" layer="25">GND</text>
 <text x="76" y="33.7" size="1.016" layer="25">GND</text>
 <text x="41" y="61.7" size="1.016" layer="25">GND</text>
-<wire x1="2" y1="68" x2="2" y2="17" width="0" layer="20"/>
-<wire x1="2" y1="68" x2="7" y2="73" width="0.1524" layer="20" curve="-90"/>
-<wire x1="7" y1="73" x2="8" y2="73" width="0.1524" layer="20"/>
-<wire x1="90" y1="68" x2="85" y2="73" width="0.1524" layer="20" curve="90"/>
-<wire x1="85" y1="73" x2="84" y2="73" width="0.1524" layer="20"/>
-<wire x1="2" y1="17" x2="7" y2="12" width="0.1524" layer="20" curve="90"/>
-<wire x1="7" y1="12" x2="8" y2="12" width="0.1524" layer="20"/>
-<wire x1="90" y1="17" x2="85" y2="12" width="0.1524" layer="20" curve="-90"/>
-<wire x1="85" y1="12" x2="84" y2="12" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="adafruit">
