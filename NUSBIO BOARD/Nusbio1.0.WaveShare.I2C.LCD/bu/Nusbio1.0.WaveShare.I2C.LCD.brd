@@ -178,8 +178,8 @@
 <text x="23" y="79" size="1.27" layer="25">I2C_SDA_GPIO_7</text>
 <text x="23" y="76" size="1.27" layer="25">I2C_SCL_GPIO_6</text>
 <text x="87.5" y="14.5" size="1.27" layer="25" rot="R90">+</text>
-<text x="66" y="19.5" size="1.778" layer="25" rot="R90" align="center">RIGHT</text>
-<text x="21" y="19.5" size="1.778" layer="25" rot="R90" align="center">LEFT</text>
+<text x="66" y="19.5" size="1.9304" layer="25" rot="R90" align="center">RIGHT</text>
+<text x="21" y="19.5" size="1.9304" layer="25" rot="R90" align="center">LEFT</text>
 <text x="16.5" y="15.5" size="1.27" layer="25" rot="R90">+</text>
 </plain>
 <libraries>
